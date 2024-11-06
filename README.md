@@ -1,4 +1,6 @@
 # TacticalGS3
  
-COLEEEEEE
-Spike
+
+- COLEEEEEE
+- Alex <3
+-
