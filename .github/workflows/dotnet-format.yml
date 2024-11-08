@@ -12,7 +12,6 @@ on:
 jobs:
   dotnet-format:
 
-
     runs-on: ubuntu-latest
 
     steps:
