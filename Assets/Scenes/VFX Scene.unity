@@ -232,7 +232,7 @@ ParticleSystemRenderer:
   m_MeshDistribution: 0
   m_SortMode: 0
   m_MinParticleSize: 0
-  m_MaxParticleSize: 1000
+  m_MaxParticleSize: 0.5
   m_CameraVelocityScale: 0
   m_VelocityScale: 0
   m_LengthScale: 2
@@ -269,7 +269,7 @@ ParticleSystem:
   m_GameObject: {fileID: 342154903}
   serializedVersion: 8
   lengthInSec: 1
-  simulationSpeed: 0.8
+  simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
   ringBufferMode: 0
@@ -343,7 +343,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 2.4
+      scalar: 2.2
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -1686,12 +1686,12 @@ ParticleSystem:
         - serializedVersion: 3
           time: 0
           value: 0
-          inSlope: 1.4647422
-          outSlope: 1.4647422
+          inSlope: 2.5223684
+          outSlope: 2.5223684
           tangentMode: 0
           weightedMode: 0
           inWeight: 0.33333334
-          outWeight: 0.66901404
+          outWeight: 0.11267605
         - serializedVersion: 3
           time: 1
           value: 1
@@ -1790,17 +1790,12 @@ ParticleSystem:
     uvChannelMask: -1
     rowMode: 1
     sprites:
-    - sprite: {fileID: -271831599, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: -1867139436, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: 312336370, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: -352490127, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: -970393765, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: -463936223, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: -1832203351, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: 2113384523, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: 2105427879, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: 793260670, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: 167063156, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
+    - sprite: {fileID: 427375054, guid: 7aac8b517c5293a4abd9cbd3fc06fe9e, type: 3}
+    - sprite: {fileID: -1355346809, guid: 7aac8b517c5293a4abd9cbd3fc06fe9e, type: 3}
+    - sprite: {fileID: 20424844, guid: 7aac8b517c5293a4abd9cbd3fc06fe9e, type: 3}
+    - sprite: {fileID: -1121892625, guid: 7aac8b517c5293a4abd9cbd3fc06fe9e, type: 3}
+    - sprite: {fileID: -1756821134, guid: 7aac8b517c5293a4abd9cbd3fc06fe9e, type: 3}
+    - sprite: {fileID: 380447086, guid: 7aac8b517c5293a4abd9cbd3fc06fe9e, type: 3}
     flipU: 0
     flipV: 0
   VelocityModule:
@@ -5096,7 +5091,7 @@ ParticleSystem:
   m_GameObject: {fileID: 615991950}
   serializedVersion: 8
   lengthInSec: 1
-  simulationSpeed: 0.75
+  simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
   ringBufferMode: 0
@@ -6457,7 +6452,7 @@ ParticleSystem:
         atime0: 0
         atime1: 3662
         atime2: 17348
-        atime3: 55898
+        atime3: 37008
         atime4: 0
         atime5: 0
         atime6: 0
@@ -6513,12 +6508,12 @@ ParticleSystem:
         - serializedVersion: 3
           time: 0
           value: 0
-          inSlope: 2.6595318
-          outSlope: 2.6595318
+          inSlope: 2.5223684
+          outSlope: 2.5223684
           tangentMode: 0
           weightedMode: 0
           inWeight: 0.33333334
-          outWeight: 0.07042253
+          outWeight: 0.11267605
         - serializedVersion: 3
           time: 1
           value: 1
@@ -6617,17 +6612,12 @@ ParticleSystem:
     uvChannelMask: -1
     rowMode: 1
     sprites:
-    - sprite: {fileID: -271831599, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: -1867139436, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: 312336370, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: -352490127, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: -970393765, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: -463936223, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: -1832203351, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: 2113384523, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: 2105427879, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: 793260670, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: 167063156, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
+    - sprite: {fileID: 427375054, guid: 7aac8b517c5293a4abd9cbd3fc06fe9e, type: 3}
+    - sprite: {fileID: -1355346809, guid: 7aac8b517c5293a4abd9cbd3fc06fe9e, type: 3}
+    - sprite: {fileID: 20424844, guid: 7aac8b517c5293a4abd9cbd3fc06fe9e, type: 3}
+    - sprite: {fileID: -1121892625, guid: 7aac8b517c5293a4abd9cbd3fc06fe9e, type: 3}
+    - sprite: {fileID: -1756821134, guid: 7aac8b517c5293a4abd9cbd3fc06fe9e, type: 3}
+    - sprite: {fileID: 380447086, guid: 7aac8b517c5293a4abd9cbd3fc06fe9e, type: 3}
     flipU: 0
     flipV: 0
   VelocityModule:
@@ -9970,7 +9960,7 @@ ParticleSystemRenderer:
   m_MeshDistribution: 0
   m_SortMode: 0
   m_MinParticleSize: 0
-  m_MaxParticleSize: 1000
+  m_MaxParticleSize: 0.5
   m_CameraVelocityScale: 0
   m_VelocityScale: 0
   m_LengthScale: 2
@@ -9998,38 +9988,6 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
---- !u!1 &725336873
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 725336874}
-  m_Layer: 0
-  m_Name: SlashSequenceTest
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &725336874
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 725336873}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.11375549, y: 0.06705511, z: 0.11084992}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1217377874}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &811510696
 GameObject:
   m_ObjectHideFlags: 0
@@ -10057,7 +10015,7 @@ ParticleSystem:
   m_GameObject: {fileID: 811510696}
   serializedVersion: 8
   lengthInSec: 1
-  simulationSpeed: 0.8
+  simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
   ringBufferMode: 0
@@ -11474,12 +11432,12 @@ ParticleSystem:
         - serializedVersion: 3
           time: 0
           value: 0
-          inSlope: 2.6595318
-          outSlope: 2.6595318
+          inSlope: 2.5223684
+          outSlope: 2.5223684
           tangentMode: 0
           weightedMode: 0
           inWeight: 0.33333334
-          outWeight: 0.07042253
+          outWeight: 0.11267605
         - serializedVersion: 3
           time: 1
           value: 1
@@ -11578,17 +11536,12 @@ ParticleSystem:
     uvChannelMask: -1
     rowMode: 1
     sprites:
-    - sprite: {fileID: -271831599, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: -1867139436, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: 312336370, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: -352490127, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: -970393765, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: -463936223, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: -1832203351, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: 2113384523, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: 2105427879, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: 793260670, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: 167063156, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
+    - sprite: {fileID: 427375054, guid: 7aac8b517c5293a4abd9cbd3fc06fe9e, type: 3}
+    - sprite: {fileID: -1355346809, guid: 7aac8b517c5293a4abd9cbd3fc06fe9e, type: 3}
+    - sprite: {fileID: 20424844, guid: 7aac8b517c5293a4abd9cbd3fc06fe9e, type: 3}
+    - sprite: {fileID: -1121892625, guid: 7aac8b517c5293a4abd9cbd3fc06fe9e, type: 3}
+    - sprite: {fileID: -1756821134, guid: 7aac8b517c5293a4abd9cbd3fc06fe9e, type: 3}
+    - sprite: {fileID: 380447086, guid: 7aac8b517c5293a4abd9cbd3fc06fe9e, type: 3}
     flipU: 0
     flipV: 0
   VelocityModule:
@@ -14903,7 +14856,7 @@ ParticleSystemRenderer:
   m_MeshDistribution: 0
   m_SortMode: 0
   m_MinParticleSize: 0
-  m_MaxParticleSize: 1000
+  m_MaxParticleSize: 0.5
   m_CameraVelocityScale: 0
   m_VelocityScale: 0
   m_LengthScale: 2
@@ -15010,7 +14963,7 @@ ParticleSystemRenderer:
   m_MeshDistribution: 0
   m_SortMode: 0
   m_MinParticleSize: 0
-  m_MaxParticleSize: 1000
+  m_MaxParticleSize: 0.5
   m_CameraVelocityScale: 0
   m_VelocityScale: 0
   m_LengthScale: 2
@@ -15047,7 +15000,7 @@ ParticleSystem:
   m_GameObject: {fileID: 1217377871}
   serializedVersion: 8
   lengthInSec: 3
-  simulationSpeed: 0.95
+  simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
   ringBufferMode: 0
@@ -16399,7 +16352,7 @@ ParticleSystem:
         atime0: 0
         atime1: 3662
         atime2: 17348
-        atime3: 55898
+        atime3: 37008
         atime4: 0
         atime5: 0
         atime6: 0
@@ -16455,12 +16408,12 @@ ParticleSystem:
         - serializedVersion: 3
           time: 0
           value: 0
-          inSlope: 2.6595318
-          outSlope: 2.6595318
+          inSlope: 2.5223684
+          outSlope: 2.5223684
           tangentMode: 0
           weightedMode: 0
           inWeight: 0.33333334
-          outWeight: 0.07042253
+          outWeight: 0.11267605
         - serializedVersion: 3
           time: 1
           value: 1
@@ -16559,17 +16512,12 @@ ParticleSystem:
     uvChannelMask: -1
     rowMode: 1
     sprites:
-    - sprite: {fileID: -271831599, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: -1867139436, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: 312336370, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: -352490127, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: -970393765, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: -463936223, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: -1832203351, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: 2113384523, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: 2105427879, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: 793260670, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: 167063156, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
+    - sprite: {fileID: 427375054, guid: 7aac8b517c5293a4abd9cbd3fc06fe9e, type: 3}
+    - sprite: {fileID: -1355346809, guid: 7aac8b517c5293a4abd9cbd3fc06fe9e, type: 3}
+    - sprite: {fileID: 20424844, guid: 7aac8b517c5293a4abd9cbd3fc06fe9e, type: 3}
+    - sprite: {fileID: -1121892625, guid: 7aac8b517c5293a4abd9cbd3fc06fe9e, type: 3}
+    - sprite: {fileID: -1756821134, guid: 7aac8b517c5293a4abd9cbd3fc06fe9e, type: 3}
+    - sprite: {fileID: 380447086, guid: 7aac8b517c5293a4abd9cbd3fc06fe9e, type: 3}
     flipU: 0
     flipV: 0
   VelocityModule:
@@ -19857,14 +19805,14 @@ Transform:
   m_GameObject: {fileID: 1217377871}
   serializedVersion: 2
   m_LocalRotation: {x: -0.2097735, y: -0, z: -0, w: 0.97775}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.11375549, y: 0.06705511, z: 0.11084992}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 615991952}
   - {fileID: 1298242474}
   - {fileID: 1594411506}
-  m_Father: {fileID: 725336874}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -24.218, y: 0, z: 0}
 --- !u!1 &1288123622
 GameObject:
@@ -19945,7 +19893,7 @@ ParticleSystemRenderer:
   m_MeshDistribution: 0
   m_SortMode: 0
   m_MinParticleSize: 0
-  m_MaxParticleSize: 1000
+  m_MaxParticleSize: 0.5
   m_CameraVelocityScale: 0
   m_VelocityScale: 0
   m_LengthScale: 2
@@ -19982,7 +19930,7 @@ ParticleSystem:
   m_GameObject: {fileID: 1288123622}
   serializedVersion: 8
   lengthInSec: 1
-  simulationSpeed: 0.75
+  simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
   ringBufferMode: 0
@@ -21399,12 +21347,12 @@ ParticleSystem:
         - serializedVersion: 3
           time: 0
           value: 0
-          inSlope: 2.6595318
-          outSlope: 2.6595318
+          inSlope: 2.5223684
+          outSlope: 2.5223684
           tangentMode: 0
           weightedMode: 0
           inWeight: 0.33333334
-          outWeight: 0.07042253
+          outWeight: 0.11267605
         - serializedVersion: 3
           time: 1
           value: 1
@@ -21503,17 +21451,12 @@ ParticleSystem:
     uvChannelMask: -1
     rowMode: 1
     sprites:
-    - sprite: {fileID: -271831599, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: -1867139436, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: 312336370, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: -352490127, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: -970393765, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: -463936223, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: -1832203351, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: 2113384523, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: 2105427879, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: 793260670, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: 167063156, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
+    - sprite: {fileID: 427375054, guid: 7aac8b517c5293a4abd9cbd3fc06fe9e, type: 3}
+    - sprite: {fileID: -1355346809, guid: 7aac8b517c5293a4abd9cbd3fc06fe9e, type: 3}
+    - sprite: {fileID: 20424844, guid: 7aac8b517c5293a4abd9cbd3fc06fe9e, type: 3}
+    - sprite: {fileID: -1121892625, guid: 7aac8b517c5293a4abd9cbd3fc06fe9e, type: 3}
+    - sprite: {fileID: -1756821134, guid: 7aac8b517c5293a4abd9cbd3fc06fe9e, type: 3}
+    - sprite: {fileID: 380447086, guid: 7aac8b517c5293a4abd9cbd3fc06fe9e, type: 3}
     flipU: 0
     flipV: 0
   VelocityModule:
@@ -24809,7 +24752,7 @@ ParticleSystem:
   m_GameObject: {fileID: 1298242471}
   serializedVersion: 8
   lengthInSec: 1
-  simulationSpeed: 0.95
+  simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
   ringBufferMode: 0
@@ -26217,12 +26160,12 @@ ParticleSystem:
         - serializedVersion: 3
           time: 0
           value: 0
-          inSlope: 2.6595318
-          outSlope: 2.6595318
+          inSlope: 2.5223684
+          outSlope: 2.5223684
           tangentMode: 0
           weightedMode: 0
           inWeight: 0.33333334
-          outWeight: 0.07042253
+          outWeight: 0.11267605
         - serializedVersion: 3
           time: 1
           value: 1
@@ -26321,17 +26264,12 @@ ParticleSystem:
     uvChannelMask: -1
     rowMode: 1
     sprites:
-    - sprite: {fileID: -271831599, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: -1867139436, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: 312336370, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: -352490127, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: -970393765, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: -463936223, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: -1832203351, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: 2113384523, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: 2105427879, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: 793260670, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: 167063156, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
+    - sprite: {fileID: 427375054, guid: 7aac8b517c5293a4abd9cbd3fc06fe9e, type: 3}
+    - sprite: {fileID: -1355346809, guid: 7aac8b517c5293a4abd9cbd3fc06fe9e, type: 3}
+    - sprite: {fileID: 20424844, guid: 7aac8b517c5293a4abd9cbd3fc06fe9e, type: 3}
+    - sprite: {fileID: -1121892625, guid: 7aac8b517c5293a4abd9cbd3fc06fe9e, type: 3}
+    - sprite: {fileID: -1756821134, guid: 7aac8b517c5293a4abd9cbd3fc06fe9e, type: 3}
+    - sprite: {fileID: 380447086, guid: 7aac8b517c5293a4abd9cbd3fc06fe9e, type: 3}
     flipU: 0
     flipV: 0
   VelocityModule:
@@ -29646,7 +29584,7 @@ ParticleSystemRenderer:
   m_MeshDistribution: 0
   m_SortMode: 0
   m_MinParticleSize: 0
-  m_MaxParticleSize: 1000
+  m_MaxParticleSize: 0.5
   m_CameraVelocityScale: 0
   m_VelocityScale: 0
   m_LengthScale: 2
@@ -29716,7 +29654,7 @@ ParticleSystem:
   m_GameObject: {fileID: 1369584728}
   serializedVersion: 8
   lengthInSec: 1
-  simulationSpeed: 0.8
+  simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
   ringBufferMode: 0
@@ -31060,7 +30998,7 @@ ParticleSystem:
         serializedVersion: 2
         key0: {r: 0, g: 0.7064569, b: 1, a: 0}
         key1: {r: 0, g: 0.7064569, b: 1, a: 1}
-        key2: {r: 0, g: 0, b: 0, a: 1}
+        key2: {r: 1, g: 1, b: 1, a: 1}
         key3: {r: 0, g: 0, b: 0, a: 0}
         key4: {r: 0, g: 0, b: 0, a: 0}
         key5: {r: 0, g: 0, b: 0, a: 0}
@@ -31068,7 +31006,7 @@ ParticleSystem:
         key7: {r: 0, g: 0, b: 0, a: 0}
         ctime0: 0
         ctime1: 65535
-        ctime2: 0
+        ctime2: 38165
         ctime3: 0
         ctime4: 0
         ctime5: 0
@@ -31077,7 +31015,7 @@ ParticleSystem:
         atime0: 0
         atime1: 3662
         atime2: 17348
-        atime3: 55898
+        atime3: 37008
         atime4: 0
         atime5: 0
         atime6: 0
@@ -31133,12 +31071,12 @@ ParticleSystem:
         - serializedVersion: 3
           time: 0
           value: 0
-          inSlope: 2.6595318
-          outSlope: 2.6595318
+          inSlope: 2.5223684
+          outSlope: 2.5223684
           tangentMode: 0
           weightedMode: 0
           inWeight: 0.33333334
-          outWeight: 0.07042253
+          outWeight: 0.11267605
         - serializedVersion: 3
           time: 1
           value: 1
@@ -31237,17 +31175,12 @@ ParticleSystem:
     uvChannelMask: -1
     rowMode: 1
     sprites:
-    - sprite: {fileID: -271831599, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: -1867139436, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: 312336370, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: -352490127, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: -970393765, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: -463936223, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: -1832203351, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: 2113384523, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: 2105427879, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: 793260670, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: 167063156, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
+    - sprite: {fileID: 427375054, guid: 7aac8b517c5293a4abd9cbd3fc06fe9e, type: 3}
+    - sprite: {fileID: -1355346809, guid: 7aac8b517c5293a4abd9cbd3fc06fe9e, type: 3}
+    - sprite: {fileID: 20424844, guid: 7aac8b517c5293a4abd9cbd3fc06fe9e, type: 3}
+    - sprite: {fileID: -1121892625, guid: 7aac8b517c5293a4abd9cbd3fc06fe9e, type: 3}
+    - sprite: {fileID: -1756821134, guid: 7aac8b517c5293a4abd9cbd3fc06fe9e, type: 3}
+    - sprite: {fileID: 380447086, guid: 7aac8b517c5293a4abd9cbd3fc06fe9e, type: 3}
     flipU: 0
     flipV: 0
   VelocityModule:
@@ -34584,7 +34517,7 @@ ParticleSystemRenderer:
   m_MeshDistribution: 0
   m_SortMode: 0
   m_MinParticleSize: 0
-  m_MaxParticleSize: 1000
+  m_MaxParticleSize: 0.5
   m_CameraVelocityScale: 0
   m_VelocityScale: 0
   m_LengthScale: 2
@@ -34691,7 +34624,7 @@ ParticleSystemRenderer:
   m_MeshDistribution: 0
   m_SortMode: 0
   m_MinParticleSize: 0
-  m_MaxParticleSize: 1000
+  m_MaxParticleSize: 0.5
   m_CameraVelocityScale: 0
   m_VelocityScale: 0
   m_LengthScale: 2
@@ -34728,7 +34661,7 @@ ParticleSystem:
   m_GameObject: {fileID: 1436142368}
   serializedVersion: 8
   lengthInSec: 1
-  simulationSpeed: 0.75
+  simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
   ringBufferMode: 0
@@ -34802,7 +34735,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1.25
+      scalar: 1.4
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -36145,12 +36078,12 @@ ParticleSystem:
         - serializedVersion: 3
           time: 0
           value: 0
-          inSlope: 2.6595318
-          outSlope: 2.6595318
+          inSlope: 2.5223684
+          outSlope: 2.5223684
           tangentMode: 0
           weightedMode: 0
           inWeight: 0.33333334
-          outWeight: 0.07042253
+          outWeight: 0.11267605
         - serializedVersion: 3
           time: 1
           value: 1
@@ -36249,17 +36182,12 @@ ParticleSystem:
     uvChannelMask: -1
     rowMode: 1
     sprites:
-    - sprite: {fileID: -271831599, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: -1867139436, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: 312336370, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: -352490127, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: -970393765, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: -463936223, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: -1832203351, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: 2113384523, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: 2105427879, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: 793260670, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: 167063156, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
+    - sprite: {fileID: 427375054, guid: 7aac8b517c5293a4abd9cbd3fc06fe9e, type: 3}
+    - sprite: {fileID: -1355346809, guid: 7aac8b517c5293a4abd9cbd3fc06fe9e, type: 3}
+    - sprite: {fileID: 20424844, guid: 7aac8b517c5293a4abd9cbd3fc06fe9e, type: 3}
+    - sprite: {fileID: -1121892625, guid: 7aac8b517c5293a4abd9cbd3fc06fe9e, type: 3}
+    - sprite: {fileID: -1756821134, guid: 7aac8b517c5293a4abd9cbd3fc06fe9e, type: 3}
+    - sprite: {fileID: 380447086, guid: 7aac8b517c5293a4abd9cbd3fc06fe9e, type: 3}
     flipU: 0
     flipV: 0
   VelocityModule:
@@ -39647,7 +39575,7 @@ ParticleSystem:
   m_GameObject: {fileID: 1594411503}
   serializedVersion: 8
   lengthInSec: 1
-  simulationSpeed: 0.95
+  simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
   ringBufferMode: 0
@@ -41055,12 +40983,12 @@ ParticleSystem:
         - serializedVersion: 3
           time: 0
           value: 0
-          inSlope: 2.6595318
-          outSlope: 2.6595318
+          inSlope: 2.5223684
+          outSlope: 2.5223684
           tangentMode: 0
           weightedMode: 0
           inWeight: 0.33333334
-          outWeight: 0.07042253
+          outWeight: 0.11267605
         - serializedVersion: 3
           time: 1
           value: 1
@@ -41159,17 +41087,12 @@ ParticleSystem:
     uvChannelMask: -1
     rowMode: 1
     sprites:
-    - sprite: {fileID: -271831599, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: -1867139436, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: 312336370, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: -352490127, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: -970393765, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: -463936223, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: -1832203351, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: 2113384523, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: 2105427879, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: 793260670, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
-    - sprite: {fileID: 167063156, guid: 0b772dc233bc6be41a207e4b4b3b7ab2, type: 3}
+    - sprite: {fileID: 427375054, guid: 7aac8b517c5293a4abd9cbd3fc06fe9e, type: 3}
+    - sprite: {fileID: -1355346809, guid: 7aac8b517c5293a4abd9cbd3fc06fe9e, type: 3}
+    - sprite: {fileID: 20424844, guid: 7aac8b517c5293a4abd9cbd3fc06fe9e, type: 3}
+    - sprite: {fileID: -1121892625, guid: 7aac8b517c5293a4abd9cbd3fc06fe9e, type: 3}
+    - sprite: {fileID: -1756821134, guid: 7aac8b517c5293a4abd9cbd3fc06fe9e, type: 3}
+    - sprite: {fileID: 380447086, guid: 7aac8b517c5293a4abd9cbd3fc06fe9e, type: 3}
     flipU: 0
     flipV: 0
   VelocityModule:
@@ -44484,7 +44407,7 @@ ParticleSystemRenderer:
   m_MeshDistribution: 0
   m_SortMode: 0
   m_MinParticleSize: 0
-  m_MaxParticleSize: 1000
+  m_MaxParticleSize: 0.5
   m_CameraVelocityScale: 0
   m_VelocityScale: 0
   m_LengthScale: 2
@@ -44533,4 +44456,4 @@ SceneRoots:
   m_Roots:
   - {fileID: 1534604200}
   - {fileID: 327936419}
-  - {fileID: 725336874}
+  - {fileID: 1217377874}
