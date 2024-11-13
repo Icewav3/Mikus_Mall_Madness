@@ -60,10 +60,10 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.31f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Combat\ActionEffect.cs" />
+    <Compile Include="Assets\Scripts\Combat\CombatActions\CombatAction.cs" />
     <Compile Include="Assets\Scripts\Combat\CharacterBase.cs" />
-    <Compile Include="Assets\Scripts\Combat\Character.cs" />
-    <Compile Include="Assets\Scripts\Combat\CombatAction.cs" />
+    <Compile Include="Assets\Scripts\Combat\Character\Character.cs" />
+    <Compile Include="Assets\Scripts\Combat\CombatActions\ActionEffect.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

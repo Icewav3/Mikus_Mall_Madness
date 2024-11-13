@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+
 using UnityEngine;
 
 public class CombatAction : ScriptableObject
@@ -10,7 +12,6 @@ public class CombatAction : ScriptableObject
 
 	[SerializeField]
 	private List<ActionEffect> _effects;
-	public List<ActionEffect> Effects => _effects;
 
 	[SerializeField]
 	private ActionAnimType _animType;
@@ -18,7 +19,7 @@ public class CombatAction : ScriptableObject
 
 	[SerializeField]
 	private List<ActionBehaviourType> _behaviourTypes;
-	public List<ActionBehaviourType> BehaviourTypes => _behaviourTypes;
+	public ReadOnlyCollection<ActionBehaviourType> BehaviourTypes => _behaviourTypes.AsReadOnly();
 
 	[SerializeField]
 	private int _staminaCost;

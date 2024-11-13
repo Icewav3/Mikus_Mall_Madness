@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+
 using UnityEngine;
 
 public class CharacterBase : ScriptableObject
@@ -21,6 +23,10 @@ public class CharacterBase : ScriptableObject
 	public int BaseDefense => _baseDefense;
 
 	[SerializeField]
+	private int _baseAttack;
+	public int BaseAttack => _baseAttack;
+
+	[SerializeField]
 	private List<CombatAction> _combatActions;
-	public List<CombatAction> CombatActions => _combatActions;
+	public ReadOnlyCollection<CombatAction> CombatActions => _combatActions.AsReadOnly();
 }
