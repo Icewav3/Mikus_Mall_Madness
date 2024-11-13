@@ -63,6 +63,7 @@
     <Compile Include="Assets\Scripts\Combat\CombatActions\CombatAction.cs" />
     <Compile Include="Assets\Scripts\Combat\CharacterBase.cs" />
     <Compile Include="Assets\Scripts\Combat\Character\Character.cs" />
+    <Compile Include="Assets\Scripts\Combat\Character\StatBoost.cs" />
     <Compile Include="Assets\Scripts\Combat\CombatActions\ActionEffect.cs" />
   </ItemGroup>
   <ItemGroup>
