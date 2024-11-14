@@ -1,8 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
+
+using UnityEngine;
 
 public class Character : MonoBehaviour
 {
@@ -15,6 +16,8 @@ public class Character : MonoBehaviour
 	[SerializeField]
 	private CharacterBase _characterBase;
 	public CharacterBase CharacterBase => _characterBase;
+
+	public ReadOnlyCollection<CombatAction> CombatActions => _characterBase.CombatActions;
 
 	[SerializeField]
 	private bool _isEnemy;
@@ -92,7 +95,7 @@ public class Character : MonoBehaviour
 
 		OnDamage?.Invoke(this, new DamageEvent(appliedDamage, damage));
 
-		if(_currentHealth <= 0)
+		if (_currentHealth <= 0)
 		{
 			IsDead = true;
 			OnDeath?.Invoke(this);
@@ -133,5 +136,5 @@ public class DamageEvent
 	}
 
 	public int AppliedDamage { get; private set; }
-	public int Damage { get; private set;}
+	public int Damage { get; private set; }
 }
