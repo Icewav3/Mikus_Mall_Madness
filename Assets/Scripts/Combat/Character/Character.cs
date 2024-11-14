@@ -20,6 +20,8 @@ public class Character : MonoBehaviour
 	private bool _isEnemy;
 	public bool IsEnemy => _isEnemy;
 
+	public bool IsDead { get; private set; }
+
 	#region Stats
 	private List<StatBoost> _activeStatBoosts = new List<StatBoost>();
 	public List<StatBoost> ActiveStatBoosts => _activeStatBoosts;
@@ -89,6 +91,12 @@ public class Character : MonoBehaviour
 		_currentHealth -= appliedDamage;
 
 		OnDamage?.Invoke(this, new DamageEvent(appliedDamage, damage));
+
+		if(_currentHealth <= 0)
+		{
+			IsDead = true;
+			OnDeath?.Invoke(this);
+		}
 	}
 
 	public void Heal(int heal)

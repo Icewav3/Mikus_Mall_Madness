@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Damage Target", menuName = "Action Effects/Damage Target")]
-public class DamageTargetEffect : ActionEffect
+[CreateAssetMenu(fileName = "Heal Self", menuName = "Action Effects/Heal Self")]
+public class HealSelfEffect : ActionEffect
 {
 	[SerializeField]
-	private int _damage;
+	private int _amount;
 
 	public override void Activate(Character origin, Character target, List<Character> enemies, List<Character> allies)
 	{
-		target.Damage(Mathf.FloorToInt(_damage * origin.Attack));
+		origin.Heal(_amount);
 	}
 }
