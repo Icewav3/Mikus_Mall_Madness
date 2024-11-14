@@ -32,6 +32,9 @@ public class Character : MonoBehaviour
 	private int _currentHealth;
 	public int CurrentHealth => _currentHealth;
 
+	private int _currentStamina;
+	public int CurrentStamina => _currentStamina;
+
 	public int MaxHealth
 	{
 		get { return Mathf.FloorToInt(ApplyStatBoosts(CharacterBase.BaseHealth, StatTypes.MaxHealth)); }
@@ -106,14 +109,26 @@ public class Character : MonoBehaviour
 	{
 		if (heal <= 0) return;
 
-		_currentHealth += heal;
+		int appliedHeal = heal;
 
-		OnHeal?.Invoke(this, heal);
+		if(_currentHealth + heal > MaxHealth)
+		{
+			appliedHeal = MaxHealth - _currentHealth;
+			_currentHealth = MaxHealth;
+		}
+		else
+		{
+			_currentHealth += heal;
+		}
+
+		OnHeal?.Invoke(this, appliedHeal);
 	}
 
 	public void DepleteStamina(int stamina)
 	{
 		if (stamina <= 0) return;
+
+		_currentStamina -= stamina;
 
 		OnStaminaDeplete?.Invoke(this, stamina);
 	}
@@ -122,7 +137,19 @@ public class Character : MonoBehaviour
 	{
 		if (stamina <= 0) return;
 
-		OnStaminaGain?.Invoke(this, stamina);
+		int gainedStamina = stamina;
+
+		if(_currentStamina + stamina > MaxStamina)
+		{
+			gainedStamina = MaxStamina - _currentStamina;
+			_currentStamina = MaxStamina;
+		}
+		else
+		{
+			_currentStamina += stamina;
+		}
+
+		OnStaminaGain?.Invoke(this, gainedStamina);
 	}
 	#endregion
 }
