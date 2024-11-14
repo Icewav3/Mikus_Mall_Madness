@@ -62,6 +62,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Combat\CombatActions\CombatAction.cs" />
     <Compile Include="Assets\Scripts\Combat\CharacterBase.cs" />
+    <Compile Include="Assets\Scripts\Combat\CombatActions\DamageTargetEffect.cs" />
     <Compile Include="Assets\Scripts\Combat\Character\PartyManager.cs" />
     <Compile Include="Assets\Scripts\Combat\Character\Character.cs" />
     <Compile Include="Assets\Scripts\Combat\CombatButtonManager.cs" />

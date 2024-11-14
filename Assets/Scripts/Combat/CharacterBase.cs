@@ -23,10 +23,6 @@ public class CharacterBase : ScriptableObject
 	public int BaseDefense => _baseDefense;
 
 	[SerializeField]
-	private int _baseAttack;
-	public int BaseAttack => _baseAttack;
-
-	[SerializeField]
 	private List<CombatAction> _combatActions;
 	public ReadOnlyCollection<CombatAction> CombatActions => _combatActions.AsReadOnly();
 }

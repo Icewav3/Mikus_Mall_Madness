@@ -2,12 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
-using Unity.VisualScripting;
 using System.Linq;
 
 public class Character : MonoBehaviour
 {
 	public event Action<Character> OnDeath;
+	public event Action<Character, DamageEvent> OnDamage;
+	public event Action<Character, int> OnHeal;
+	public event Action<Character, int> OnStaminaDeplete;
+	public event Action<Character, int> OnStaminaGain;
 
 	[SerializeField]
 	private CharacterBase _characterBase;
@@ -26,30 +29,31 @@ public class Character : MonoBehaviour
 
 	public int MaxHealth
 	{
-		get { return ApplyStatBoosts(CharacterBase.BaseHealth, StatTypes.MaxHealth); }
+		get { return Mathf.FloorToInt(ApplyStatBoosts(CharacterBase.BaseHealth, StatTypes.MaxHealth)); }
 	}
 
 	public int MaxStamina
 	{
-		get { return ApplyStatBoosts(CharacterBase.BaseStamina, StatTypes.MaxStamina); }
+		get { return Mathf.FloorToInt(ApplyStatBoosts(CharacterBase.BaseStamina, StatTypes.MaxStamina)); }
 	}
 
 	public int Speed
 	{
-		get { return ApplyStatBoosts(CharacterBase.BaseSpeed, StatTypes.Speed); }
+		get { return Mathf.FloorToInt(ApplyStatBoosts(CharacterBase.BaseSpeed, StatTypes.Speed)); }
 	}
 
 	public int Defense
 	{
-		get { return ApplyStatBoosts(CharacterBase.BaseDefense, StatTypes.Defense); }
+		get { return Mathf.FloorToInt(ApplyStatBoosts(CharacterBase.BaseDefense, StatTypes.Defense)); }
 	}
 
-	public int Attack
+	private float _attack = 1;
+	public float Attack
 	{
-		get { return ApplyStatBoosts(CharacterBase.BaseAttack, StatTypes.Attack); }
+		get { return ApplyStatBoosts(_attack, StatTypes.Attack); }
 	}
 
-	public int ApplyStatBoosts(int baseValue, StatTypes statType)
+	public float ApplyStatBoosts(float baseValue, StatTypes statType)
 	{
 		float modifiedStat = baseValue;
 
@@ -70,7 +74,56 @@ public class Character : MonoBehaviour
 
 		modifiedStat *= finalMultiplier;
 
-		return Mathf.FloorToInt(modifiedStat);
+		return modifiedStat;
 	}
 	#endregion Stats
+
+	#region Stat Accessors
+	public void Damage(int damage)
+	{
+		if (damage <= 0) return;
+
+		float defenseMultiplier = 1 - Defense / (100 + Mathf.Abs(Defense));
+		int appliedDamage = Mathf.FloorToInt(damage * defenseMultiplier);
+
+		_currentHealth -= appliedDamage;
+
+		OnDamage?.Invoke(this, new DamageEvent(appliedDamage, damage));
+	}
+
+	public void Heal(int heal)
+	{
+		if (heal <= 0) return;
+
+		_currentHealth += heal;
+
+		OnHeal?.Invoke(this, heal);
+	}
+
+	public void DepleteStamina(int stamina)
+	{
+		if (stamina <= 0) return;
+
+		OnStaminaDeplete?.Invoke(this, stamina);
+	}
+
+	public void GainStamina(int stamina)
+	{
+		if (stamina <= 0) return;
+
+		OnStaminaGain?.Invoke(this, stamina);
+	}
+	#endregion
+}
+
+public class DamageEvent
+{
+	public DamageEvent(int appliedDamage, int damage)
+	{
+		AppliedDamage = appliedDamage;
+		Damage = damage;
+	}
+
+	public int AppliedDamage { get; private set; }
+	public int Damage { get; private set;}
 }
