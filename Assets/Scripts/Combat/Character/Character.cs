@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using Unity.VisualScripting;
+using System.Linq;
 
 public class Character : MonoBehaviour
 {
@@ -17,6 +18,9 @@ public class Character : MonoBehaviour
 	public bool IsEnemy => _isEnemy;
 
 	#region Stats
+	private List<StatBoost> _activeStatBoosts = new List<StatBoost>();
+	public List<StatBoost> ActiveStatBoosts => _activeStatBoosts;
+
 	private int _currentHealth;
 	public int CurrentHealth => _currentHealth;
 
@@ -45,9 +49,28 @@ public class Character : MonoBehaviour
 		get { return ApplyStatBoosts(CharacterBase.BaseAttack, StatTypes.Attack); }
 	}
 
-	public int ApplyStatBoosts(int baseAmount, StatTypes statType)
+	public int ApplyStatBoosts(int baseValue, StatTypes statType)
 	{
-		return baseAmount;
+		float modifiedStat = baseValue;
+
+		List<StatBoost> applicableBoosts = ActiveStatBoosts.Where(sb => sb.StatIncrease == statType).ToList();
+		float finalMultiplier = 1;
+
+		foreach (StatBoost boost in applicableBoosts)
+		{
+			if (boost.Type == StatBoostTypes.Additive)
+			{
+				modifiedStat += boost.Amount;
+			}
+			else if (boost.Type == StatBoostTypes.Multiplicative)
+			{
+				finalMultiplier += boost.Amount;
+			}
+		}
+
+		modifiedStat *= finalMultiplier;
+
+		return Mathf.FloorToInt(modifiedStat);
 	}
 	#endregion Stats
 }

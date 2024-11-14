@@ -1,9 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-
 using UnityEngine;
 
+[CreateAssetMenu(fileName = "Combat Action", menuName = "")]
 public class CombatAction : ScriptableObject
 {
 	[SerializeField]

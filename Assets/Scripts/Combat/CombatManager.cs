@@ -20,13 +20,13 @@ public class CombatManager : MonoBehaviour
 	public event Action<CombatManager> OnLoopEnd;
 	public event Action<CombatManager, bool> OnBattleEnd;
 
-	private void Awake()
+	private void OnEnable()
 	{
 		_actionSelector.OnTurnComplete += EndTurn;
 	}
 	private void OnDisable()
 	{
-		_actionSelector.OnTurnComplete += EndTurn;
+		_actionSelector.OnTurnComplete -= EndTurn;
 	}
 
 	public void InitBattle(List<Character> enemies)

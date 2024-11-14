@@ -1,9 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-
 using UnityEngine;
 
+[CreateAssetMenu(fileName = "Character Base", menuName = "Characters/Character Base")]
 public class CharacterBase : ScriptableObject
 {
 	[SerializeField]

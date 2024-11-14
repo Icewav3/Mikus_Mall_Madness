@@ -37,6 +37,6 @@ public enum StatTypes
 
 public enum StatBoostTypes
 {
-	Addative,
+	Additive,
 	Multiplicative
 }
