@@ -8,8 +8,11 @@ using UnityEngine;
 public class Character : MonoBehaviour
 {
 	public event Action<Character> OnDeath;
+
+	// stat/gain loss events are stored separately for future damage effects systems to use easily
 	public event Action<Character, DamageEvent> OnDamage;
 	public event Action<Character, int> OnHeal;
+
 	public event Action<Character, int> OnStaminaDeplete;
 	public event Action<Character, int> OnStaminaGain;
 
@@ -17,12 +20,14 @@ public class Character : MonoBehaviour
 	private CharacterBase _characterBase;
 	public CharacterBase CharacterBase => _characterBase;
 
+	// shorthand variable to expose the character base's actions
 	public ReadOnlyCollection<CombatAction> CombatActions => _characterBase.CombatActions;
 
 	[SerializeField]
 	private bool _isEnemy;
 	public bool IsEnemy => _isEnemy;
 
+	// primarily used to ensure multi-targeting attacks don't target dead characters
 	public bool IsDead { get; private set; }
 
 	#region Stats
@@ -55,17 +60,26 @@ public class Character : MonoBehaviour
 		get { return Mathf.FloorToInt(ApplyStatBoosts(CharacterBase.BaseDefense, StatTypes.Defense)); }
 	}
 
+	// attack is used as a MULTIPLIER to damage dealt.
+	// this is slightly weird with the way stat boosts are handled,
+	// as if you wanted to give a 20% attack boost, you'd actually ADD 0.2 to this.
+	// sorry!! -cate (we tried to find a way around this but gave up)
 	private float _attack = 1;
 	public float Attack
 	{
 		get { return ApplyStatBoosts(_attack, StatTypes.Attack); }
 	}
 
+	// even though most of our stats are stored as ints, we can be more specific by returning a float in case we need one
 	public float ApplyStatBoosts(float baseValue, StatTypes statType)
 	{
+		// store a temporary version of the stat for additive boosts
 		float modifiedStat = baseValue;
 
+		// find boosts that match our stat we're trying to increase
 		List<StatBoost> applicableBoosts = ActiveStatBoosts.Where(sb => sb.StatIncrease == statType).ToList();
+
+		// used for multiplicative boosts to ensure they are not compounding (10% + 10% = 20% instead of 21%)
 		float finalMultiplier = 1;
 
 		foreach (StatBoost boost in applicableBoosts)
@@ -91,6 +105,7 @@ public class Character : MonoBehaviour
 	{
 		if (damage <= 0) return;
 
+		// calculate defense damage reduction (uses a formula that can be found here: https://riskofrain2.fandom.com/wiki/Armor)
 		float defenseMultiplier = 1 - Defense / (100 + Mathf.Abs(Defense));
 		int appliedDamage = Mathf.FloorToInt(damage * defenseMultiplier);
 
@@ -111,6 +126,7 @@ public class Character : MonoBehaviour
 
 		int appliedHeal = heal;
 
+		// do not allow overhealing
 		if(_currentHealth + heal > MaxHealth)
 		{
 			appliedHeal = MaxHealth - _currentHealth;
@@ -139,6 +155,7 @@ public class Character : MonoBehaviour
 
 		int gainedStamina = stamina;
 
+		// do not allow stamina gain past the maximum
 		if(_currentStamina + stamina > MaxStamina)
 		{
 			gainedStamina = MaxStamina - _currentStamina;
@@ -154,6 +171,7 @@ public class Character : MonoBehaviour
 	#endregion
 }
 
+// class to bundle more specific information about an instance of damage
 public class DamageEvent
 {
 	public DamageEvent(int appliedDamage, int damage)

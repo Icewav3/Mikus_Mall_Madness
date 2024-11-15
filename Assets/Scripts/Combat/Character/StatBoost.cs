@@ -17,6 +17,7 @@ public class StatBoost
 	private StatTypes _statIncrease;
 	public StatTypes StatIncrease => _statIncrease;
 
+	// how the boost is applied to the base value (x + y vs x * y)
 	[SerializeField]
 	private StatBoostTypes _type;
 	public StatBoostTypes Type => _type;

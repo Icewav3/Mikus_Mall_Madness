@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 using UnityEngine;
 
@@ -32,7 +33,7 @@ public class CombatManager : MonoBehaviour
 	public void InitBattle(List<Character> enemies)
 	{
 		_enemies = enemies;
-		_playerParty = _party.Members;
+		_playerParty = _party.Members.ToList();
 
 		foreach (Character enemy in _enemies) _combatants.Add(enemy);
 		foreach (Character ally in _playerParty) _combatants.Add(ally);
