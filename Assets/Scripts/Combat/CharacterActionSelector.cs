@@ -4,14 +4,19 @@ using System.Linq;
 
 using UnityEngine;
 
+///<summary>
+///  <para>Class that handles selecting <see cref="CombatAction"/>s in combat.</para>
+///  <para>Also handles behaviour for enemnies in combat.</para>
+///</summary>
 public class CharacterActionSelector : MonoBehaviour
 {
+	///<summary>Event called when the turn has finished and the action as been performed.</summary>
 	public event Action<CharacterActionSelector> OnTurnComplete;
 
 	[SerializeField]
 	private CombatButtonManager _buttonManager;
 
-	private void Awake()
+	private void OnEnable()
 	{
 		_buttonManager.OnActionSelected += HandleAction;
 	}
@@ -20,23 +25,32 @@ public class CharacterActionSelector : MonoBehaviour
 		_buttonManager.OnActionSelected -= HandleAction;
 	}
 
-	public void StartSelection(Character character, List<Character> playerParty, List<Character> enemies)
+	///<param name="character">The character whose turn it is.</param>
+	///<param name="allies">The party that the current character belongs to.</param>
+	///<param name="oponents">The party that the current character does not belong to.</param>
+	///<summary>
+	///Starts process of selecting an action for a given <see cref="Character"/>.
+	///</summary>
+	public void StartSelection(Character character, List<Character> allies, List<Character> oponents)
 	{
-		if(character.IsEnemy)
+		//do different things depending on whether the character passed in is an enemy
+		if (character.IsEnemy)
 		{
-
+			// TODO: Define enemy behaviour
 		}
 		else
 		{
 			_buttonManager.Populate(character.CombatActions.ToArray());
 		}
 	}
+	//recieves and processes a target for the given character's chosen action
 	private void HandleTargetSelection()
 	{
+		// TODO: Implement target selection from player
 	}
-
+	//handles the player's selected combat action
 	private void HandleAction(CombatButtonManager buttonManager, CombatAction action)
 	{
-
+		// TODO: Process Action selection from player
 	}
 }

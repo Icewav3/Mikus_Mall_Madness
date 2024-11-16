@@ -12,14 +12,19 @@ public class PartyManager : ScriptableObject
 	// only publicly expose as read only so no other classes can add/remove members from our party
 	public ReadOnlyCollection<Character> Members => _members.AsReadOnly();
 
+	///<summary>
+	///  Iterates through the entire party to reset their health and other stats to default.
+	///</summary>
 	public void HealParty()
 	{
-		foreach(Character character in _members)
+		foreach (Character character in _members)
 		{
 			character.Heal(character.MaxHealth);
 		}
 	}
 
+	///<param name="member">The <see cref="Character"/> to be added.</param>
+	///<summary>Adds a <see cref="Character"/> to the party.</summary>
 	public void AddMember(Character member)
 	{
 		_members.Add(member);
