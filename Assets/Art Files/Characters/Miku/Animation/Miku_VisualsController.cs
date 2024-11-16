@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.VFX;
 
 public class Miku_VisualsController : MonoBehaviour
 {
@@ -13,6 +14,10 @@ public class Miku_VisualsController : MonoBehaviour
     private ParticleSystem tinySparks;
     [SerializeField]
     private ParticleSystem point;
+    [SerializeField]
+    private VisualEffect pointGraph;
+    [SerializeField]
+    private ParticleSystem afterSparks;
 
     public void ult_StageLights()
 	{
@@ -27,6 +32,12 @@ public class Miku_VisualsController : MonoBehaviour
     public void atk2_Point()
 	{
 		point.Play();
+        pointGraph.Play();
+	}
+
+    public void atk2_afterSparks()
+	{
+        afterSparks.Play();
 	}
 
     public void changeSortingLayerUP()
