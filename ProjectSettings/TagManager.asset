@@ -44,10 +44,13 @@ TagManager:
   - name: Floor
     uniqueID: 2730274505
     locked: 0
+  - name: '[Behind] Particles'
+    uniqueID: 2021559959
+    locked: 0
   - name: Characters
     uniqueID: 2837402685
     locked: 0
-  - name: Particles
+  - name: '[Front] Particles'
     uniqueID: 2313855497
     locked: 0
   - name: Overlay
