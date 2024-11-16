@@ -127,7 +127,7 @@ public class Character : MonoBehaviour
 		int appliedHeal = heal;
 
 		// do not allow overhealing
-		if(_currentHealth + heal > MaxHealth)
+		if (_currentHealth + heal > MaxHealth)
 		{
 			appliedHeal = MaxHealth - _currentHealth;
 			_currentHealth = MaxHealth;
@@ -156,7 +156,7 @@ public class Character : MonoBehaviour
 		int gainedStamina = stamina;
 
 		// do not allow stamina gain past the maximum
-		if(_currentStamina + stamina > MaxStamina)
+		if (_currentStamina + stamina > MaxStamina)
 		{
 			gainedStamina = MaxStamina - _currentStamina;
 			_currentStamina = MaxStamina;

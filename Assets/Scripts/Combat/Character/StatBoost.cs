@@ -1,12 +1,11 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
 [Serializable]
 public class StatBoost
 {
-    public StatBoost(StatTypes statIncrease, StatBoostTypes type, float amount)
+	public StatBoost(StatTypes statIncrease, StatBoostTypes type, float amount)
 	{
 		_statIncrease = statIncrease;
 		_type = type;

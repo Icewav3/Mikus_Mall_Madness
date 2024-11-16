@@ -39,7 +39,7 @@ namespace DefaultNamespace
 		private void UpdateMovementDirection()
 		{
 			Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-			Vector2 direction     = mousePosition - transform.position;
+			Vector2 direction = mousePosition - transform.position;
 
 			// Round the direction to the nearest 45-degree angle
 			if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y))
