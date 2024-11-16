@@ -41,3 +41,24 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Floor
+    uniqueID: 2730274505
+    locked: 0
+  - name: Characters
+    uniqueID: 2837402685
+    locked: 0
+  - name: Particles
+    uniqueID: 2313855497
+    locked: 0
+  - name: Overlay
+    uniqueID: 3368797753
+    locked: 0
+  - name: CharacterInUse
+    uniqueID: 1527346651
+    locked: 0
+  - name: '[SCR] Borders'
+    uniqueID: 332025473
+    locked: 0
+  - name: '[SCR] Splash'
+    uniqueID: 1642097399
+    locked: 0
