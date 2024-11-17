@@ -13,26 +13,19 @@ public class Miku_VisualsController : MonoBehaviour
     [SerializeField]
     private ParticleSystem tinySparks;
     [SerializeField]
-    private ParticleSystem point;
-    [SerializeField]
-    private VisualEffect pointGraph;
-    [SerializeField]
     private ParticleSystem afterSparks;
+    [SerializeField]
+    private ParticleSystem shockwave;
 
     public void ult_StageLights()
 	{
 		stageLights.Play();
 	}
 
-    public void ult_TinySparks()
+    public void ult_Burst()
 	{
 		tinySparks.Play();
-	}
-
-    public void atk2_Point()
-	{
-		point.Play();
-        pointGraph.Play();
+		shockwave.Play();
 	}
 
     public void atk2_afterSparks()
