@@ -32,7 +32,7 @@ public class CombatManager : MonoBehaviour
 	public event Action<CombatManager> OnLoopEnd;
 	///<summary>
 	///  Event broadcast when the battle is finished.
-	///  Passes a boolean representing whether the player has won or not.
+	///  Passes a <see cref="bool"/> representing whether the player has won or not.
 	///</summary>
 	public event Action<CombatManager, bool> OnBattleEnd;
 

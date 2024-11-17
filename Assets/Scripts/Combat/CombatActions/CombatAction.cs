@@ -28,7 +28,7 @@ public class CombatAction : ScriptableObject
 	private int _staminaCost;
 	public int StaminaCost => _staminaCost;
 
-	// potentially make override with delay between effects??? might be unneccesary
+	// NOTE: Potentially make override with delay between effects??? might be unneccesary
 	public void Perform(Character origin, Character target, List<Character> enemies, List<Character> allies)
 	{
 		foreach (ActionEffect effect in _effects)

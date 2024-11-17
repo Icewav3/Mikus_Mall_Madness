@@ -5,6 +5,10 @@ using System.Linq;
 
 using UnityEngine;
 
+///<summary>
+///  Class that contains all per instance information related to a character.
+///  Base stats are derived from <see cref="CharacterBase"/>.
+///</summary>
 public class Character : MonoBehaviour
 {
 	public event Action<Character> OnDeath;
@@ -18,7 +22,7 @@ public class Character : MonoBehaviour
 
 	[SerializeField]
 	private CharacterBase _characterBase;
-	public CharacterBase CharacterBase => _characterBase;
+	public CharacterBase Base => _characterBase;
 
 	// shorthand variable to expose the character base's actions
 	public ReadOnlyCollection<CombatAction> CombatActions => _characterBase.CombatActions;
@@ -28,6 +32,9 @@ public class Character : MonoBehaviour
 	public bool IsEnemy => _isEnemy;
 
 	// primarily used to ensure multi-targeting attacks don't target dead characters
+	///<summary>
+	///  Whether the character should be ignored when targeting for an action, or in the turn order.
+	///</summary>
 	public bool IsDead { get; private set; }
 
 	#region Stats
@@ -42,22 +49,22 @@ public class Character : MonoBehaviour
 
 	public int MaxHealth
 	{
-		get { return Mathf.FloorToInt(ApplyStatBoosts(CharacterBase.BaseHealth, StatTypes.MaxHealth)); }
+		get { return Mathf.FloorToInt(ApplyStatBoosts(Base.BaseHealth, StatTypes.MaxHealth)); }
 	}
 
 	public int MaxStamina
 	{
-		get { return Mathf.FloorToInt(ApplyStatBoosts(CharacterBase.BaseStamina, StatTypes.MaxStamina)); }
+		get { return Mathf.FloorToInt(ApplyStatBoosts(Base.BaseStamina, StatTypes.MaxStamina)); }
 	}
 
 	public int Speed
 	{
-		get { return Mathf.FloorToInt(ApplyStatBoosts(CharacterBase.BaseSpeed, StatTypes.Speed)); }
+		get { return Mathf.FloorToInt(ApplyStatBoosts(Base.BaseSpeed, StatTypes.Speed)); }
 	}
 
 	public int Defense
 	{
-		get { return Mathf.FloorToInt(ApplyStatBoosts(CharacterBase.BaseDefense, StatTypes.Defense)); }
+		get { return Mathf.FloorToInt(ApplyStatBoosts(Base.BaseDefense, StatTypes.Defense)); }
 	}
 
 	// attack is used as a MULTIPLIER to damage dealt.
@@ -65,12 +72,22 @@ public class Character : MonoBehaviour
 	// as if you wanted to give a 20% attack boost, you'd actually ADD 0.2 to this.
 	// sorry!! -cate (we tried to find a way around this but gave up)
 	private float _attack = 1;
+	///<returns>A multiplier for how much damage should be dealt by the character.</returns>
 	public float Attack
 	{
 		get { return ApplyStatBoosts(_attack, StatTypes.Attack); }
 	}
 
-	// even though most of our stats are stored as ints, we can be more specific by returning a float in case we need one
+	///<param name="baseValue">The base value the stat to be modified</param>
+	///<param name="statType">The type of stat to look for in modifiers.</param>
+	///<summary>
+	///  Applies all the relevant <see cref="StatBoost"/>s to a given stat.
+	///</summary>
+	///<returns>
+	///  The modified value after all boosts have been applied.
+	///  Though most stats are stored as <see cref="int"/>,
+	///  we can be more specific by returning <see cref="float"/> in case we need one.
+	///</returns>
 	public float ApplyStatBoosts(float baseValue, StatTypes statType)
 	{
 		// store a temporary version of the stat for additive boosts
@@ -101,6 +118,18 @@ public class Character : MonoBehaviour
 	#endregion Stats
 
 	#region Stat Accessors
+	///<param name="damage">
+	///  <para>The amount of damage to deal to the character.</para>
+	///  <para>Negative values are ignored.</para>
+	///</param>
+	///<summary>
+	///  <para>
+	///    Decreases the character's health.
+	///    The amount the health stat is decreased by is not directly solely determined by <paramref name="damage"/>,
+	///    but instead uses a formula that takes the character's defense stat into account.
+	///  </para>
+	///  <para>Also broadcasts and event with the amount of health was gained.</para>
+	///</summary>
 	public void Damage(int damage)
 	{
 		if (damage <= 0) return;
@@ -115,11 +144,21 @@ public class Character : MonoBehaviour
 
 		if (_currentHealth <= 0)
 		{
+			_currentHealth = 0;
 			IsDead = true;
 			OnDeath?.Invoke(this);
 		}
 	}
 
+	///<param name="heal">
+	///  <para>The amount of health to add to the character.</para>
+	///  <para>Negative values are ignored.</para>
+	///</param>
+	///<summary>
+	///  <para>Increases the character's health stat by <paramref name="heal"/>.
+	///  The health stat will not go below 0.</para>
+	///  <para>Also broadcasts and event with the amount of health was gained.</para>
+	///</summary>
 	public void Heal(int heal)
 	{
 		if (heal <= 0) return;
@@ -140,8 +179,18 @@ public class Character : MonoBehaviour
 		OnHeal?.Invoke(this, appliedHeal);
 	}
 
+	///<param name="stamina">
+	///  <para>The amount of stamina to remove from the character.</para>
+	///  <para>Negative values are ignored.</para>
+	///</param>
+	///<summary>
+	///  <para>Decreases the character's stamina stat by <paramref name="stamina"/>.
+	///  The stamina stat will not go below 0.</para>
+	///  <para>Also broadcasts and event with the amount of stamina was lost.</para>
+	///</summary>
 	public void DepleteStamina(int stamina)
 	{
+		// TODO: Add check to prevent stamina from becoming negative
 		if (stamina <= 0) return;
 
 		_currentStamina -= stamina;
@@ -149,6 +198,15 @@ public class Character : MonoBehaviour
 		OnStaminaDeplete?.Invoke(this, stamina);
 	}
 
+	///<param name="stamina">
+	///  <para>The amount of stamina to give to the character.</para>
+	///  <para>Negative values are ignored.</para>
+	///</param>
+	///<summary>
+	///  <para>Increments the character's stamina stat by <paramref name="stamina"/>.
+	///  The stamina stat will not go above <see cref="MaxStamina"/>.</para>
+	///  <para>Also broadcasts and event with the amount of stamina was gained.</para>
+	///</summary>
 	public void GainStamina(int stamina)
 	{
 		if (stamina <= 0) return;
@@ -171,15 +229,21 @@ public class Character : MonoBehaviour
 	#endregion
 }
 
-// class to bundle more specific information about an instance of damage
+///<summary>
+///  Class containing information about an instance of damage.
+///</summary>
 public class DamageEvent
 {
+	///<param name="appliedDamage">Damage the target was dealt.</param>
+	///<param name="damage">Damage before defense calculations.</param>
 	public DamageEvent(int appliedDamage, int damage)
 	{
 		AppliedDamage = appliedDamage;
 		Damage = damage;
 	}
 
+	///<returns>The amount of damage actually applied to a target.</returns>
 	public int AppliedDamage { get; private set; }
+	///<returns>The raw damage number before defense calculations.</returns>
 	public int Damage { get; private set; }
 }
