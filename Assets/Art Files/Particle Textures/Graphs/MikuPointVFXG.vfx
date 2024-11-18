@@ -18,9 +18,9 @@ MonoBehaviour:
   uiBounds:
     serializedVersion: 2
     x: 428
-    y: -190
+    y: -192
     width: 3324
-    height: 1620
+    height: 1586
 --- !u!114 &114350483966674976
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -107,7 +107,7 @@ MonoBehaviour:
   m_Children:
   - {fileID: 8926484042661614622}
   - {fileID: 8926484042661614610}
-  m_UIPosition: {x: 941, y: -190}
+  m_UIPosition: {x: 941, y: -192}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots: []
@@ -2144,7 +2144,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"r":0.0,"g":0.5639736652374268,"b":1.0,"a":0.0}'
+      m_SerializableObject: '{"r":0.0,"g":0.5647058486938477,"b":1.0,"a":0.0}'
     m_Space: 2147483647
   m_Property:
     name: _Color
@@ -6149,7 +6149,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"r":0.0,"g":0.04915332794189453,"b":1.0,"a":0.0}'
+      m_SerializableObject: '{"r":0.0,"g":0.050980567932128909,"b":1.0,"a":0.0}'
     m_Space: 2147483647
   m_Property:
     name: _Color

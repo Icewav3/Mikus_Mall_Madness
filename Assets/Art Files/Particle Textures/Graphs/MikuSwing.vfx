@@ -20,7 +20,7 @@ MonoBehaviour:
     x: 387
     y: -200
     width: 2042
-    height: 1970
+    height: 1934
 --- !u!114 &114350483966674976
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2021,7 +2021,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"x":0.0,"y":0.0,"z":36.599998474121097}'
+      m_SerializableObject: '{"x":0.0,"y":0.0,"z":33.79999923706055}'
     m_Space: 2147483647
   m_Property:
     name: Angle
@@ -3298,7 +3298,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"x":0.0,"y":0.0,"z":66.80000305175781}'
+      m_SerializableObject: '{"x":0.0,"y":0.0,"z":82.0}'
     m_Space: 2147483647
   m_Property:
     name: Angle
