@@ -43,8 +43,11 @@ public class CharacterActionSelector : MonoBehaviour
 			_buttonManager.Populate(character.CombatActions.ToArray());
 		}
 	}
+	public void HandleTargetHover(Targetable targetable, Character character)
+	{
+	}
 	//recieves and processes a target for the given character's chosen action
-	private void HandleTargetSelection()
+	public void HandleTargetSelection(Targetable targetable, Character character)
 	{
 		// TODO: Implement target selection from player
 	}

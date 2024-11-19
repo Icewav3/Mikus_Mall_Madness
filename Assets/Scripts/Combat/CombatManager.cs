@@ -25,6 +25,9 @@ public class CombatManager : MonoBehaviour
 	[SerializeField]
 	private CharacterActionSelector _actionSelector;
 
+	[SerializeField]
+	private List<Targetable> _targetableActors = new();
+
 	///<summary>
 	///  Event broadcast when the turn index resets to 0,
 	///  meaning every character has performed a <see cref="CombatAction"/>.
@@ -50,12 +53,38 @@ public class CombatManager : MonoBehaviour
 		_enemies = enemies;
 		_playerParty = _party.Members.ToList();
 
-		foreach (Character enemy in _enemies) _combatants.Add(enemy);
-		foreach (Character ally in _playerParty) _combatants.Add(ally);
+		//foreach (Character enemy in _enemies)
+		for (int i = 0; i < _enemies.Count; i++)
+		{
+			_combatants.Add(_enemies[i]);
+			_targetableActors[i + 4].Actor.Init(_enemies[i]);
+			_targetableActors[i + 4].OnHover += _actionSelector.HandleTargetHover;
+			_targetableActors[i + 4].OnSelect += _actionSelector.HandleTargetSelection;
+		}
+		for (int i = 0; i < _playerParty.Count; i++)
+		{
+			_combatants.Add(_playerParty[i]);
+			_targetableActors[i].Actor.Init(_playerParty[i]);
+			_targetableActors[i].OnHover += _actionSelector.HandleTargetHover;
+			_targetableActors[i].OnSelect += _actionSelector.HandleTargetSelection;
+		}
 
 		SortCombatants();
 
 		NextTurn();
+	}
+	public void EndBattle()
+	{
+		for (int i = 0; i < _enemies.Count; i++)
+		{
+			_targetableActors[i + 4].OnHover -= _actionSelector.HandleTargetHover;
+			_targetableActors[i + 4].OnSelect -= _actionSelector.HandleTargetSelection;
+		}
+		for (int i = 0; i < _playerParty.Count; i++)
+		{
+			_targetableActors[i].OnHover -= _actionSelector.HandleTargetHover;
+			_targetableActors[i].OnSelect -= _actionSelector.HandleTargetSelection;
+		}
 	}
 
 	//sorts the combatants based on their individual speed stats
