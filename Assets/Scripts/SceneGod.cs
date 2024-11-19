@@ -41,7 +41,7 @@ public class SceneGod : MonoBehaviour
 
 	void Start()
 	{
-		EnterExploreState();
+		//EnterCombatState();
 	}
 
 	/// <summary>
