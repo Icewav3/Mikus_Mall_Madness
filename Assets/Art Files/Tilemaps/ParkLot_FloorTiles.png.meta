@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ec97c9a303cde3b4292364283e70be88
+guid: ca1d074b032a2f94199a43ebc47da521
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,28 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ParkLot_FloorTiles 1_0
+      name: ParkLot_FloorTiles_0
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 641ffd7aa6eb5de41bbd36f49941c48e
+      internalID: 1357328632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParkLot_FloorTiles_1
       rect:
         serializedVersion: 2
         x: 96
@@ -111,14 +132,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc8cbf08e0fc31248adabaa5cd74a458
-      internalID: -581390339
+      spriteID: a6247cd789f0a824c883469d6c341914
+      internalID: 1428503520
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ParkLot_FloorTiles 1_1
+      name: ParkLot_FloorTiles_2
       rect:
         serializedVersion: 2
         x: 128
@@ -132,14 +153,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1f93dc3d7a5d8b84fba8d7466cce44e9
-      internalID: -1362710449
+      spriteID: 52a5dfe9754610c479499cc943ecab01
+      internalID: -1394395231
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ParkLot_FloorTiles 1_2
+      name: ParkLot_FloorTiles_3
       rect:
         serializedVersion: 2
         x: 96
@@ -153,14 +174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d00d9909f093e5448839ae147e7c10e
-      internalID: 37940231
+      spriteID: 59f0d521480d9e04da7b1dca32635788
+      internalID: 671371183
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ParkLot_FloorTiles 1_3
+      name: ParkLot_FloorTiles_4
       rect:
         serializedVersion: 2
         x: 128
@@ -174,8 +195,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8df825994651c447b59ec2fa29cba25
-      internalID: 914418497
+      spriteID: d2153a3468dc59f49911133de1e6e85b
+      internalID: 317680204
       vertices: []
       indices: 
       edges: []
@@ -191,10 +212,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ParkLot_FloorTiles 1_0: -581390339
-      ParkLot_FloorTiles 1_1: -1362710449
-      ParkLot_FloorTiles 1_2: 37940231
-      ParkLot_FloorTiles 1_3: 914418497
+      ParkLot_FloorTiles_0: 1357328632
+      ParkLot_FloorTiles_1: 1428503520
+      ParkLot_FloorTiles_2: -1394395231
+      ParkLot_FloorTiles_3: 671371183
+      ParkLot_FloorTiles_4: 317680204
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
