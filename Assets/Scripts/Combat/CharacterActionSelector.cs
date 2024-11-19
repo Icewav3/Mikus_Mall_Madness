@@ -15,6 +15,8 @@ public class CharacterActionSelector : MonoBehaviour
 
 	[SerializeField]
 	private CombatButtonManager _buttonManager;
+	[SerializeField]
+	private EnemyCombatAI _enemyCombatAI;
 
 	private void OnEnable()
 	{
@@ -37,6 +39,8 @@ public class CharacterActionSelector : MonoBehaviour
 		if (character.IsEnemy)
 		{
 			// TODO: Define enemy behaviour
+			_enemyCombatAI.HandleEnemyAction(character, allies, oponents);
+			OnTurnComplete?.Invoke(this);
 		}
 		else
 		{
