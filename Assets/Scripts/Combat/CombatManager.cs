@@ -97,6 +97,15 @@ public class CombatManager : MonoBehaviour
 	//handles starting a turn loop
 	private void NextTurn()
 	{
+		Character nextCharacter = _combatants[_turnIndex];
+		if (nextCharacter.IsEnemy)
+		{
+			_actionSelector.StartSelection(nextCharacter, _enemies, _playerParty);
+		}
+		else
+		{
+			_actionSelector.StartSelection(nextCharacter, _playerParty, _enemies);
+		}
 		// TODO: Implement logic for starting a turn
 		// NOTE: Make sure to check if characters are still alive before starting their turn
 	}
@@ -106,7 +115,7 @@ public class CombatManager : MonoBehaviour
 	{
 		//increment the turn index
 		//if the index is outside the bounds of the combatants list, wrap it with the modulus operator
-		_turnIndex += (_combatants.Count + _turnIndex + 1) % _combatants.Count;
+		_turnIndex = (_combatants.Count + _turnIndex + 1) % _combatants.Count;
 		//if the turn index is 0 after incrementing
 		//this means the manager has done a full cycle through every combatant
 		//call the end cycle method
