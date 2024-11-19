@@ -10,7 +10,6 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Party Manager", menuName = "Characters/Party Manager")]
 public class PartyManager : ScriptableObject
 {
-	[SerializeField]
 	private List<Character> _members = new();
 
 	// only publicly expose as read only so no other classes can add/remove members from our party
@@ -33,5 +32,9 @@ public class PartyManager : ScriptableObject
 	public void AddMember(Character member)
 	{
 		_members.Add(member);
+	}
+	public void Clear()
+	{
+		_members = new();
 	}
 }
