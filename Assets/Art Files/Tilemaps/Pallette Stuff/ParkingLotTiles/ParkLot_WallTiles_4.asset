@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ParkLot_FloorTiles_2
+  m_Name: ParkLot_WallTiles_4
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 695815361, guid: ca1d074b032a2f94199a43ebc47da521, type: 3}
+  m_Sprite: {fileID: 436440123, guid: 119a2c7ce34152a4e9d777810d4d5711, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
