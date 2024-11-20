@@ -1,0 +1,112 @@
+﻿classDiagram
+    ActionAnimType -- CombatAction
+    ActionBehaviourType -- CombatAction
+    CharacterBase --> Character
+    CombatManager ..> PartyManager
+    PartyManager ..|> Character
+    Character ..> CharacterStats
+    Character ..> CombatAction
+    CombatAction ..> ActionEffect
+    CombatManager ..|> Character
+    CombatManager ..> CharacterActionSelector
+    CharacterActionSelector ..> CombatButtonManager
+    %%CombatManager ..> CombatButtonManager
+
+    class CombatButtonManager {
+        +event Action<CombatButtonManager, int> OnActionSelected
+        %%+void SelectMove(int index)
+
+        +void Populate(CombatAction[] combatActions)
+        +void DeInit()
+    }
+    class CharacterActionSelector {
+        +event Action<Character> OnTurnComplete
+
+        +void StartSelection(Character character, List<Character> playerParty, List<Character> enemies)
+        -void HandleAction()
+        -void HandleTargetSelection()
+    }
+
+    class CombatAction {
+        +bool TargetAllies
+        -List<ActionEffect> effects
+        +ActionAnimType animType
+        +List<ActionBehaviourType> behaviourTypes
+        +int StaminaCost
+
+        +void Perform(Character origin, Character target, List<Character> enemies, List<Character> allies)
+    }
+
+    class ActionEffect {
+        <<abstract>>
+        +void Activate(Character origin, Character target, List<Character> enemies, List<Character> allies)*
+    }
+    class ActionAnimType {
+        <<enum>>
+        Attack
+        Status
+        Defend
+    }
+    class ActionBehaviourType {
+        <<enum>>
+        Attack
+        Buff
+        Debuff
+        Defend
+    }
+    ActionEffect --|> DamageEnemyTeam : implementation
+    class DamageEnemyTeam {
+        -int damage
+
+        +void Activate(Character origin, Character target, List<Character> enemies, List<Character> allies)
+    }
+    ActionEffect --|> DebuffSelf : implementation
+    class DebuffSelf {
+        -Debuff debuff
+
+        +void Activate(Character origin, Character target, List<Character> enemies, List<Character> allies)
+    }
+
+    class PartyManager {
+        <<ScriptableObject>>
+        +List<Character> Party
+
+        +void HealParty()
+    }
+
+    class CombatManager {
+        -int turnIndex
+        -PartyManager party
+        -List<Character> combatants
+        -List<Character> playerParty
+        -List<Character> enemies
+
+        +void InitBattle(List<Character> enemies)
+        -void SortCombatants()
+        -void NextTurn()
+    }
+
+    %% Character Classes
+    class CharacterBase {
+        +int BaseHealth
+        +int BaseStamina
+        +int BaseSpeed
+        +int BaseDefense
+        +List<CombatAction> CombatActions
+    }
+
+    class Character {
+        -CharacterBase base
+        +event Action<Character> OnDeath
+        +CharacterStats Stats
+        +bool IsEnemy
+    }
+    class CharacterStats {
+        +int MaxHealth
+        +int Health
+        +int MaxStamina
+        +int Stamina
+        +int Speed
+
+        -int ApplyStatBoosts(float baseValue, statTypes statType)
+    }
