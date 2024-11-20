@@ -53,7 +53,6 @@ public class CombatManager : MonoBehaviour
 		_enemies = enemies;
 		_playerParty = _party.Members.ToList();
 
-		//foreach (Character enemy in _enemies)
 		for (int i = 0; i < _enemies.Count; i++)
 		{
 			_combatants.Add(_enemies[i]);

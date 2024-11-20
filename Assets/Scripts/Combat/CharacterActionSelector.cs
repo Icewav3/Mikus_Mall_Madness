@@ -46,14 +46,9 @@ public class CharacterActionSelector : MonoBehaviour
 		//do different things depending on whether the character passed in is an enemy
 		if (character.IsEnemy)
 		{
-			//TEST PLEASE REMOVE
-			character.CombatActions[UnityEngine.Random.Range(0, character.CombatActions.Count)]
-			.Perform(character, opponents[0], opponents, allies);
+			_enemyCombatAI.HandleEnemyAction(character, allies, opponents);
 			OnTurnComplete?.Invoke(this);
 			print("Enemy HP: " + character.CurrentHealth);
-			// TODO: Define enemy behaviour
-			_enemyCombatAI.HandleEnemyAction(character, allies, oponents);
-			OnTurnComplete?.Invoke(this);
 		}
 		else
 		{
