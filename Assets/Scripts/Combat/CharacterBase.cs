@@ -1,11 +1,20 @@
-using System.Collections;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+
 using UnityEngine;
 
+///<summary>
+///  Class that defines the base values to be instantiated into a <see cref="Character"/>.
+///</summary>
 [CreateAssetMenu(fileName = "Character Base", menuName = "Characters/Character Base")]
 public class CharacterBase : ScriptableObject
 {
+	// TODO: Add values for artists (Animator, default sprite, etc.)
+
+	[SerializeField]
+	private bool _isEnemy = false;
+	public bool IsEnemy => _isEnemy;
+
 	[SerializeField]
 	private int _baseHealth;
 	public int BaseHealth => _baseHealth;

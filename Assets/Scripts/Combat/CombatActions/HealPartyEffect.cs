@@ -1,5 +1,5 @@
-using System.Collections;
 using System.Collections.Generic;
+
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Heal Party", menuName = "Action Effects/Heal Party")]
@@ -10,7 +10,7 @@ public class HealPartyEffect : ActionEffect
 
 	public override void Activate(Character origin, Character target, List<Character> enemies, List<Character> allies)
 	{
-		foreach(Character ally in allies)
+		foreach (Character ally in allies)
 		{
 			if (!ally.IsDead) ally.Heal(_amount);
 		}

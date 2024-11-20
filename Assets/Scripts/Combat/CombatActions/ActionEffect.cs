@@ -1,7 +1,10 @@
-using System.Collections;
 using System.Collections.Generic;
+
 using UnityEngine;
 
+///<summary>
+///  Abstract base class for all action effects.
+///</summary>
 public abstract class ActionEffect : ScriptableObject
 {
 	// all action instructions will be defined in child classes
