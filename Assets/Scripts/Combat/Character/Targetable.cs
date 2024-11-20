@@ -14,12 +14,12 @@ public class Targetable : MonoBehaviour, IPointerEnterHandler, IPointerClickHand
 
 	public void OnPointerEnter(PointerEventData pointerEventData)
 	{
-		if (_actor.Character.IsDead) return;
+		if (_actor.Character == null || _actor.Character.IsDead) return;
 		OnHover?.Invoke(this, _actor.Character);
 	}
 	public void OnPointerClick(PointerEventData pointerEventData)
 	{
-		if (_actor.Character.IsDead) return;
+		if (_actor.Character == null || _actor.Character.IsDead) return;
 		OnSelect?.Invoke(this, _actor.Character);
 	}
 }

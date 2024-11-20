@@ -13,19 +13,27 @@ public class RenderHealthBar : MonoBehaviour
 
 	private void OnEnable()
 	{
+		_actor.OnInit += HandleInit;
 		if (_healthBar.drawMode != SpriteDrawMode.Tiled) Debug.LogWarning("A Health bar does not have its draw mode set to tiled. Attempting to fix");
 		_healthBar.drawMode = SpriteDrawMode.Tiled;
-
-		_actor.Character.OnDamage += DepleteHealthBar;
-		_actor.Character.OnHeal += ReplenishHealthBar;
-
-		UpdateHealthBar(_actor.Character);
 	}
 
 	private void OnDisable()
 	{
-		_actor.Character.OnDamage -= DepleteHealthBar;
-		_actor.Character.OnHeal -= ReplenishHealthBar;
+		_actor.OnInit -= HandleInit;
+		if(_actor.Character != null)
+		{
+			_actor.Character.OnDamage -= DepleteHealthBar;
+			_actor.Character.OnHeal -= ReplenishHealthBar;
+		}
+	}
+
+	private void HandleInit(CharacterActor actor, Character character)
+	{
+		_actor.Character.OnDamage += DepleteHealthBar;
+		_actor.Character.OnHeal += ReplenishHealthBar;
+
+		UpdateHealthBar(_actor.Character);
 	}
 
 	private void DepleteHealthBar(Character character, DamageEvent damageEvent)
