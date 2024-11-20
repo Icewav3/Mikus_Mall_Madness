@@ -1,0 +1,66 @@
+﻿classDiagram
+    %% Core Classes
+    PlayerController <|-- OverworldMovement : controls
+    OverworldMovement <|.. SpriteAnimator : uses
+
+    %% Core Components
+    class PlayerController {
+        -currentTile : Vector2
+        -targetTile : Vector2
+        -encounterManager : EncounterManager
+        +move(direction: Vector2)
+        +checkForEncounter()
+        +onEncounterOutcome(outcome: EncounterOutcome) : void
+    }
+
+    class OverworldMovement {
+        -moveSpeed : float
+        -movementDirection : Vector2
+        +updateMovement()
+        +setMovementDirection(mousePosition: Vector2)
+    }
+
+    class SpriteAnimator {
+        -animationStates : Dictionary<Direction, AnimationClip>
+        +setAnimation(direction: Vector2)
+    }
+
+    %% Input Handling
+    OverworldInputAction <|.. OverworldMovement : input action
+
+    class OverworldInputAction {
+        +getMousePosition() : Vector2
+        +isLeftClickPressed() : bool
+    }
+
+    %% Encounters
+    EncounterManager <|.. TileEncounterTrigger : manages
+
+    class EncounterManager {
+        -activeEncounter : Encounter
+        +checkForEncounter(tilePosition: Vector2) : bool
+        +triggerEncounter(encounter: Encounter)
+        +onEncounterComplete(outcome: EncounterOutcome) : void
+    }
+
+    class TileEncounterTrigger {
+        -triggerTilePositions : List<Vector2>
+        +checkPlayerPosition(playerPosition: Vector2) : void
+    }
+
+    class Encounter {
+        -id : string
+        -enemyGroup : List<Enemy>
+        +startEncounter()
+        +loadBattleScene()
+    }
+
+    %% Unity Systems (Noted as Unity Built-In)
+    OverworldInputAction
+    EncounterManager.loadBattleScene
+
+    %% Associations and Dependencies
+    PlayerController "1" --> "1" OverworldMovement
+    OverworldMovement "1" --> "1" SpriteAnimator
+    OverworldMovement "1" --> "1" OverworldInputAction
+    EncounterManager "1" --> "*" TileEncounterTrigger
