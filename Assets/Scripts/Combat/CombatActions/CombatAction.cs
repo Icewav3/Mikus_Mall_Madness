@@ -6,6 +6,9 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Combat Action", menuName = "")]
 public class CombatAction : ScriptableObject
 {
+	[SerializeField]
+	private string _displayName;
+	public string DisplayName => _displayName;
 	// whether the action allows you to target allies or not after choosing it
 	[SerializeField]
 	private bool _targetAllies;

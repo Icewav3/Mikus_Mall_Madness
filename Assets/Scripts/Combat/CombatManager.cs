@@ -50,11 +50,16 @@ public class CombatManager : MonoBehaviour
 
 	public void InitBattle(List<Character> enemies)
 	{
+		foreach (Targetable targetable in _targetableActors)
+		{ 
+			targetable.gameObject.SetActive(false);
+		}
 		_enemies = enemies;
 		_playerParty = _party.Members.ToList();
 
 		for (int i = 0; i < _enemies.Count; i++)
 		{
+			_targetableActors[i+4].gameObject.SetActive(true);
 			_combatants.Add(_enemies[i]);
 			_targetableActors[i + 4].Actor.Init(_enemies[i]);
 			_targetableActors[i + 4].OnHover += _actionSelector.HandleTargetHover;
@@ -62,6 +67,7 @@ public class CombatManager : MonoBehaviour
 		}
 		for (int i = 0; i < _playerParty.Count; i++)
 		{
+			_targetableActors[i].gameObject.SetActive(true);
 			_combatants.Add(_playerParty[i]);
 			_targetableActors[i].Actor.Init(_playerParty[i]);
 			_targetableActors[i].OnHover += _actionSelector.HandleTargetHover;
