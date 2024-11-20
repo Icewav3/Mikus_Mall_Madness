@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/Art Files/Tilemaps/PlaceholderSprites.png.meta
-guid: 9cbdf607e6e51e34a83b6f1044d5e7ee
-========
 guid: 119a2c7ce34152a4e9d777810d4d5711
->>>>>>>> origin/main:Assets/Art Files/Tilemaps/ParkLot_WallTiles.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
