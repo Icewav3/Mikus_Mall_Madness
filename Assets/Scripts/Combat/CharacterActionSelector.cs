@@ -45,8 +45,10 @@ public class CharacterActionSelector : MonoBehaviour
 		if (character.IsEnemy)
 		{
 			//TEST PLEASE REMOVE
-			character.CombatActions[UnityEngine.Random.Range(0, character.CombatActions.Count)].Perform(character, opponents[0], opponents, allies);
+			character.CombatActions[UnityEngine.Random.Range(0, character.CombatActions.Count)]
+			.Perform(character, opponents[0], opponents, allies);
 			OnTurnComplete?.Invoke(this);
+			print("Enemy HP: " + character.CurrentHealth);
 			// TODO: Define enemy behaviour
 		}
 		else
@@ -62,12 +64,11 @@ public class CharacterActionSelector : MonoBehaviour
 	{
 		_nextAction.Perform(_currentCharacter, target, _opponents, _allies);
 		OnTurnComplete?.Invoke(this);
-		// TODO: Implement target selection from player
+		print("Player Character HP: " + _currentCharacter.CurrentHealth);
 	}
 	//handles the player's selected combat action
 	private void HandleAction(CombatButtonManager buttonManager, CombatAction action)
 	{
 		_nextAction = action;
-		// TODO: Process Action selection from player
 	}
 }

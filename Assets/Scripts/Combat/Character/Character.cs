@@ -152,8 +152,6 @@ public class Character
 			IsDead = true;
 			OnDeath?.Invoke(this);
 		}
-		string jim = (IsEnemy) ? "Enemy HP: " : "Player HP: ";
-		Debug.Log(jim + _currentHealth);
 	}
 
 	///<param name="heal">
