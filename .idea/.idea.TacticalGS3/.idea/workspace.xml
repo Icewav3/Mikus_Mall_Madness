@@ -4,416 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="36b34a51-7c56-43b8-af5b-e0282e554950" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.TacticalGS3/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.TacticalGS3/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.vscode/extensions.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.vscode/launch.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Animation.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Animation/PlaceholderAnim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Animation/PlaceholderAnim/Garb.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Animation/PlaceholderAnim/Garb/Attack.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Animation/PlaceholderAnim/Garb/Attack.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Animation/PlaceholderAnim/Garb/Idle.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Animation/PlaceholderAnim/Garb/Idle.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Animation/PlaceholderAnim/Garb/MoveUp.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Animation/PlaceholderAnim/Garb/MoveUp.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Animation/PlaceholderAnim/Garb/PlaceholderController.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Animation/PlaceholderAnim/Garb/PlaceholderController.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Animation/PlaceholderAnim/Idle.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Animation/PlaceholderAnim/Idle.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Animation/PlaceholderAnim/MoveUp.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Animation/PlaceholderAnim/MoveUp.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Animation/PlaceholderAnim/ParticleFunction.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Animation/PlaceholderAnim/ParticleFunction.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Animation/PlaceholderAnim/SpecialVisuals.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Animation/PlaceholderAnim/SpecialVisuals.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Animation/PlaceholderAnim/atkNormal.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Animation/PlaceholderAnim/atkNormal.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Animation/PlaceholderAnim/pHolderCont.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Animation/PlaceholderAnim/pHolderCont.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Luka.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Luka/Luka_CharacterSprites.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Luka/Luka_CharacterSprites.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Miku.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Miku/Animation.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Miku/Animation/MikuController.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Miku/Animation/MikuController.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Miku/Animation/Miku_Downed.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Miku/Animation/Miku_Downed.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Miku/Animation/Miku_IdleBL.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Miku/Animation/Miku_IdleBL.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Miku/Animation/Miku_IdleBR.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Miku/Animation/Miku_IdleBR.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Miku/Animation/Miku_IdleTL.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Miku/Animation/Miku_IdleTL.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Miku/Animation/Miku_IdleTR.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Miku/Animation/Miku_IdleTR.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Miku/Animation/Miku_Spin.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Miku/Animation/Miku_Spin.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Miku/Animation/Miku_VisualsController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Miku/Animation/Miku_VisualsController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Miku/Animation/Miku_WalkingBL.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Miku/Animation/Miku_WalkingBL.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Miku/Animation/Miku_WalkingBR.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Miku/Animation/Miku_WalkingBR.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Miku/Animation/Miku_WalkingTL.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Miku/Animation/Miku_WalkingTL.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Miku/Animation/Miku_WalkingTR.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Miku/Animation/Miku_WalkingTR.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Miku/Animation/Miku_atkNormal-1.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Miku/Animation/Miku_atkNormal-1.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Miku/Animation/Miku_atkNormal-2.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Miku/Animation/Miku_atkNormal-2.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Miku/Animation/Miku_ultBuff.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Miku/Animation/Miku_ultBuff.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Miku/Animation/Miku_ultSequence.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Miku/Animation/Miku_ultSequence.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Miku/Animation/moveUp.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Miku/Animation/moveUp.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Miku/MikuArt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Miku/MikuCharacter.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Miku/MikuCharacter.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Miku/Miku_CharacterSprites.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Miku/Miku_CharacterSprites.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Miku/Miku_Outline.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Miku/Miku_Outline.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Rin &amp; Len.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Rin &amp; Len/Animation.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Rin &amp; Len/Animation/RinLenController.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Rin &amp; Len/Animation/RinLenController.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Rin &amp; Len/Animation/RinLen_VisualsController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Rin &amp; Len/Animation/RinLen_VisualsController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Rin &amp; Len/Animation/RinLen_atkNormal.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Rin &amp; Len/Animation/RinLen_atkNormal.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Rin &amp; Len/Animation/RinLen_ultDamage.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Rin &amp; Len/Animation/RinLen_ultDamage.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Rin &amp; Len/Animation/RinLen_ultSequence.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Rin &amp; Len/Animation/RinLen_ultSequence.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Rin &amp; Len/Animation/moveUp.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Rin &amp; Len/Animation/moveUp.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Rin &amp; Len/Len_CharacterSprites.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Rin &amp; Len/Len_CharacterSprites.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Rin &amp; Len/Len_Outline.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Rin &amp; Len/Len_Outline.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Rin &amp; Len/RinLenArt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Rin &amp; Len/RinLenArt.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Rin &amp; Len/RinLenCharacter.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Rin &amp; Len/RinLenCharacter.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Rin &amp; Len/Rin_CharacterSprites.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Rin &amp; Len/Rin_CharacterSprites.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Rin &amp; Len/Rin_Outline.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Rin &amp; Len/Rin_Outline.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Rin &amp; Len/mOrangeOutline.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Rin &amp; Len/mOrangeOutline.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Dash.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Dash.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Glow.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Glow.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Graphs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Graphs/MikuPoint.shadergraph" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Graphs/MikuPoint.shadergraph.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Graphs/MikuPointVFXG.vfx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Graphs/MikuPointVFXG.vfx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Graphs/MikuSwing.shadergraph" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Graphs/MikuSwing.shadergraph.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Graphs/MikuSwing.vfx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Graphs/MikuSwing.vfx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Graphs/Smoke.shadergraph" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Graphs/Smoke.shadergraph.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Graphs/SmokeConsecutive.vfx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Graphs/SmokeConsecutive.vfx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Graphs/SmokeSingular.vfx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Graphs/SmokeSingular.vfx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Graphs/TrailShader.shadergraph" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Graphs/TrailShader.shadergraph.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/MikuSwingShader.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/MikuSwingShader.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Point.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Point.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/PointSmall.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/PointSmall.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/PointSmallReversed.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/PointSmallReversed.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/RingFadeInner.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/RingFadeInner.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/RingFadeInnerThicker 1.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/RingFadeInnerThicker 1.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/RingFadeInnerThicker.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/RingFadeInnerThicker.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/StageLightMat.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/StageLightMat.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Textures.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Textures/Circle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Textures/Circle.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Textures/Circle2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Textures/Circle2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Textures/Glow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Textures/Glow.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Textures/New Material 1.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Textures/New Material 1.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Textures/New Material.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Textures/New Material.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Textures/Point.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Textures/Point.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Textures/PointSmall.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Textures/PointSmall.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Textures/PointSmallReversed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Textures/PointSmallReversed.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Textures/RingInnerFade.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Textures/RingInnerFade.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Textures/RingInnerFadeThicker.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Textures/RingInnerFadeThicker.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Textures/Shine 2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Textures/Shine 2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Textures/Shine.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Textures/Shine.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Textures/SlashTestLonger.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Textures/SlashTestLonger.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Textures/Smoke.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Textures/Smoke.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Textures/Smoke1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Textures/Smoke1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Textures/Sphere.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Textures/Sphere.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Textures/Stage Light.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Textures/Stage Light.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Textures/Swing.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Textures/Swing.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Textures/SwingCutOff.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Textures/SwingCutOff.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Textures/SwingThicker.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Textures/SwingThicker.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Textures/SwingTrail.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Textures/SwingTrail.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Textures/TrailTest.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/Textures/TrailTest.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/TrailShader Variant.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Particle Textures/TrailShader Variant.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Luka_frontFacingl.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Luka_frontFacingl.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/MallScene.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/MallScene.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Mall_FloorTiles.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Mall_Props.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Mall_Props.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Mall_WallTiles.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Mall_WallTiles.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/NRM.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/NRM/Mall_PropsNRM.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/NRM/Mall_PropsNRM.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/NRM/NMFloor.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/NRM/NMFloor.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/NRM/Wall TilesNRM.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/NRM/Wall TilesNRM.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/Mall_WallTiles_1.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/Mall_WallTiles_1.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/Mall_WallTiles_13.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/Mall_WallTiles_13.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/Mall_WallTiles_14.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/Mall_WallTiles_14.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/Mall_WallTiles_18.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/Mall_WallTiles_18.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/Mall_WallTiles_19.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/Mall_WallTiles_19.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/Mall_WallTiles_20.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/Mall_WallTiles_20.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/Mall_WallTiles_21.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/Mall_WallTiles_21.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/Mall_WallTiles_22.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/Mall_WallTiles_22.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/Mall_WallTiles_23.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/Mall_WallTiles_23.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/Mall_WallTiles_24.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/Mall_WallTiles_24.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/Mall_WallTiles_25.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/Mall_WallTiles_25.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/Mall_WallTiles_26.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/Mall_WallTiles_26.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/Mall_WallTiles_3.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/Mall_WallTiles_3.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/Mall_WallTiles_5.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/Mall_WallTiles_5.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/Wall Tiles_39.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/Wall Tiles_39.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/Wall Tiles_40.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/Wall Tiles_40.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/WallRules/BrownWallRuleBottom.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/WallRules/BrownWallRuleBottom.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/WallRules/BrownWallRuleTop.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/WallRules/BrownWallRuleTop.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/WallRules/WallDoorwayEnd1RuleBottom.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/WallRules/WallDoorwayEnd1RuleBottom.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/WallRules/WallDoorwayEnd1RuleTop.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/WallRules/WallDoorwayEnd1RuleTop.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/WallRules/WallDoorwayRuleBottom.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/WallRules/WallDoorwayRuleBottom.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/WallRules/WallDoorwayRuleTop.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/WallRules/WallDoorwayRuleTop.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/WallRules/WallIndentRuleBottom.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/WallRules/WallIndentRuleBottom.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/WallRules/WallIndentRuleTop.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/WallRules/WallIndentRuleTop.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/WallRules/WallTileRuleBottom.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/WallRules/WallTileRuleBottom.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/WallRules/WallTileRuleTop.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/WallRules/WallTileRuleTop.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/ParkingLotTiles.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/ParkingLotTiles/ParkLot_FloorTiles_0.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/ParkingLotTiles/ParkLot_FloorTiles_0.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/ParkingLotTiles/ParkLot_FloorTiles_1.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/ParkingLotTiles/ParkLot_FloorTiles_1.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/ParkingLotTiles/ParkLot_FloorTiles_2.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/ParkingLotTiles/ParkLot_FloorTiles_2.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/ParkingLotTiles/ParkLot_FloorTiles_3.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/ParkingLotTiles/ParkLot_FloorTiles_3.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/ParkingLotTiles/ParkLot_FloorTiles_4.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/ParkingLotTiles/ParkLot_FloorTiles_4.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/ParkingLotTiles/ParkLot_FloorTiles_5.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/ParkingLotTiles/ParkLot_FloorTiles_5.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/ParkingLotTiles/ParkLot_FloorTiles_6.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/ParkingLotTiles/ParkLot_FloorTiles_6.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/ParkingLotTiles/ParkLot_WallTiles_0.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/ParkingLotTiles/ParkLot_WallTiles_0.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/ParkingLotTiles/ParkLot_WallTiles_1.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/ParkingLotTiles/ParkLot_WallTiles_1.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/ParkingLotTiles/ParkLot_WallTiles_10.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/ParkingLotTiles/ParkLot_WallTiles_10.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/ParkingLotTiles/ParkLot_WallTiles_11.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/ParkingLotTiles/ParkLot_WallTiles_11.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/ParkingLotTiles/ParkLot_WallTiles_12.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/ParkingLotTiles/ParkLot_WallTiles_12.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/ParkingLotTiles/ParkLot_WallTiles_13.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/ParkingLotTiles/ParkLot_WallTiles_13.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/ParkingLotTiles/ParkLot_WallTiles_14.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/ParkingLotTiles/ParkLot_WallTiles_14.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/ParkingLotTiles/ParkLot_WallTiles_15.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/ParkingLotTiles/ParkLot_WallTiles_15.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/ParkingLotTiles/ParkLot_WallTiles_16.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/ParkingLotTiles/ParkLot_WallTiles_16.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/ParkingLotTiles/ParkLot_WallTiles_17.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/ParkingLotTiles/ParkLot_WallTiles_17.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/ParkingLotTiles/ParkLot_WallTiles_2.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/ParkingLotTiles/ParkLot_WallTiles_2.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/ParkingLotTiles/ParkLot_WallTiles_3.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/ParkingLotTiles/ParkLot_WallTiles_3.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/ParkingLotTiles/ParkLot_WallTiles_4.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/ParkingLotTiles/ParkLot_WallTiles_4.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/ParkingLotTiles/ParkLot_WallTiles_5.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/ParkingLotTiles/ParkLot_WallTiles_5.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/ParkingLotTiles/ParkLot_WallTiles_6.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/ParkingLotTiles/ParkLot_WallTiles_6.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/ParkingLotTiles/ParkLot_WallTiles_7.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/ParkingLotTiles/ParkLot_WallTiles_7.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/ParkingLotTiles/ParkLot_WallTiles_8.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/ParkingLotTiles/ParkLot_WallTiles_8.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/ParkingLotTiles/ParkLot_WallTiles_9.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/ParkingLotTiles/ParkLot_WallTiles_9.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette/Mall_WallsFloors.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette/ParkLot_WallsFloors.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette/ParkLot_WallsFloors.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/ParkLot_FloorTiles.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/ParkLot_FloorTiles.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/ParkLot_WallTiles.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Diagrams.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Diagrams/Combat.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Diagrams/Combat.txt.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Diagrams/Overworld.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Diagrams/Overworld.txt.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/SceneGod.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/SceneGod.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/CombatScene.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/CombatScene.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/OverworldScene.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/OverworldScene.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/SpriteAnimScene.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/SpriteAnimScene.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/VFX Scene.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/VFX Scene.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SceneGod.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SceneGod.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ShaderGraphs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ShaderGraphs/Outline.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ShaderGraphs/Outline.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ShaderGraphs/OutlineSample.shadersubgraph" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ShaderGraphs/OutlineSample.shadersubgraph.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ShaderGraphs/PlayerOutline.shadergraph" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ShaderGraphs/PlayerOutline.shadergraph.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SlashSequenceTest.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SlashSequenceTest.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/URP2D.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/URP2D.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/URP2D_Renderer.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/URP2D_Renderer.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/BurstAotSettings_StandaloneWindows.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/CommonBurstAotSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/TimelineSettings.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TacticalGS3/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/FloorTiles.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/FloorTiles.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Mall_FloorTiles.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/FloorRules.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/FloorRules.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/FloorRules/WhiteFloor.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/FloorRules/WhiteFloor.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/FloorRules/WhiteFloor.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/FloorRules/WhiteFloor.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/FloorTiles_0.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/FloorTiles_0.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/FloorTiles_0.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/FloorTiles_0.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/FloorTiles_1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/FloorTiles_1.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/FloorTiles_1.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/FloorTiles_1.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/FloorTiles_2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/FloorTiles_2.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/FloorTiles_2.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/FloorTiles_2.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/FloorTiles_3.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/FloorTiles_3.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/FloorTiles_3.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/FloorTiles_3.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/FloorTiles_4.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/FloorTiles_4.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/FloorTiles_4.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/FloorTiles_4.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/FloorTiles_5.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/FloorTiles_5.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/FloorTiles_5.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/FloorTiles_5.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/FloorTiles_6.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/FloorTiles_6.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/FloorTiles_6.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/FloorTiles_6.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/FloorTiles_7.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/FloorTiles_7.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/FloorTiles_7.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/FloorTiles_7.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/FloorTiles_8.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/FloorTiles_8.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/FloorTiles_8.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/FloorTiles_8.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/GlassRules.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/GlassRules.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/GlassRules/BottomGlassRule.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/GlassRules/BottomGlassRule.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/GlassRules/BottomGlassRule.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/GlassRules/BottomGlassRule.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/GlassRules/MiddleGlassRule.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/GlassRules/MiddleGlassRule.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/GlassRules/MiddleGlassRule.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/GlassRules/MiddleGlassRule.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/GlassRules/TopGlassRule.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/GlassRules/TopGlassRule.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/GlassRules/TopGlassRule.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/GlassRules/TopGlassRule.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/WallRules.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/WallRules.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/WallRules/BottomWallRule.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/WallRules/BottomWallRule.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/WallRules/BottomWallRule.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/WallRules/BottomWallRule.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/WallRules/TopMiddleWallRule.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/WallRules/TopMiddleWallRule.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/WallRules/TopMiddleWallRule.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/WallRules/TopMiddleWallRule.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/WallRules/WallStripeRuleBottom.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/WallRules/WallStripeRuleBottom.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/WallRules/WallStripeRuleBottom.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/WallRules/WallStripeRuleBottom.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/WallRules/WallStripeRuleTop.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/WallRules/WallStripeRuleTop.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/WallRules/WallStripeRuleTop.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette Stuff/MallTiles/WallRules/WallStripeRuleTop.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette/Environment.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette/Environment.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Pallette/Mall_WallsFloors.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Wall Tiles.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/Wall Tiles.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/ParkLot_WallTiles.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/character_placeholder_test.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/character_placeholder_test.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art Files/Characters/Miku/MikuArt.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/placeholders_v100-Sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art Files/Tilemaps/placeholders_v100-Sheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/OverworldPlayerTest.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/OverworldPlayerTest.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TilesTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TilesTest.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/OverworldPlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/OverworldPlayerMovement.cs" afterDir="false" />
+    <list default="true" id="36b34a51-7c56-43b8-af5b-e0282e554950" name="Changes" comment="Merge Commit">
       <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/VFXManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/VFXManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -440,6 +32,7 @@
     <setting file="mock://C:/Users/coled/Desktop/Github/TacticalGS3/Assets/Art Files/Tilemaps/Luka_frontFacingl.png.meta" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/coled/Desktop/Github/TacticalGS3/Assets/Art Files/Tilemaps/Luka_frontFacingl.png.meta" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/coled/Desktop/Github/TacticalGS3/Assets/Art Files/Tilemaps/Luka_frontFacingl.png.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Combat/CombatManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/coled/Desktop/Github/TacticalGS3/Assets/Scripts/OverworldPlayerMovement.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/OverworldPlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/Users/coled/Desktop/Github/TacticalGS3/Assets/Scripts/OverworldPlayerMovement.cs" root0="SKIP_HIGHLIGHTING" />
@@ -463,7 +56,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Merging combat-actions",
+    "git-widget-placeholder": "combat-actions",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -532,6 +125,15 @@
       <workItem from="1731978026577" duration="361000" />
       <workItem from="1732028408404" duration="3001000" />
     </task>
+    <task id="LOCAL-00001" summary="Merge Commit">
+      <option name="closed" value="true" />
+      <created>1732117299662</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1732117299662</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -558,7 +160,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="Merge Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge Commit" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
