@@ -106,8 +106,6 @@ public class CombatManager : MonoBehaviour
 		{
 			_actionSelector.StartSelection(nextCharacter, _playerParty, _enemies);
 		}
-		// TODO: Implement logic for starting a turn
-		// NOTE: Make sure to check if characters are still alive before starting their turn
 	}
 	//callback that listens to an event on the character action selector
 	//marks the end of a turn loop
@@ -121,8 +119,15 @@ public class CombatManager : MonoBehaviour
 		//call the end cycle method
 		if (_turnIndex == 0) EndCombatCycle();
 
-		//restart the loop
-		NextTurn();
+		if (_playerParty.FirstOrDefault(c => !c.IsDead) == null || _enemies.FirstOrDefault(c => !c.IsDead) == null)
+		{
+			EndBattle();
+		}
+		else
+		{
+			//restart the loop
+			NextTurn();
+		}
 	}
 	//marks the end of a full cycle through every combatant on the field
 	private void EndCombatCycle()
