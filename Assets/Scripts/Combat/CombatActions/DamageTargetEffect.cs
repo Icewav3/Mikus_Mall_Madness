@@ -1,5 +1,5 @@
-using System.Collections;
 using System.Collections.Generic;
+
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Damage Target", menuName = "Action Effects/Damage Target")]
