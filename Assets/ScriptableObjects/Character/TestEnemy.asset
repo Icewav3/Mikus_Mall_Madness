@@ -19,3 +19,4 @@ MonoBehaviour:
   _baseDefense: 0
   _combatActions:
   - {fileID: 11400000, guid: ed321317761791144b8b406a3b0be69f, type: 2}
+  - {fileID: 11400000, guid: 18e2e1597c5fc314a941e1a3b49bb6e2, type: 2}

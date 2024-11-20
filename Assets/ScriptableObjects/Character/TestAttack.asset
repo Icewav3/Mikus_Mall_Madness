@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60f92c633cbf08346911ec557657b966, type: 3}
   m_Name: TestAttack
   m_EditorClassIdentifier: 
+  _displayName: Punch
   _targetAllies: 0
   _effects:
   - {fileID: 11400000, guid: d4547f7e9a2001540bd80522b84c37fc, type: 2}

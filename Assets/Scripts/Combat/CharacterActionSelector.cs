@@ -62,6 +62,7 @@ public class CharacterActionSelector : MonoBehaviour
 	public void HandleTargetSelection(Targetable targetable, Character target)
 	{
 		_nextAction.Perform(_currentCharacter, target, _opponents, _allies);
+		_buttonManager.DeInit();
 		OnTurnComplete?.Invoke(this);
 		print("Player Character HP: " + _currentCharacter.CurrentHealth);
 	}

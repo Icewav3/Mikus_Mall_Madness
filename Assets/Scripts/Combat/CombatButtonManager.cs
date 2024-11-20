@@ -10,7 +10,7 @@ using UnityEngine.UI;
 public class CombatButtonManager : MonoBehaviour
 {
 	[SerializeField]
-	private List<Button> _buttons = new();
+	private List<CombatButton> _buttons = new();
 	private List<CombatAction> _actions = new();
 	///<summary>
 	///  <para>Event that is broadcast when an action as been selected.</para>
@@ -23,8 +23,17 @@ public class CombatButtonManager : MonoBehaviour
 	///</summary>
 	public void Populate(List<CombatAction> combatActions)
 	{
+		foreach (CombatButton button in _buttons)
+		{
+			button.gameObject.SetActive(false);
+		}
 		_actions = combatActions;
 		// TODO: Fill out UI buttons with info for their respective actions
+		for (int i = 0; i < _actions.Count; i++)
+		{
+			_buttons[i].gameObject.SetActive(true);
+			_buttons[i].Text.text = _actions[i].DisplayName;
+		}
 	}
 	///<summary>
 	///  Cleans up the combat UI at the end of a turn.
@@ -32,6 +41,10 @@ public class CombatButtonManager : MonoBehaviour
 	public void DeInit()
 	{
 		// TODO: Clean up and disable UI buttons to prepare for a new batch
+		foreach (CombatButton button in _buttons)
+		{
+			button.gameObject.SetActive(false);
+		}
 	}
 
 	public void SelectAction(int actionIndex)

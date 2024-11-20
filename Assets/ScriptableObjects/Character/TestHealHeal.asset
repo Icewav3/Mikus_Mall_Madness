@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e2f35a29afc4574ab909acb9384b4a3, type: 3}
   m_Name: TestHealHeal
   m_EditorClassIdentifier: 
-  _amount: 0
+  _amount: 1

@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60f92c633cbf08346911ec557657b966, type: 3}
   m_Name: TestHeal
   m_EditorClassIdentifier: 
-  _targetAllies: 0
-  _effects: []
+  _displayName: Kiss
+  _targetAllies: 1
+  _effects:
+  - {fileID: 11400000, guid: 9f33f7c80f5705c4195c40905efa64eb, type: 2}
   _animType: 0
-  _behaviourTypes: 
+  _behaviourTypes: 04000000
   _staminaCost: 0
