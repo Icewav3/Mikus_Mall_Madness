@@ -298,6 +298,48 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Mall_FloorTiles_0
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 288
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93c0a630a636fd94581ce98aef6b8297
+      internalID: -1760563984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mall_FloorTiles_1
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 224
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6af5f2e38c9581642b26165ea4f41f55
+      internalID: -1954237850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -320,6 +362,8 @@ TextureImporter:
       FloorTiles_6: 2108877506
       FloorTiles_7: -995400229
       FloorTiles_8: -1925381979
+      Mall_FloorTiles_0: -1760563984
+      Mall_FloorTiles_1: -1954237850
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
