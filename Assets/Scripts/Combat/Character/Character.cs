@@ -9,8 +9,15 @@ using UnityEngine;
 ///  Class that contains all per instance information related to a character.
 ///  Base stats are derived from <see cref="CharacterBase"/>.
 ///</summary>
-public class Character : MonoBehaviour
+public class Character
 {
+	public Character(CharacterBase characterBase)
+	{
+		_characterBase = characterBase;
+
+		_currentHealth = MaxHealth;
+		_currentStamina = MaxStamina;
+	}
 	public event Action<Character> OnDeath;
 
 	// stat/gain loss events are stored separately for future damage effects systems to use easily
@@ -20,22 +27,19 @@ public class Character : MonoBehaviour
 	public event Action<Character, int> OnStaminaDeplete;
 	public event Action<Character, int> OnStaminaGain;
 
-	[SerializeField]
 	private CharacterBase _characterBase;
 	public CharacterBase Base => _characterBase;
 
 	// shorthand variable to expose the character base's actions
 	public ReadOnlyCollection<CombatAction> CombatActions => _characterBase.CombatActions;
 
-	[SerializeField]
-	private bool _isEnemy;
-	public bool IsEnemy => _isEnemy;
+	public bool IsEnemy => Base.IsEnemy;
 
 	// primarily used to ensure multi-targeting attacks don't target dead characters
 	///<summary>
 	///  Whether the character should be ignored when targeting for an action, or in the turn order.
 	///</summary>
-	public bool IsDead { get; private set; }
+	public bool IsDead { get; private set; } = false;
 
 	#region Stats
 	private List<StatBoost> _activeStatBoosts = new List<StatBoost>();

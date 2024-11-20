@@ -18,6 +18,11 @@ public class CharacterActionSelector : MonoBehaviour
 	[SerializeField]
 	private EnemyCombatAI _enemyCombatAI;
 
+	private CombatAction _nextAction;
+	private Character _currentCharacter;
+	private List<Character> _allies;
+	private List<Character> _opponents;
+
 	private void OnEnable()
 	{
 		_buttonManager.OnActionSelected += HandleAction;
@@ -29,32 +34,45 @@ public class CharacterActionSelector : MonoBehaviour
 
 	///<param name="character">The character whose turn it is.</param>
 	///<param name="allies">The party that the current character belongs to.</param>
-	///<param name="oponents">The party that the current character does not belong to.</param>
+	///<param name="opponents">The party that the current character does not belong to.</param>
 	///<summary>
 	///Starts process of selecting an action for a given <see cref="Character"/>.
 	///</summary>
-	public void StartSelection(Character character, List<Character> allies, List<Character> oponents)
+	public void StartSelection(Character character, List<Character> allies, List<Character> opponents)
 	{
+		_currentCharacter = character;
+		_allies = allies;
+		_opponents = opponents;
 		//do different things depending on whether the character passed in is an enemy
 		if (character.IsEnemy)
 		{
+			//TEST PLEASE REMOVE
+			character.CombatActions[UnityEngine.Random.Range(0, character.CombatActions.Count)]
+			.Perform(character, opponents[0], opponents, allies);
+			OnTurnComplete?.Invoke(this);
+			print("Enemy HP: " + character.CurrentHealth);
 			// TODO: Define enemy behaviour
 			_enemyCombatAI.HandleEnemyAction(character, allies, oponents);
 			OnTurnComplete?.Invoke(this);
 		}
 		else
 		{
-			_buttonManager.Populate(character.CombatActions.ToArray());
+			_buttonManager.Populate(character.CombatActions.ToList());
 		}
 	}
-	//recieves and processes a target for the given character's chosen action
-	private void HandleTargetSelection()
+	public void HandleTargetHover(Targetable targetable, Character character)
 	{
-		// TODO: Implement target selection from player
+	}
+	//recieves and processes a target for the given character's chosen action
+	public void HandleTargetSelection(Targetable targetable, Character target)
+	{
+		_nextAction.Perform(_currentCharacter, target, _opponents, _allies);
+		OnTurnComplete?.Invoke(this);
+		print("Player Character HP: " + _currentCharacter.CurrentHealth);
 	}
 	//handles the player's selected combat action
 	private void HandleAction(CombatButtonManager buttonManager, CombatAction action)
 	{
-		// TODO: Process Action selection from player
+		_nextAction = action;
 	}
 }
