@@ -8,42 +8,64 @@ public class EnemyCombatAI : MonoBehaviour
 	// Handle Enemy combat turn
 
 	// TO DO: pick an action at random
-	// TO DO (later): spell check Opponent as they're all missing the second P
 
-	// Future: add priority to certain actions
+	// add priority to certain actions
 	// depending on the enemy's action selection
 
-	private int _randomAction;
-	private int _randomTarget;
+	private List<Character> _allies;
+	private List<Character> _opponents;
+	private List<CombatAction> _combatActions;
+	private List<ActionBehaviourType> _behaviourTypes;
+	private Character _character;
 
-	public void HandleEnemyAction(Character character, List<Character> allies, List<Character> oponents)
+	private int _action;
+	private int _target;
+
+	public void HandleEnemyAction(Character character, List<Character> allies, List<Character> opponents)
 	{
+		_allies = allies;
+		_opponents = opponents;
+		_character = character;
+
 		// Get list of available actions
-		List<CombatAction> characterActions = character.CombatActions.ToList();
+		_combatActions = _character.CombatActions.ToList();
+		// Get list of action types
+		List<ActionBehaviourType> BehaviourTypes = _behaviourTypes.ToList();
 
-		_randomAction = Random.Range(0, characterActions.Count);
+		_action = Random.Range(0, _combatActions.Count);
 
-		HandleEnemyTarget(characterActions, _randomAction);
+		HandleEnemyTarget();
 	}
 
-	private void HandleEnemyTarget(List<CombatAction> characterActions, int action)
+	private void HandleEnemyTarget()
 	{
 		// 1. check actions
+		// 2. target alley or opponent based on action type
 
-		// Future:
-		// 2. Attack: target alive opponents
-		// 2. Heal/Buff: target low hp/unbuffed allies
-
-
+		if (_combatActions[_action].TargetAllies) { TargetAlly(); }
+		else { TargetOpponent(); }
 	}
 
 	private void TargetAlly()
 	{
+		// Heal allies with the lowest health
+		// Buff unbuffed allies: prioritize higher attack
 
+		// heal
+		/*
+		if (_combatActions[_action].BehaviourTypes)
+		{
+
+		}
+		// buff
+		else if ()
+		{
+
+		}*/
 	}
 
-	private void TargetOponent()
+	private void TargetOpponent()
 	{
-
+		// Attack: target alive opponents at random
 	}
 }
