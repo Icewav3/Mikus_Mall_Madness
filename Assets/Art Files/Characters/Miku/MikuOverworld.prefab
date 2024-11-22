@@ -141,7 +141,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3718976793350327173}
   - component: {fileID: 6848297232430702266}
-  - component: {fileID: 7614304691101885444}
   m_Layer: 0
   m_Name: MikuOverworld
   m_TagString: Untagged
@@ -175,7 +174,7 @@ Animator:
   m_GameObject: {fileID: 6644343094179886234}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0be3df1f1eeed8e4785f8cb559cb13d9, type: 2}
+  m_Controller: {fileID: 9100000, guid: 9fba269512bad0d4b834d7300b76835b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -186,20 +185,3 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &7614304691101885444
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6644343094179886234}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 364f1afafc2befd46b698f6e37c0c316, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  charSprite: {fileID: 2831588333061271729}
-  stageLights: {fileID: 0}
-  tinySparks: {fileID: 0}
-  afterSparks: {fileID: 0}
-  shockwave: {fileID: 0}
