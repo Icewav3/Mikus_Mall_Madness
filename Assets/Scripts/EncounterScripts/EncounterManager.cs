@@ -23,9 +23,15 @@ public class EncounterManager : MonoBehaviour
 			Debug.LogWarning("An encounter is already active!");
 			return;
 		}
-
-		activeEncounter = encounter;
-		activeEncounter.StartEncounter();
+		if (encounter)
+		{
+			activeEncounter = encounter;
+			activeEncounter.StartEncounter();
+		}
+		else
+		{
+			Debug.LogWarning("There is no ENCOUNTER DATA");
+		}
 	}
 
 	/// <summary>
