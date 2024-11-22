@@ -5242,7 +5242,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7853938709274276072}
-  - component: {fileID: 402345818719576995}
   m_Layer: 0
   m_Name: CharacterPosition
   m_TagString: Untagged
@@ -5266,20 +5265,6 @@ Transform:
   - {fileID: 8767248430655574067}
   m_Father: {fileID: 3718976793350327173}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &402345818719576995
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1165726276506024248}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a59dee17e73347059dd6dc56e88a6843, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  tilemap: {fileID: 0}
 --- !u!1 &2925899110647917669
 GameObject:
   m_ObjectHideFlags: 0

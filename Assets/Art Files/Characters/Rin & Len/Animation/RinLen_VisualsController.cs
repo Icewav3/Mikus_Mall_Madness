@@ -9,15 +9,7 @@ public class RinLen_VisualsController : MonoBehaviour
     [SerializeField]
 	private SpriteRenderer charSprite2;
     //[VFX]
-    [SerializeField]
-    private ParticleSystem Dash;
-    [SerializeField]
-    private ParticleSystem ultDash1;
-    [SerializeField]
-    private ParticleSystem ultDash2;
-    [SerializeField]
-    private ParticleSystem ultDash3;
-
+	
     public void changeSortingLayerUP()
 	{
 		charSprite.sortingLayerName = "CharacterInUse";
