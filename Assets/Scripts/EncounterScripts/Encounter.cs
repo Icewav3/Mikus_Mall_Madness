@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class Encounter : MonoBehaviour 
 {
-	public string id;
-	public GameObject[] enemyGroup;
+	[SerializeField]
+	private GameObject[] enemyGroup;
 
 	public void StartEncounter()
 	{

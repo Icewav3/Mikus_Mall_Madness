@@ -1,16 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class TileEncounterTrigger : MonoBehaviour
 {
-	public Encounter encounter;
-	private EncounterManager encounterManager;
-
-	private void Start()
-	{
-		encounterManager = FindObjectOfType<EncounterManager>();
-	}
+	[SerializeField]
+	private Encounter _encounter;
+	private EncounterManager _encounterManager;
 
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
@@ -24,9 +18,9 @@ public class TileEncounterTrigger : MonoBehaviour
 
 	private void TriggerEncounter()
 	{
-		if (encounterManager != null)
+		if (_encounterManager != null)
 		{
-			encounterManager.TriggerEncounter(encounter);
+			_encounterManager.TriggerEncounter(_encounter);
 		}
 	}
 }

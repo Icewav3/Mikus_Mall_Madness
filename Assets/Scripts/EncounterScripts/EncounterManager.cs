@@ -1,12 +1,4 @@
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-
-public enum EncounterOutcome
-{
-	Victory,
-	Defeat
-}
 
 public class EncounterManager : MonoBehaviour
 {
@@ -37,8 +29,8 @@ public class EncounterManager : MonoBehaviour
 	/// <summary>
 	/// Finish Combat
 	/// </summary>
-	/// <param name="outcome"></param>
-	public void OnEncounterComplete(EncounterOutcome outcome)
+	/// <param name="outcome">true victory</param>
+	public void OnEncounterComplete(bool outcome)
 	{
 		if (activeEncounter == null)
 		{
@@ -46,15 +38,15 @@ public class EncounterManager : MonoBehaviour
 			return;
 		}
 
-		switch (outcome)
+		if (outcome) // victory
 		{
-			case EncounterOutcome.Victory:
-				HandleVictory();
-				break;
-			case EncounterOutcome.Defeat:
-				HandleDefeat();
-				break;
+			HandleVictory();
 		}
+		else
+		{
+			HandleDefeat();
+		}
+
 		activeEncounter = null;
 	}
 
