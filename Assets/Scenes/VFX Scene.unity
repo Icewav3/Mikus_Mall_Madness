@@ -28736,10 +28736,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: JeffEnemy
       objectReference: {fileID: 0}
-    - target: {fileID: 8874589642206484352, guid: 34f494dad8c7890469e8a56d9f3b2696, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 1346742207, guid: 79d2fe54627c7c74c8d63af8844dfcaf, type: 3}
     - target: {fileID: 9003454335732420616, guid: 34f494dad8c7890469e8a56d9f3b2696, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
