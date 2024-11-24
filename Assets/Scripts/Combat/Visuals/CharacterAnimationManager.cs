@@ -14,10 +14,10 @@ public class CharacterAnimationManager : MonoBehaviour
 		_target.OnInit -= HandleCharacterInit;
 	}
 
-    private void HandleCharacterInit(CharacterActor actor, Character character)
-    {
+	private void HandleCharacterInit(CharacterActor actor, Character character)
+	{
 		GameObject go = GameObject.Instantiate(character.Base.Visuals, Vector3.zero, Quaternion.identity);
 		go.transform.SetParent(transform);
 		go.transform.GetChild(0).transform.position = transform.position;
-    }
+	}
 }
