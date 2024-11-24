@@ -6643,7 +6643,7 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
---- !u!1001 &970149620
+--- !u!1001 &989600806
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -6651,63 +6651,55 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 966268496186928893, guid: 34f494dad8c7890469e8a56d9f3b2696, type: 3}
+    - target: {fileID: 966268496186928893, guid: 99757232bb4c8b540a3b174b8f6d48df, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.48
+      value: 3.5
       objectReference: {fileID: 0}
-    - target: {fileID: 966268496186928893, guid: 34f494dad8c7890469e8a56d9f3b2696, type: 3}
+    - target: {fileID: 966268496186928893, guid: 99757232bb4c8b540a3b174b8f6d48df, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.76
+      value: 0.75
       objectReference: {fileID: 0}
-    - target: {fileID: 7523147148120459159, guid: 34f494dad8c7890469e8a56d9f3b2696, type: 3}
+    - target: {fileID: 7523147148120459159, guid: 99757232bb4c8b540a3b174b8f6d48df, type: 3}
       propertyPath: m_Name
-      value: JeffEnemy (3)
+      value: JesseEnemy (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 8874589642206484352, guid: 34f494dad8c7890469e8a56d9f3b2696, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -593754609, guid: 79d2fe54627c7c74c8d63af8844dfcaf, type: 3}
-    - target: {fileID: 8874589642206484352, guid: 34f494dad8c7890469e8a56d9f3b2696, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: d7dc2937bed409043a5bb676d18f559a, type: 2}
-    - target: {fileID: 9003454335732420616, guid: 34f494dad8c7890469e8a56d9f3b2696, type: 3}
+    - target: {fileID: 9003454335732420616, guid: 99757232bb4c8b540a3b174b8f6d48df, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9003454335732420616, guid: 34f494dad8c7890469e8a56d9f3b2696, type: 3}
+    - target: {fileID: 9003454335732420616, guid: 99757232bb4c8b540a3b174b8f6d48df, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9003454335732420616, guid: 34f494dad8c7890469e8a56d9f3b2696, type: 3}
+    - target: {fileID: 9003454335732420616, guid: 99757232bb4c8b540a3b174b8f6d48df, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9003454335732420616, guid: 34f494dad8c7890469e8a56d9f3b2696, type: 3}
+    - target: {fileID: 9003454335732420616, guid: 99757232bb4c8b540a3b174b8f6d48df, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 9003454335732420616, guid: 34f494dad8c7890469e8a56d9f3b2696, type: 3}
+    - target: {fileID: 9003454335732420616, guid: 99757232bb4c8b540a3b174b8f6d48df, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9003454335732420616, guid: 34f494dad8c7890469e8a56d9f3b2696, type: 3}
+    - target: {fileID: 9003454335732420616, guid: 99757232bb4c8b540a3b174b8f6d48df, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9003454335732420616, guid: 34f494dad8c7890469e8a56d9f3b2696, type: 3}
+    - target: {fileID: 9003454335732420616, guid: 99757232bb4c8b540a3b174b8f6d48df, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9003454335732420616, guid: 34f494dad8c7890469e8a56d9f3b2696, type: 3}
+    - target: {fileID: 9003454335732420616, guid: 99757232bb4c8b540a3b174b8f6d48df, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9003454335732420616, guid: 34f494dad8c7890469e8a56d9f3b2696, type: 3}
+    - target: {fileID: 9003454335732420616, guid: 99757232bb4c8b540a3b174b8f6d48df, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9003454335732420616, guid: 34f494dad8c7890469e8a56d9f3b2696, type: 3}
+    - target: {fileID: 9003454335732420616, guid: 99757232bb4c8b540a3b174b8f6d48df, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
@@ -6715,7 +6707,7 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 34f494dad8c7890469e8a56d9f3b2696, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 99757232bb4c8b540a3b174b8f6d48df, type: 3}
 --- !u!43 &1060924362
 Mesh:
   m_ObjectHideFlags: 0
@@ -6899,7 +6891,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7523147148120459159, guid: 34f494dad8c7890469e8a56d9f3b2696, type: 3}
       propertyPath: m_Name
-      value: JeffEnemy (2)
+      value: JeffEnemy (1)
       objectReference: {fileID: 0}
     - target: {fileID: 8874589642206484352, guid: 34f494dad8c7890469e8a56d9f3b2696, type: 3}
       propertyPath: m_Sprite
@@ -29002,13 +28994,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5532831845017337102, guid: 99757232bb4c8b540a3b174b8f6d48df, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 69486790ffb87b546b6312a0b0108054, type: 2}
     - target: {fileID: 7523147148120459159, guid: 99757232bb4c8b540a3b174b8f6d48df, type: 3}
       propertyPath: m_Name
-      value: JesseCharacter
+      value: JesseEnemy
       objectReference: {fileID: 0}
     - target: {fileID: 9003454335732420616, guid: 99757232bb4c8b540a3b174b8f6d48df, type: 3}
       propertyPath: m_LocalPosition.x
@@ -29273,6 +29261,6 @@ SceneRoots:
   - {fileID: 481277069}
   - {fileID: 1959329319}
   - {fileID: 1091837661}
-  - {fileID: 970149620}
   - {fileID: 2234462188900238928}
+  - {fileID: 989600806}
   - {fileID: 342233384}
