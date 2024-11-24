@@ -9,7 +9,8 @@ public class SceneGod : MonoBehaviour
 	[SerializeField] private string exploreScene;
 	[SerializeField] private string combatScene;
 	public static SceneGod SInstance { get; private set; }
-
+	public List<Character> EnemyCharacters;
+	public bool WonLastBattle { get; private set; } = false;
 	private enum GameState { Explore, Combat }
 
 	private GameState _currentState;
@@ -50,11 +51,13 @@ public class SceneGod : MonoBehaviour
 	/// <remarks>
 	/// This method sets up the environment and parameters required for the combat state.
 	/// </remarks>
-	public void EnterCombatState()
+	/// <param name="characters">The list of characters from the encounter</param>
+	public void EnterCombatState(List<Character> characters)
 	{
 		if (_currentState != GameState.Combat)
 		{
-			_currentState = GameState.Combat;
+			EnemyCharacters = characters;
+			_currentState   = GameState.Combat;
 			SceneManager.LoadScene(combatScene);
 		}
 		else
@@ -69,10 +72,12 @@ public class SceneGod : MonoBehaviour
 	/// <remarks>
 	/// This method is responsible for setting up the environment required for the exploration state.
 	/// </remarks>
-	public void EnterExploreState()
+	/// <param name="victory">Whether the player has won the last encounter</param>
+	public void EnterExploreState(bool victory)
 	{
 		if (_currentState != GameState.Explore)
 		{
+			WonLastBattle = victory;
 			_currentState = GameState.Explore;
 			SceneManager.LoadScene(exploreScene);
 		}
