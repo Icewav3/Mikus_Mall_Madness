@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,12 +100,12 @@ TextureImporter:
       name: Mall_Props_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 189
-        width: 98
-        height: 64
+        x: 50
+        y: 197
+        width: 54
+        height: 55
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -142,12 +142,12 @@ TextureImporter:
       name: Mall_Props_1
       rect:
         serializedVersion: 2
-        x: 4
-        y: 136
-        width: 65
-        height: 47
+        x: 0
+        y: 197
+        width: 51
+        height: 55
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -210,7 +210,7 @@ TextureImporter:
         width: 25
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -231,7 +231,7 @@ TextureImporter:
         width: 27
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -252,7 +252,7 @@ TextureImporter:
         width: 27
         height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -273,7 +273,7 @@ TextureImporter:
         width: 27
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -281,6 +281,69 @@ TextureImporter:
       bones: []
       spriteID: d3f55a35555ff5c4a95992cfacdda125
       internalID: -491763260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mall_Props_9
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 100
+        width: 17
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ddbb630ccff9c143869f627e26e0bd6
+      internalID: -2055944639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mall_Props_10
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 100
+        width: 15
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b142c49fe8961148b06d5061f7ede0d
+      internalID: -804723315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mall_Props_11
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 100
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad5790fc38addcb4eac375380d26d671
+      internalID: -1939171961
       vertices: []
       indices: 
       edges: []
@@ -300,6 +363,8 @@ TextureImporter:
     nameFileIdTable:
       Mall_Props_0: 418800995
       Mall_Props_1: -131901758
+      Mall_Props_10: -804723315
+      Mall_Props_11: -1939171961
       Mall_Props_2: -364726572
       Mall_Props_3: 400132716
       Mall_Props_4: -229943416
@@ -307,6 +372,7 @@ TextureImporter:
       Mall_Props_6: 2059701631
       Mall_Props_7: -1473079465
       Mall_Props_8: -491763260
+      Mall_Props_9: -2055944639
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
