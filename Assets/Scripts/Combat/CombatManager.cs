@@ -76,7 +76,7 @@ public class CombatManager : MonoBehaviour
 
 		NextTurn();
 	}
-	public void EndBattle()
+	public void EndBattle(bool victory)
 	{
 		for (int i = 0; i < _enemies.Count; i++)
 		{
@@ -86,6 +86,7 @@ public class CombatManager : MonoBehaviour
 		{
 			_targetableActors[i].OnSelect -= _actionSelector.HandleTargetSelection;
 		}
+		SceneGod.SInstance.EnterExploreState(victory);
 	}
 
 	//sorts the combatants based on their individual speed stats
@@ -120,9 +121,13 @@ public class CombatManager : MonoBehaviour
 		//call the end cycle method
 		if (_turnIndex == 0) EndCombatCycle();
 
-		if (_playerParty.FirstOrDefault(c => !c.IsDead) == null || _enemies.FirstOrDefault(c => !c.IsDead) == null)
+		if (_playerParty.FirstOrDefault(c => !c.IsDead) == null)
 		{
-			EndBattle();
+			EndBattle(false);
+		}
+		else if (_enemies.FirstOrDefault(c => !c.IsDead) == null)
+		{
+			EndBattle(true);
 		}
 		else
 		{

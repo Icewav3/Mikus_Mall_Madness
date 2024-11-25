@@ -66,7 +66,7 @@ public class SceneGod : MonoBehaviour
 	/// <remarks>
 	/// This method is responsible for setting up the environment required for the exploration state.
 	/// </remarks>
-	public void EnterExploreState()
+	public void EnterExploreState(bool victory)
 	{
 		if (_currentState != GameState.Explore)
 		{
