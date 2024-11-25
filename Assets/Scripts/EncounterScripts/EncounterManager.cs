@@ -1,24 +1,26 @@
+using System.Collections.Generic;
+
 using UnityEngine;
 
 public class EncounterManager : MonoBehaviour
 {
-	private Character[] activeEncounter; // Currently activated Encounter
+	private List<Character> activeEncounter; // Currently activated Encounter
 
 	/// <summary>
 	/// Enter Combat
 	/// </summary>
 	/// <param name="encounter"></param>
-	public void TriggerEncounter(Character[] encounter)
+	public void TriggerEncounter(List<Character> encounter)
 	{
 		if (activeEncounter != null)
 		{
 			Debug.LogWarning("An encounter is already active!");
 			return;
 		}
-		if (encounter?.Length > 0)
+		if (encounter.Count > 0)
 		{
 			activeEncounter = encounter;
-			SceneGod.SInstance.EnterCombatState();
+			SceneGod.SInstance.EnterCombatState(activeEncounter);
 		}
 		else
 		{
@@ -29,40 +31,18 @@ public class EncounterManager : MonoBehaviour
 	/// <summary>
 	/// Finish Combat
 	/// </summary>
-	/// <param name="outcome">true victory</param>
-	public void OnEncounterComplete(bool outcome)
+	public void OnEncounterComplete()
 	{
-		if (activeEncounter == null)
+		if (SceneGod.SInstance.WonLastBattle)
 		{
-			Debug.LogWarning("No active encounter to complete.");
-			return;
-		}
+			//TODO::
+			print("change next scene");
 
-		if (outcome) // victory
-		{
-			HandleVictory();
 		}
 		else
 		{
-			HandleDefeat();
+			//TODO::
+			print("Scene intialized");
 		}
-
-		activeEncounter = null;
-	}
-
-	/// <summary>
-	/// Victory
-	/// </summary>
-	private void HandleVictory()
-	{
-		Debug.Log("Player won the encounter!");
-	}
-
-	/// <summary>
-	/// Defeat
-	/// </summary>
-	private void HandleDefeat()
-	{
-		Debug.Log("Player lost the encounter!");
 	}
 }
