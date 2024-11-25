@@ -44,14 +44,11 @@ TagManager:
   - name: Floor
     uniqueID: 2730274505
     locked: 0
-  - name: StoreProps
-    uniqueID: 346325127
-    locked: 0
   - name: Wall
     uniqueID: 3504616623
     locked: 0
-  - name: NonStoreProps
-    uniqueID: 2993039905
+  - name: OverworldCharacter
+    uniqueID: 4224091809
     locked: 0
   - name: Roof
     uniqueID: 4241334259
