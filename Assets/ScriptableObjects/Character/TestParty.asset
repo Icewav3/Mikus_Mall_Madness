@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29001ba2747116b4b8f40430567f6b61, type: 3}
   m_Name: TestParty
   m_EditorClassIdentifier: 
-  _visuals: {fileID: 6644343094179886234, guid: a313f299de333da41b4e843f940525b2, type: 3}
+  _visuals: {fileID: 7614304691101885444, guid: a313f299de333da41b4e843f940525b2, type: 3}
   _isEnemy: 0
   _baseHealth: 100
   _baseStamina: 100
