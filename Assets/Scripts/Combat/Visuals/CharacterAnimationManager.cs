@@ -4,6 +4,7 @@ public class CharacterAnimationManager : MonoBehaviour
 {
 	[SerializeField]
 	private CharacterActor _target;
+	private VisualsController _visuals;
 
 	private void OnEnable()
 	{
@@ -12,12 +13,20 @@ public class CharacterAnimationManager : MonoBehaviour
 	private void OnDisable()
 	{
 		_target.OnInit -= HandleCharacterInit;
+		if(_visuals) _visuals.OnPerformAction -= HandlePerformAction;
 	}
 
 	private void HandleCharacterInit(CharacterActor actor, Character character)
 	{
-		GameObject go = GameObject.Instantiate(character.Base.Visuals, Vector3.zero, Quaternion.identity);
-		go.transform.SetParent(transform);
-		go.transform.GetChild(0).transform.position += transform.position;
+		_visuals = Instantiate(character.Base.Visuals, Vector3.zero, Quaternion.identity);
+		_visuals.transform.SetParent(transform);
+		_visuals.transform.GetChild(0).transform.position += transform.position;
+
+		_visuals.OnPerformAction += HandlePerformAction;
+	}
+
+	private void HandlePerformAction(VisualsController visuals)
+	{
+
 	}
 }

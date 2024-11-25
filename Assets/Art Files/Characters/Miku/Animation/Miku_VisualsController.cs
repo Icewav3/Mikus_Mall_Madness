@@ -1,9 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.VFX;
 
-public class Miku_VisualsController : MonoBehaviour
+public class Miku_VisualsController : VisualsController
 {
     [SerializeField]
 	private SpriteRenderer charSprite;

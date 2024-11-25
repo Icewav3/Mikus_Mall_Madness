@@ -10,8 +10,8 @@ using UnityEngine;
 public class CharacterBase : ScriptableObject
 {
 	[SerializeField]
-	private GameObject _visuals;
-	public GameObject Visuals => _visuals;
+	private VisualsController _visuals;
+	public VisualsController Visuals => _visuals;
 
 	[SerializeField]
 	private bool _isEnemy = false;
