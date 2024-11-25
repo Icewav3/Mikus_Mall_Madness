@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class RenderHealthBar : MonoBehaviour
@@ -21,7 +19,7 @@ public class RenderHealthBar : MonoBehaviour
 	private void OnDisable()
 	{
 		_actor.OnInit -= HandleInit;
-		if(_actor.Character != null)
+		if (_actor.Character != null)
 		{
 			_actor.Character.OnDamage -= DepleteHealthBar;
 			_actor.Character.OnHeal -= ReplenishHealthBar;

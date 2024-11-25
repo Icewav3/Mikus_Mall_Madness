@@ -42,6 +42,7 @@ public class CharacterActionSelector : MonoBehaviour
 	///</summary>
 	public void StartSelection(Character character, List<Character> allies, List<Character> opponents)
 	{
+		_canPickTarget = false;
 		_currentCharacter = character;
 		_currentCharacter.OnActionPerformed += HandlePerformAction;
 		_allies = allies;
@@ -50,15 +51,14 @@ public class CharacterActionSelector : MonoBehaviour
 		if (character.IsEnemy)
 		{
 			_enemyCombatAI.HandleEnemyAction(character, allies, opponents);
-			OnTurnComplete?.Invoke(this);
+			_nextAction = _enemyCombatAI.Action;
+			_target = _enemyCombatAI.Target;
+			_currentCharacter.StartAnimation(_nextAction.AnimType);
 		}
 		else
 		{
 			_buttonManager.Populate(character.CombatActions.ToList());
 		}
-	}
-	public void HandleTargetHover(Targetable targetable, Character character)
-	{
 	}
 
 	private void HandlePerformAction(Character character)
@@ -73,6 +73,11 @@ public class CharacterActionSelector : MonoBehaviour
 	public void HandleTargetSelection(Targetable targetable, Character target)
 	{
 		if (!_canPickTarget) return;
+
+		bool validSelection =
+			(_allies.Contains(target) && _nextAction.TargetAllies) ||
+			(_opponents.Contains(target) && !_nextAction.TargetAllies);
+		if (!validSelection) return;
 
 		_canPickTarget = false;
 		_target = target;

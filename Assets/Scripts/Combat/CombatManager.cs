@@ -62,7 +62,6 @@ public class CombatManager : MonoBehaviour
 			_targetableActors[i+4].gameObject.SetActive(true);
 			_combatants.Add(_enemies[i]);
 			_targetableActors[i + 4].Actor.Init(_enemies[i]);
-			_targetableActors[i + 4].OnHover += _actionSelector.HandleTargetHover;
 			_targetableActors[i + 4].OnSelect += _actionSelector.HandleTargetSelection;
 		}
 		for (int i = 0; i < _playerParty.Count; i++)
@@ -70,7 +69,6 @@ public class CombatManager : MonoBehaviour
 			_targetableActors[i].gameObject.SetActive(true);
 			_combatants.Add(_playerParty[i]);
 			_targetableActors[i].Actor.Init(_playerParty[i]);
-			_targetableActors[i].OnHover += _actionSelector.HandleTargetHover;
 			_targetableActors[i].OnSelect += _actionSelector.HandleTargetSelection;
 		}
 
@@ -82,12 +80,10 @@ public class CombatManager : MonoBehaviour
 	{
 		for (int i = 0; i < _enemies.Count; i++)
 		{
-			_targetableActors[i + 4].OnHover -= _actionSelector.HandleTargetHover;
 			_targetableActors[i + 4].OnSelect -= _actionSelector.HandleTargetSelection;
 		}
 		for (int i = 0; i < _playerParty.Count; i++)
 		{
-			_targetableActors[i].OnHover -= _actionSelector.HandleTargetHover;
 			_targetableActors[i].OnSelect -= _actionSelector.HandleTargetSelection;
 		}
 	}

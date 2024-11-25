@@ -10,6 +10,10 @@ using UnityEngine;
 public class CharacterBase : ScriptableObject
 {
 	[SerializeField]
+	private string _name;
+	public string Name => _name;
+
+	[SerializeField]
 	private VisualsController _visuals;
 	public VisualsController Visuals => _visuals;
 

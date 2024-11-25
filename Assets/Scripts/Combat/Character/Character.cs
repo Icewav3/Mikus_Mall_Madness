@@ -38,6 +38,8 @@ public class Character
 
 	public bool IsEnemy => Base.IsEnemy;
 
+	public string Name => Base.Name;
+
 	// primarily used to ensure multi-targeting attacks don't target dead characters
 	///<summary>
 	///  Whether the character should be ignored when targeting for an action, or in the turn order.
@@ -242,6 +244,11 @@ public class Character
 	public void PerformAction()
 	{
 		OnActionPerformed?.Invoke(this);
+	}
+
+	public override string ToString()
+	{
+		return Name;
 	}
 }
 
