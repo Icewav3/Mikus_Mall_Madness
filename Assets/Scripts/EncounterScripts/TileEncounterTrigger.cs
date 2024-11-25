@@ -3,7 +3,7 @@ using UnityEngine;
 public class TileEncounterTrigger : MonoBehaviour
 {
 	[SerializeField]
-	private Encounter _encounter;
+	private Character[] enemyGroup;
 	private EncounterManager _encounterManager;
 
 	private void OnTriggerEnter2D(Collider2D collision)
@@ -20,7 +20,7 @@ public class TileEncounterTrigger : MonoBehaviour
 	{
 		if (_encounterManager != null)
 		{
-			_encounterManager.TriggerEncounter(_encounter);
+			_encounterManager.TriggerEncounter(enemyGroup);
 		}
 	}
 }

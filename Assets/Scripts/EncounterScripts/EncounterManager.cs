@@ -2,23 +2,23 @@ using UnityEngine;
 
 public class EncounterManager : MonoBehaviour
 {
-	private Encounter activeEncounter; // Currently activated Encounter
+	private Character[] activeEncounter; // Currently activated Encounter
 
 	/// <summary>
 	/// Enter Combat
 	/// </summary>
 	/// <param name="encounter"></param>
-	public void TriggerEncounter(Encounter encounter)
+	public void TriggerEncounter(Character[] encounter)
 	{
 		if (activeEncounter != null)
 		{
 			Debug.LogWarning("An encounter is already active!");
 			return;
 		}
-		if (encounter)
+		if (encounter?.Length > 0)
 		{
 			activeEncounter = encounter;
-			activeEncounter.StartEncounter();
+			SceneGod.SInstance.EnterCombatState();
 		}
 		else
 		{
