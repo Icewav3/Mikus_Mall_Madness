@@ -27,6 +27,5 @@ public class CharacterAnimationManager : MonoBehaviour
 
 	private void HandlePerformAction(VisualsController visuals)
 	{
-
 	}
 }

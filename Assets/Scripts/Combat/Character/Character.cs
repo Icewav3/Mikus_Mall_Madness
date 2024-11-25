@@ -27,6 +27,8 @@ public class Character
 	public event Action<Character, int> OnStaminaDeplete;
 	public event Action<Character, int> OnStaminaGain;
 
+	public event Action<Character, ActionAnimType> OnAnimationStart;
+
 	private CharacterBase _characterBase;
 	public CharacterBase Base => _characterBase;
 
@@ -231,6 +233,11 @@ public class Character
 		OnStaminaGain?.Invoke(this, gainedStamina);
 	}
 	#endregion
+
+	public void StartAnimation(ActionAnimType animType)
+	{
+		OnAnimationStart?.Invoke(this, animType);
+	}
 }
 
 ///<summary>

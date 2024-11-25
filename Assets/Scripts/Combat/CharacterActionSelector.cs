@@ -19,6 +19,7 @@ public class CharacterActionSelector : MonoBehaviour
 	private EnemyCombatAI _enemyCombatAI;
 
 	private CombatAction _nextAction;
+	private Character _target;
 	private Character _currentCharacter;
 	private List<Character> _allies;
 	private List<Character> _opponents;
@@ -61,10 +62,12 @@ public class CharacterActionSelector : MonoBehaviour
 	//recieves and processes a target for the given character's chosen action
 	public void HandleTargetSelection(Targetable targetable, Character target)
 	{
-		_nextAction.Perform(_currentCharacter, target, _opponents, _allies);
-		_buttonManager.DeInit();
-		OnTurnComplete?.Invoke(this);
-		print("Player Character HP: " + _currentCharacter.CurrentHealth);
+		_target = target;
+		//_nextAction.Perform(_currentCharacter, target, _opponents, _allies);
+		_currentCharacter.StartAnimation(_nextAction.AnimType);
+		//_buttonManager.DeInit();
+		//OnTurnComplete?.Invoke(this);
+		//print("Player Character HP: " + _currentCharacter.CurrentHealth);
 	}
 	//handles the player's selected combat action
 	private void HandleAction(CombatButtonManager buttonManager, CombatAction action)
