@@ -999,6 +999,69 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Jesse_EnemySprites_0
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c458c97971878514092d8216fe85712f
+      internalID: -1223305796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jesse_EnemySprites_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2518d2b58fc4ff7418be5f15822f614f
+      internalID: 33794695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jesse_EnemySprites_2
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d517eebf1808a140ae896761f7c3fb3
+      internalID: 1433824643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -1053,6 +1116,9 @@ TextureImporter:
       EnemyStalker_Sheet_7: -1374184026
       EnemyStalker_Sheet_8: -1921030938
       EnemyStalker_Sheet_9: 2011073403
+      Jesse_EnemySprites_0: -1223305796
+      Jesse_EnemySprites_1: 33794695
+      Jesse_EnemySprites_2: 1433824643
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
