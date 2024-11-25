@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29001ba2747116b4b8f40430567f6b61, type: 3}
   m_Name: TestEnemy
   m_EditorClassIdentifier: 
+  _name: Jeff
+  _visuals: {fileID: 3187822434954041856, guid: 34f494dad8c7890469e8a56d9f3b2696, type: 3}
   _isEnemy: 1
   _baseHealth: 100
   _baseStamina: 0
@@ -19,4 +21,3 @@ MonoBehaviour:
   _baseDefense: 0
   _combatActions:
   - {fileID: 11400000, guid: ed321317761791144b8b406a3b0be69f, type: 2}
-  - {fileID: 11400000, guid: 18e2e1597c5fc314a941e1a3b49bb6e2, type: 2}

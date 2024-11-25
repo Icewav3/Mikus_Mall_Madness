@@ -57,7 +57,7 @@ public class SceneGod : MonoBehaviour
 		if (_currentState != GameState.Combat)
 		{
 			EnemyCharacters = characters;
-			_currentState   = GameState.Combat;
+			_currentState = GameState.Combat;
 			SceneManager.LoadScene(combatScene);
 		}
 		else

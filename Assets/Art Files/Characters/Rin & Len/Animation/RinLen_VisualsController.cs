@@ -1,16 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class RinLen_VisualsController : MonoBehaviour
 {
-    [SerializeField]
+	[SerializeField]
 	private SpriteRenderer charSprite;
-    [SerializeField]
+	[SerializeField]
 	private SpriteRenderer charSprite2;
-    //[VFX]
-	
-    public void changeSortingLayerUP()
+	//[VFX]
+
+	public void changeSortingLayerUP()
 	{
 		charSprite.sortingLayerName = "CharacterInUse";
 		charSprite2.sortingLayerName = "CharacterInUse";

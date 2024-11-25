@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 
 using UnityEngine;
-using UnityEngine.UI;
 
 ///<summary>
 ///  Class that bridges <see cref="CharacterActionSelector"/> with the UI and player input.
@@ -40,7 +39,6 @@ public class CombatButtonManager : MonoBehaviour
 	///</summary>
 	public void DeInit()
 	{
-		// TODO: Clean up and disable UI buttons to prepare for a new batch
 		foreach (CombatButton button in _buttons)
 		{
 			button.gameObject.SetActive(false);

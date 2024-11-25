@@ -25532,6 +25532,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 364f1afafc2befd46b698f6e37c0c316, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _animator: {fileID: 6848297232430702266}
   charSprite: {fileID: 2831588333061271729}
   stageLights: {fileID: 7491958901993511982}
   tinySparks: {fileID: 3891851787721457707}

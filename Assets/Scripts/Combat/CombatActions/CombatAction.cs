@@ -43,9 +43,11 @@ public class CombatAction : ScriptableObject
 
 public enum ActionAnimType
 {
-	Attack,
+	Attack1,
+	Attack2,
 	Status,
-	Defend
+	Defend,
+	Signature
 }
 
 public enum ActionBehaviourType
