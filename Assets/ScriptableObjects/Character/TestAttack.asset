@@ -17,5 +17,5 @@ MonoBehaviour:
   _effects:
   - {fileID: 11400000, guid: d4547f7e9a2001540bd80522b84c37fc, type: 2}
   _animType: 0
-  _behaviourTypes: 
+  _behaviourTypes: 00000000
   _staminaCost: 10

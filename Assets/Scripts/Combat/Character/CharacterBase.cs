@@ -9,7 +9,13 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Character Base", menuName = "Characters/Character Base")]
 public class CharacterBase : ScriptableObject
 {
-	// TODO: Add values for artists (Animator, default sprite, etc.)
+	[SerializeField]
+	private string _name;
+	public string Name => _name;
+
+	[SerializeField]
+	private VisualsController _visuals;
+	public VisualsController Visuals => _visuals;
 
 	[SerializeField]
 	private bool _isEnemy = false;
