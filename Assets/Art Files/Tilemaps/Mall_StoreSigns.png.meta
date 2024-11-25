@@ -100,10 +100,10 @@ TextureImporter:
       name: Mall_StoreSigns_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 191
-        width: 94
-        height: 63
+        x: 16
+        y: 198
+        width: 55
+        height: 45
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,10 +121,10 @@ TextureImporter:
       name: Mall_StoreSigns_1
       rect:
         serializedVersion: 2
-        x: 7
-        y: 137
-        width: 61
-        height: 44
+        x: 11
+        y: 144
+        width: 64
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,6 +134,69 @@ TextureImporter:
       bones: []
       spriteID: 23e06d7913fb08c4184e207210880a83
       internalID: -1219268505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mall_StoreSigns_2
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 155
+        width: 63
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1898365ab7cfd0a46820e376d99883cd
+      internalID: 926273157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mall_StoreSigns_3
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 114
+        width: 63
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34b2eebb24023e94c81e06f752461e27
+      internalID: -1055117012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mall_StoreSigns_4
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 94
+        width: 55
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e568b45aab315cd4784d22455d1bf7f4
+      internalID: -429042918
       vertices: []
       indices: 
       edges: []
@@ -153,6 +216,9 @@ TextureImporter:
     nameFileIdTable:
       Mall_StoreSigns_0: -338180792
       Mall_StoreSigns_1: -1219268505
+      Mall_StoreSigns_2: 926273157
+      Mall_StoreSigns_3: -1055117012
+      Mall_StoreSigns_4: -429042918
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
