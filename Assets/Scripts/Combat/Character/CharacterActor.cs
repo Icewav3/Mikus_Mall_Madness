@@ -1,11 +1,10 @@
-using UnityEngine;
 using System;
+
+using UnityEngine;
 
 public class CharacterActor : MonoBehaviour
 {
-	[SerializeField]
-	private CharacterAnimationManager _animationManager;
-
+	public event Action<CharacterActor, ActionAnimType> OnAnimationStart;
 	public event Action<CharacterActor, Character> OnInit;
 	public Character Character { get; private set; }
 
@@ -25,8 +24,13 @@ public class CharacterActor : MonoBehaviour
 		OnInit?.Invoke(this, character);
 	}
 
-	private void HandleAnimation(Character character, ActionAnimType type)
+	private void HandleAnimation(Character character, ActionAnimType animType)
 	{
-		throw new NotImplementedException();
+		OnAnimationStart?.Invoke(this, animType);
+	}
+
+	public void PerformAction()
+	{
+		Character.PerformAction();
 	}
 }

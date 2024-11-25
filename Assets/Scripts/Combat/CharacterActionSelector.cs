@@ -23,6 +23,7 @@ public class CharacterActionSelector : MonoBehaviour
 	private Character _currentCharacter;
 	private List<Character> _allies;
 	private List<Character> _opponents;
+	private bool _canPickTarget = false;
 
 	private void OnEnable()
 	{
@@ -42,6 +43,7 @@ public class CharacterActionSelector : MonoBehaviour
 	public void StartSelection(Character character, List<Character> allies, List<Character> opponents)
 	{
 		_currentCharacter = character;
+		_currentCharacter.OnActionPerformed += HandlePerformAction;
 		_allies = allies;
 		_opponents = opponents;
 		//do different things depending on whether the character passed in is an enemy
@@ -49,7 +51,6 @@ public class CharacterActionSelector : MonoBehaviour
 		{
 			_enemyCombatAI.HandleEnemyAction(character, allies, opponents);
 			OnTurnComplete?.Invoke(this);
-			print("Enemy HP: " + character.CurrentHealth);
 		}
 		else
 		{
@@ -59,19 +60,29 @@ public class CharacterActionSelector : MonoBehaviour
 	public void HandleTargetHover(Targetable targetable, Character character)
 	{
 	}
+
+	private void HandlePerformAction(Character character)
+	{
+		_currentCharacter.OnActionPerformed -= HandlePerformAction;
+		_canPickTarget = true;
+		_nextAction.Perform(_currentCharacter, _target, _opponents, _allies);
+		_nextAction = null;
+		OnTurnComplete?.Invoke(this);
+	}
 	//recieves and processes a target for the given character's chosen action
 	public void HandleTargetSelection(Targetable targetable, Character target)
 	{
+		if (!_canPickTarget) return;
+
+		_canPickTarget = false;
 		_target = target;
-		//_nextAction.Perform(_currentCharacter, target, _opponents, _allies);
 		_currentCharacter.StartAnimation(_nextAction.AnimType);
-		//_buttonManager.DeInit();
-		//OnTurnComplete?.Invoke(this);
-		//print("Player Character HP: " + _currentCharacter.CurrentHealth);
+		_buttonManager.DeInit();
 	}
 	//handles the player's selected combat action
 	private void HandleAction(CombatButtonManager buttonManager, CombatAction action)
 	{
+		_canPickTarget = true;
 		_nextAction = action;
 	}
 }

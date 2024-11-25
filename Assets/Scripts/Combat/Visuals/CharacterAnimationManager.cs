@@ -9,11 +9,13 @@ public class CharacterAnimationManager : MonoBehaviour
 	private void OnEnable()
 	{
 		_target.OnInit += HandleCharacterInit;
+		_target.OnAnimationStart += HandleAnimation;
 	}
+
 	private void OnDisable()
 	{
 		_target.OnInit -= HandleCharacterInit;
-		if(_visuals) _visuals.OnPerformAction -= HandlePerformAction;
+		if (_visuals) _visuals.OnPerformAction -= HandlePerformAction;
 	}
 
 	private void HandleCharacterInit(CharacterActor actor, Character character)
@@ -27,5 +29,11 @@ public class CharacterAnimationManager : MonoBehaviour
 
 	private void HandlePerformAction(VisualsController visuals)
 	{
+		_target.PerformAction();
+	}
+
+	private void HandleAnimation(CharacterActor actor, ActionAnimType animType)
+	{
+		_visuals.StartAnimation(animType);
 	}
 }
