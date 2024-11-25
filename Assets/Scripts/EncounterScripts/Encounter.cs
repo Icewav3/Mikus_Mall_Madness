@@ -1,12 +1,12 @@
-using UnityEngine;
+//using UnityEngine;
 
-public class Encounter : MonoBehaviour 
-{
-	[SerializeField]
-	private GameObject[] enemyGroup;
+//public class Encounter : MonoBehaviour 
+//{
+//	[SerializeField]
+//	private Character[] enemyGroup;
 
-	public void StartEncounter()
-	{
-		Debug.Log("StartEncounter");
-	}
-}
+//	public void StartEncounter()
+//	{
+//		SceneGod.SInstance.EnterCombatState();
+//	}
+//}
