@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5e6f3fbb560bd6041a202ea918fa4f23, type: 3}
-  m_Name: WallDoorwayRuleTop
+  m_Name: BrickWallDoorwayRuleBottomRight
   m_EditorClassIdentifier: 
-  m_DefaultSprite: {fileID: -1436254805, guid: 28b0016f7ab7ef44a92c1ecf19a32100, type: 3}
+  m_DefaultSprite: {fileID: 49089736, guid: 28b0016f7ab7ef44a92c1ecf19a32100, type: 3}
   m_DefaultGameObject: {fileID: 0}
   m_DefaultColliderType: 1
   m_TilingRules:
   - m_Id: 0
     m_Sprites:
-    - {fileID: -1436254805, guid: 28b0016f7ab7ef44a92c1ecf19a32100, type: 3}
+    - {fileID: -1937467927, guid: 28b0016f7ab7ef44a92c1ecf19a32100, type: 3}
     m_GameObject: {fileID: 0}
     m_MinAnimationSpeed: 1
     m_MaxAnimationSpeed: 1
@@ -35,7 +35,7 @@ MonoBehaviour:
     m_RuleTransform: 0
   - m_Id: 1
     m_Sprites:
-    - {fileID: 177670548, guid: 28b0016f7ab7ef44a92c1ecf19a32100, type: 3}
+    - {fileID: 1516156406, guid: 28b0016f7ab7ef44a92c1ecf19a32100, type: 3}
     m_GameObject: {fileID: 0}
     m_MinAnimationSpeed: 1
     m_MaxAnimationSpeed: 1
@@ -52,7 +52,7 @@ MonoBehaviour:
     m_RuleTransform: 0
   - m_Id: 2
     m_Sprites:
-    - {fileID: -649020855, guid: 28b0016f7ab7ef44a92c1ecf19a32100, type: 3}
+    - {fileID: 49089736, guid: 28b0016f7ab7ef44a92c1ecf19a32100, type: 3}
     m_GameObject: {fileID: 0}
     m_MinAnimationSpeed: 1
     m_MaxAnimationSpeed: 1

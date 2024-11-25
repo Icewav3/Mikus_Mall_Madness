@@ -525,7 +525,7 @@ TextureImporter:
         width: 34
         height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -546,7 +546,7 @@ TextureImporter:
         width: 34
         height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -567,7 +567,7 @@ TextureImporter:
         width: 32
         height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -575,6 +575,48 @@ TextureImporter:
       bones: []
       spriteID: 55b853d9c1c1efc40aa8f72737d7152b
       internalID: -1982633146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mall_Props_23
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 115
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c78206a8117fa5448d1d9a13a5eadb8
+      internalID: 2126321226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mall_Props_24
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 107
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fc9753b2ea87f446bf7c7846bd5a6c2
+      internalID: 157320110
       vertices: []
       indices: 
       edges: []
@@ -608,6 +650,8 @@ TextureImporter:
       Mall_Props_20: -1265187305
       Mall_Props_21: -1904793082
       Mall_Props_22: -1982633146
+      Mall_Props_23: 2126321226
+      Mall_Props_24: 157320110
       Mall_Props_3: 400132716
       Mall_Props_4: -229943416
       Mall_Props_5: 1302856593
