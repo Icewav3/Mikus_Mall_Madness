@@ -1,17 +1,22 @@
 using System;
+using System.Collections;
 
 using UnityEngine;
 
 public class VisualsController : MonoBehaviour
 {
 	public event Action<VisualsController> OnPerformAction;
+	public event Action<VisualsController> OnTurnEnd;
 
 	[SerializeField]
 	private Animator _animator;
 
+	private Coroutine _waitRoutine;
+
 	public void PerformAction()
 	{
 		OnPerformAction?.Invoke(this);
+		if (_waitRoutine == null) _waitRoutine = StartCoroutine(WaitRoutine());
 	}
 
 	public void StartAnimation(ActionAnimType animType)
@@ -36,5 +41,14 @@ public class VisualsController : MonoBehaviour
 			default:
 				return;
 		}
+	}
+	private IEnumerator WaitRoutine()
+	{
+		//fuck yeah
+		yield return new WaitForSeconds(1.5f);
+
+		OnTurnEnd?.Invoke(this);
+
+		_waitRoutine = null;
 	}
 }

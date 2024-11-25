@@ -29,6 +29,7 @@ public class Character
 
 	public event Action<Character, ActionAnimType> OnAnimationStart;
 	public event Action<Character> OnActionPerformed;
+	public event Action<Character> OnTurnEnd;
 
 	private CharacterBase _characterBase;
 	public CharacterBase Base => _characterBase;
@@ -244,6 +245,10 @@ public class Character
 	public void PerformAction()
 	{
 		OnActionPerformed?.Invoke(this);
+	}
+	public void EndTurn()
+	{
+		OnTurnEnd?.Invoke(this);
 	}
 
 	public override string ToString()

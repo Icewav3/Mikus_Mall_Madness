@@ -33,4 +33,8 @@ public class CharacterActor : MonoBehaviour
 	{
 		Character.PerformAction();
 	}
+	public void EndTurn()
+	{
+		Character.EndTurn();
+	}
 }

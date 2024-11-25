@@ -1,3 +1,5 @@
+using System;
+
 using UnityEngine;
 
 public class CharacterAnimationManager : MonoBehaviour
@@ -16,6 +18,7 @@ public class CharacterAnimationManager : MonoBehaviour
 	{
 		_target.OnInit -= HandleCharacterInit;
 		if (_visuals) _visuals.OnPerformAction -= HandlePerformAction;
+		if (_visuals) _visuals.OnTurnEnd -= HandleTurnEnd;
 	}
 
 	private void HandleCharacterInit(CharacterActor actor, Character character)
@@ -25,11 +28,16 @@ public class CharacterAnimationManager : MonoBehaviour
 		_visuals.transform.GetChild(0).transform.position += transform.position;
 
 		_visuals.OnPerformAction += HandlePerformAction;
+		_visuals.OnTurnEnd += HandleTurnEnd;
 	}
 
 	private void HandlePerformAction(VisualsController visuals)
 	{
 		_target.PerformAction();
+	}
+	private void HandleTurnEnd(VisualsController controller)
+	{
+		_target.EndTurn();
 	}
 
 	private void HandleAnimation(CharacterActor actor, ActionAnimType animType)

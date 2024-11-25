@@ -45,6 +45,7 @@ public class CharacterActionSelector : MonoBehaviour
 		_canPickTarget = false;
 		_currentCharacter = character;
 		_currentCharacter.OnActionPerformed += HandlePerformAction;
+		_currentCharacter.OnTurnEnd += EndTurn;
 		_allies = allies;
 		_opponents = opponents;
 		//do different things depending on whether the character passed in is an enemy
@@ -64,9 +65,12 @@ public class CharacterActionSelector : MonoBehaviour
 	private void HandlePerformAction(Character character)
 	{
 		_currentCharacter.OnActionPerformed -= HandlePerformAction;
-		_canPickTarget = true;
 		_nextAction.Perform(_currentCharacter, _target, _opponents, _allies);
 		_nextAction = null;
+	}
+	private void EndTurn(Character character)
+	{
+		_currentCharacter.OnTurnEnd -= EndTurn;
 		OnTurnComplete?.Invoke(this);
 	}
 	//recieves and processes a target for the given character's chosen action
