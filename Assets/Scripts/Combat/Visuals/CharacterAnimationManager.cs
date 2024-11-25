@@ -18,6 +18,6 @@ public class CharacterAnimationManager : MonoBehaviour
 	{
 		GameObject go = GameObject.Instantiate(character.Base.Visuals, Vector3.zero, Quaternion.identity);
 		go.transform.SetParent(transform);
-		go.transform.GetChild(0).transform.position = transform.position;
+		go.transform.GetChild(0).transform.position += transform.position;
 	}
 }
