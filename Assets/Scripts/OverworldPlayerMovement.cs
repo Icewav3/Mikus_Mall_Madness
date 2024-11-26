@@ -4,9 +4,9 @@ using UnityEngine.Tilemaps;
 public class PlayerMovement : MonoBehaviour
 {
 	[SerializeField]
-	private float moveSpeed = 5f; // Movement speed of the player
+	private float _moveSpeed = 5f; // Movement speed of the player
 	[SerializeField]
-	private Tilemap tilemap;      // Reference to the tilemap for snapping
+	private Tilemap _tilemap;      // Reference to the tilemap for snapping
 
 	private Vector2 _movementDirection; // Direction in which the player should move
 	private bool _isMoving = false;     // Track if player is currently moving
@@ -57,18 +57,18 @@ public class PlayerMovement : MonoBehaviour
 	// Moves the player in the specified direction
 	private void MovePlayer()
 	{
-		Vector2 newPosition = (Vector2)transform.position + _movementDirection * moveSpeed * Time.deltaTime;
+		Vector2 newPosition = (Vector2)transform.position + _movementDirection * _moveSpeed * Time.deltaTime;
 		transform.position = newPosition;
 	}
 
 	// Snaps the player to the nearest tile center on the tilemap
 	private void SnapToTileCenter()
 	{
-		if (tilemap == null) return;
+		if (_tilemap == null) return;
 		// Convert the player’s current position to the nearest cell position in the tilemap
-		Vector3Int cellPosition = tilemap.WorldToCell(transform.position);
+		Vector3Int cellPosition = _tilemap.WorldToCell(transform.position);
 		// Get the world position of the center of that cell
-		Vector3 cellCenter = tilemap.GetCellCenterWorld(cellPosition);
+		Vector3 cellCenter = _tilemap.GetCellCenterWorld(cellPosition);
 		transform.position = cellCenter;
 	}
 }
