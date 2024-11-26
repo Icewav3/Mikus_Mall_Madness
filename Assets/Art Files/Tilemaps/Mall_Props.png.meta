@@ -609,7 +609,7 @@ TextureImporter:
         width: 38
         height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -617,6 +617,27 @@ TextureImporter:
       bones: []
       spriteID: 4fc9753b2ea87f446bf7c7846bd5a6c2
       internalID: 157320110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mall_Props_25
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 69
+        width: 51
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 906d77b4bc888f34e998d18c05b21b28
+      internalID: -1086023672
       vertices: []
       indices: 
       edges: []
@@ -652,6 +673,7 @@ TextureImporter:
       Mall_Props_22: -1982633146
       Mall_Props_23: 2126321226
       Mall_Props_24: 157320110
+      Mall_Props_25: -1086023672
       Mall_Props_3: 400132716
       Mall_Props_4: -229943416
       Mall_Props_5: 1302856593
