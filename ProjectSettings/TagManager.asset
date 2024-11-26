@@ -44,14 +44,23 @@ TagManager:
   - name: Floor
     uniqueID: 2730274505
     locked: 0
+  - name: StoreProps
+    uniqueID: 4225819035
+    locked: 0
   - name: Wall
     uniqueID: 3504616623
     locked: 0
-  - name: OverworldCharacter
-    uniqueID: 4224091809
+  - name: NonStoreProps
+    uniqueID: 1797194213
+    locked: 0
+  - name: Pillars
+    uniqueID: 1137053211
     locked: 0
   - name: Roof
     uniqueID: 4241334259
+    locked: 0
+  - name: OverworldCharacter
+    uniqueID: 4224091809
     locked: 0
   - name: '[Behind] Particles'
     uniqueID: 2021559959
