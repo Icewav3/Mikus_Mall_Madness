@@ -313,8 +313,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 93c0a630a636fd94581ce98aef6b8297
-      internalID: -1760563984
+      spriteID: 3501a593f14518f4b9465918d1665215
+      internalID: 1145024362
       vertices: []
       indices: 
       edges: []
@@ -334,8 +334,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6af5f2e38c9581642b26165ea4f41f55
-      internalID: -1954237850
+      spriteID: e126eb8485e23c4449cf45d624058c93
+      internalID: -1105229848
       vertices: []
       indices: 
       edges: []
@@ -362,8 +362,8 @@ TextureImporter:
       FloorTiles_6: 2108877506
       FloorTiles_7: -995400229
       FloorTiles_8: -1925381979
-      Mall_FloorTiles_0: -1760563984
-      Mall_FloorTiles_1: -1954237850
+      Mall_FloorTiles_0: 1145024362
+      Mall_FloorTiles_1: -1105229848
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
