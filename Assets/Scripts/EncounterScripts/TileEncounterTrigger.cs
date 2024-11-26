@@ -10,13 +10,6 @@ public class TileEncounterTrigger : MonoBehaviour
 
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
-		if (collision.CompareTag("Player"))
-		{
-			if (_encounterManager != null)
-			{
-				_encounterManager.TriggerEncounter(_encounter);
-			}
-		}
-		gameObject.SetActive(false);
+		SceneGod.SInstance.EnterCombatState(_encounter.GetEnemies());
 	}
 }
