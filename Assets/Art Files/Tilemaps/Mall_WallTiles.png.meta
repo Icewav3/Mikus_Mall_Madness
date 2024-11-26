@@ -1059,7 +1059,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 352
+        y: 384
         width: 32
         height: 32
       alignment: 9
@@ -1080,7 +1080,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 352
+        y: 384
         width: 32
         height: 32
       alignment: 9
@@ -1100,8 +1100,8 @@ TextureImporter:
       name: Mall_WallTiles_8
       rect:
         serializedVersion: 2
-        x: 96
-        y: 320
+        x: 160
+        y: 384
         width: 32
         height: 32
       alignment: 9
@@ -1121,8 +1121,8 @@ TextureImporter:
       name: Mall_WallTiles_9
       rect:
         serializedVersion: 2
-        x: 128
-        y: 320
+        x: 96
+        y: 352
         width: 32
         height: 32
       alignment: 9
@@ -1495,6 +1495,111 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Mall_WallTiles_27
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 352
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a594e7136ac4d34fa66d71172166dc6
+      internalID: -1315040326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mall_WallTiles_28
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 352
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a51f9cc564b1ae48bbe6f76ba6b9b33
+      internalID: -1921621930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mall_WallTiles_30
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 320
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6d39e599bf0a914ea3f36948bdc275f
+      internalID: 627924606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mall_WallTiles_31
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 320
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a291b52926de8084cabf950a51867671
+      internalID: -1817744663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mall_WallTiles_32
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 320
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f410e78c2a5bcb47b97097769dfc3e9
+      internalID: 281152211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -1528,7 +1633,14 @@ TextureImporter:
       Mall_WallTiles_24: -93835938
       Mall_WallTiles_25: 349530972
       Mall_WallTiles_26: -1019005349
+      Mall_WallTiles_27: -1315040326
+      Mall_WallTiles_28: -1921621930
+      Mall_WallTiles_29: 1300593693
       Mall_WallTiles_3: -1074238221
+      Mall_WallTiles_30: 627924606
+      Mall_WallTiles_31: -1817744663
+      Mall_WallTiles_32: 281152211
+      Mall_WallTiles_33: 1498258086
       Mall_WallTiles_4: 1836983839
       Mall_WallTiles_5: -1886274528
       Mall_WallTiles_6: 873199381
