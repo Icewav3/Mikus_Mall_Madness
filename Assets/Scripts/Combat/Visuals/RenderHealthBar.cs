@@ -12,7 +12,11 @@ public class RenderHealthBar : MonoBehaviour
 	private void OnEnable()
 	{
 		_actor.OnInit += HandleInit;
-		if (_healthBar.drawMode != SpriteDrawMode.Tiled) Debug.LogWarning("A Health bar does not have its draw mode set to tiled. Attempting to fix");
+		if (_healthBar.drawMode != SpriteDrawMode.Tiled)
+		{
+			Debug.LogWarning("A Health bar does not have its draw mode set to tiled. Attempting to fix");
+		}
+
 		_healthBar.drawMode = SpriteDrawMode.Tiled;
 	}
 
@@ -46,7 +50,7 @@ public class RenderHealthBar : MonoBehaviour
 
 	private void UpdateHealthBar(Character character)
 	{
-		float hpPercentage = (float)character.CurrentHealth / (float)character.MaxHealth;
+		float hpPercentage = character.CurrentHealth / (float)character.MaxHealth;
 
 		_healthBar.size = new Vector2(hpPercentage, 1);
 

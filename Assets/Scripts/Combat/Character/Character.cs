@@ -145,12 +145,10 @@ public class Character
 		if (damage <= 0) return;
 
 		// calculate defense damage reduction (uses a formula that can be found here: https://riskofrain2.fandom.com/wiki/Armor)
-		float defenseMultiplier = 1 - Defense / (100 + Mathf.Abs(Defense));
+		float defenseMultiplier = 1 - (Defense / (100 + Mathf.Abs(Defense)));
 		int appliedDamage = Mathf.FloorToInt(damage * defenseMultiplier);
 
 		_currentHealth -= appliedDamage;
-
-		OnDamage?.Invoke(this, new DamageEvent(appliedDamage, damage));
 
 		if (_currentHealth <= 0)
 		{
@@ -158,6 +156,8 @@ public class Character
 			IsDead = true;
 			OnDeath?.Invoke(this);
 		}
+		OnDamage?.Invoke(this, new DamageEvent(appliedDamage, damage));
+
 	}
 
 	///<param name="heal">
