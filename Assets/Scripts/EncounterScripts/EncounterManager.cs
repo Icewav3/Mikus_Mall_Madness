@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class EncounterManager : MonoBehaviour
 {
-	private Encounter activeEncounter; // Currently activated Encounter
+	private Encounter _activeEncounter; // Currently activated Encounter
+	[SerializeField] private LevelEncounters _levelEncounters;
 
 	/// <summary>
 	/// Enter Combat
@@ -12,15 +13,15 @@ public class EncounterManager : MonoBehaviour
 	/// <param name="encounter"></param>
 	public void TriggerEncounter(Encounter encounter)
 	{
-		if (activeEncounter != null)
+		if (_activeEncounter != null)
 		{
 			Debug.LogWarning("An encounter is already active!");
 			return;
 		}
 		if (encounter.GetEnemies().Count > 0 && !encounter.Encountered)
 		{
-			activeEncounter = encounter;
-			SceneGod.SInstance.EnterCombatState(activeEncounter.GetEnemies());
+			_activeEncounter = encounter;
+			SceneGod.SInstance.EnterCombatState(_activeEncounter.GetEnemies());
 		}
 		else
 		{
@@ -37,12 +38,13 @@ public class EncounterManager : MonoBehaviour
 		{
 			//TODO::
 			print("change next scene");
-			activeEncounter.Encountered = true;
+			_activeEncounter.Encountered = true;
 		}
 		else
 		{
 			//TODO::
 			print("Scene intialized");
+			_levelEncounters.ResetEncounters();
 		}
 	}
 }
