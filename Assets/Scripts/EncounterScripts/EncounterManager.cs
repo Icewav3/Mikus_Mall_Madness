@@ -13,6 +13,11 @@ public class EncounterManager : MonoBehaviour
 	/// <param name="encounter"></param>
 	public void TriggerEncounter(Encounter encounter)
 	{
+		if (_activeEncounter != null)
+		{
+			Debug.LogWarning("An encounter is already active!");
+			return;
+		}
 		if (encounter.GetEnemies().Count > 0 && !encounter.Encountered)
 		{
 			_activeEncounter = encounter;
