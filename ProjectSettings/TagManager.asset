@@ -53,6 +53,9 @@ TagManager:
   - name: NonStoreProps
     uniqueID: 1797194213
     locked: 0
+  - name: Pillars
+    uniqueID: 1137053211
+    locked: 0
   - name: Roof
     uniqueID: 4241334259
     locked: 0
