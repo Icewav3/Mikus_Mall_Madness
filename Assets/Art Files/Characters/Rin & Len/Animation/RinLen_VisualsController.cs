@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class RinLen_VisualsController : MonoBehaviour
+public class RinLen_VisualsController : VisualsController
 {
 	[SerializeField]
 	private SpriteRenderer charSprite;
