@@ -100,6 +100,13 @@ public class CombatManager : MonoBehaviour
 	private void NextTurn()
 	{
 		Character nextCharacter = _combatants[_turnIndex];
+
+		if (nextCharacter.IsDead)
+		{
+			EndTurn(_actionSelector);
+			return;
+		}
+
 		if (nextCharacter.IsEnemy)
 		{
 			_actionSelector.StartSelection(nextCharacter, _enemies, _playerParty);
