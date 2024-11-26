@@ -2521,6 +2521,24 @@ MonoBehaviour:
   m_InstancedGameObject: {fileID: 0}
   m_Flags: 3
   m_ColliderType: 1
+--- !u!1 &806251728 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6817357469646780135, guid: 6d1b6895c024aad49a390af8fb460281, type: 3}
+  m_PrefabInstance: {fileID: 1909421267}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &806251730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 806251728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c849dd1431a9124f8ea58a03e4b62b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _levelEncounters: {fileID: 11400000, guid: f22f96db0c7ca954cbe9e3974a22ba03, type: 2}
 --- !u!114 &811719583
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8442,6 +8460,10 @@ PrefabInstance:
       propertyPath: _encounter
       value: 
       objectReference: {fileID: 11400000, guid: 68b7bb8324d53254c8f695cbad9adf17, type: 2}
+    - target: {fileID: 5559024535402182, guid: 6d1b6895c024aad49a390af8fb460281, type: 3}
+      propertyPath: _encounterManager
+      value: 
+      objectReference: {fileID: 806251730}
     - target: {fileID: 6817357469646780135, guid: 6d1b6895c024aad49a390af8fb460281, type: 3}
       propertyPath: m_Name
       value: EncounterManager
@@ -8489,7 +8511,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6817357469646780135, guid: 6d1b6895c024aad49a390af8fb460281, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 806251730}
   m_SourcePrefab: {fileID: 100100000, guid: 6d1b6895c024aad49a390af8fb460281, type: 3}
 --- !u!114 &1909987824
 MonoBehaviour:

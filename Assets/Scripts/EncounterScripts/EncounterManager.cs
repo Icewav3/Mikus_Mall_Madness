@@ -16,6 +16,7 @@ public class EncounterManager : MonoBehaviour
 		if (encounter.GetEnemies().Count > 0 && !encounter.Encountered)
 		{
 			_activeEncounter = encounter;
+			_activeEncounter.Encountered = true;
 			SceneGod.SInstance.EnterCombatState(_activeEncounter.GetEnemies());
 		}
 		else
@@ -33,7 +34,6 @@ public class EncounterManager : MonoBehaviour
 		{
 			//TODO::
 			print("change next scene");
-			_activeEncounter.Encountered = true;
 		}
 		else
 		{

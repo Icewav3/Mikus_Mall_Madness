@@ -6,10 +6,12 @@ public class TileEncounterTrigger : MonoBehaviour
 {
 	[SerializeField]
 	private Encounter _encounter;
+	[SerializeField]
 	private EncounterManager _encounterManager;
 
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
-		SceneGod.SInstance.EnterCombatState(_encounter.GetEnemies());
+		if (_encounter && _encounterManager)
+			_encounterManager.TriggerEncounter(_encounter);
 	}
 }

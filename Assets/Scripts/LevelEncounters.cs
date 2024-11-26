@@ -6,7 +6,8 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "FloorEncounters", menuName = "FloorEncounters", order = 3)]
 public class LevelEncounters : ScriptableObject
 {
-	[SerializeField] private List<Encounter> levelEncounters;
+	[SerializeField] 
+	private List<Encounter> levelEncounters;
 
 	public void ResetEncounters()
 	{
