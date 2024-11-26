@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e6f3fbb560bd6041a202ea918fa4f23, type: 3}
   m_Name: WallDoorwayRuleTop
   m_EditorClassIdentifier: 
-  m_DefaultSprite: {fileID: -1436254805, guid: 28b0016f7ab7ef44a92c1ecf19a32100, type: 3}
+  m_DefaultSprite: {fileID: 140817461, guid: 28b0016f7ab7ef44a92c1ecf19a32100, type: 3}
   m_DefaultGameObject: {fileID: 0}
   m_DefaultColliderType: 1
   m_TilingRules:

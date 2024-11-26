@@ -768,69 +768,6 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: ParkLot_WallTiles_32
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 224
-        width: 32
-        height: 32
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b77f70dc50142d94abcfab7abb93ecef
-      internalID: 1544004499
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ParkLot_WallTiles_33
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 224
-        width: 32
-        height: 32
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dc674ea01530e5146a45fce0187ffae5
-      internalID: -358694553
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ParkLot_WallTiles_34
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 224
-        width: 32
-        height: 32
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8f559b145a7691b4c95e8d67bda5f409
-      internalID: -1030326758
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -868,9 +805,6 @@ TextureImporter:
       ParkLot_WallTiles_3: -1064520534
       ParkLot_WallTiles_30: -1493291196
       ParkLot_WallTiles_31: -402141495
-      ParkLot_WallTiles_32: 1544004499
-      ParkLot_WallTiles_33: -358694553
-      ParkLot_WallTiles_34: -1030326758
       ParkLot_WallTiles_4: -1246795123
       ParkLot_WallTiles_5: 153887465
       ParkLot_WallTiles_6: 682463447
