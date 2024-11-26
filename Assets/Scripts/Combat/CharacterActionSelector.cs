@@ -74,7 +74,7 @@ public class CharacterActionSelector : MonoBehaviour
 		OnTurnComplete?.Invoke(this);
 	}
 	//recieves and processes a target for the given character's chosen action
-	public void HandleTargetSelection(Targetable targetable, Character target)
+	public void HandleTargetSelection(Targetable _, Character target)
 	{
 		if (!_canPickTarget) return;
 

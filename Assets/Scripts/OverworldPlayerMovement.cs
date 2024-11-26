@@ -4,8 +4,10 @@ using UnityEngine.Tilemaps;
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMovement : MonoBehaviour
 {
-	[SerializeField] private float moveSpeed = 5f; // Movement speed of the player
-	[SerializeField] private Tilemap tilemap;      // Reference to the tilemap for snapping
+	[SerializeField]
+	private float _moveSpeed = 5f; // Movement speed of the player
+	[SerializeField]
+	private Tilemap _tilemap;      // Reference to the tilemap for snapping
 
 	private Rigidbody2D _rigidbody2D;   // Rigidbody2D component for physics-based movement
 	private Vector2 _movementDirection; // Direction in which the player should move
@@ -66,18 +68,18 @@ public class PlayerMovement : MonoBehaviour
 	// Moves the player in the specified direction
 	private void MovePlayer()
 	{
-		Vector2 newPosition = _rigidbody2D.position + _movementDirection * moveSpeed * Time.fixedDeltaTime;
+		Vector2 newPosition = _rigidbody2D.position + (_moveSpeed * Time.fixedDeltaTime * _movementDirection);
 		_rigidbody2D.MovePosition(newPosition);
 	}
 
 	// Snaps the player to the nearest tile center on the tilemap
 	private void SnapToTileCenter()
 	{
-		if (tilemap == null) return;
+		if (_tilemap == null) return;
 		// Convert the player’s current position to the nearest cell position in the tilemap
-		Vector3Int cellPosition = tilemap.WorldToCell(transform.position);
+		Vector3Int cellPosition = _tilemap.WorldToCell(transform.position);
 		// Get the world position of the center of that cell
-		Vector3 cellCenter = tilemap.GetCellCenterWorld(cellPosition);
+		Vector3 cellCenter = _tilemap.GetCellCenterWorld(cellPosition);
 		_rigidbody2D.MovePosition(cellCenter);
 	}
 }

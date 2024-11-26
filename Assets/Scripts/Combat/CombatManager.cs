@@ -93,7 +93,7 @@ public class CombatManager : MonoBehaviour
 	//a higher speed stat means the character will have a lower index
 	private void SortCombatants()
 	{
-		_combatants.Sort((a, b) => (b.Speed - a.Speed));
+		_combatants.Sort((a, b) => b.Speed - a.Speed);
 	}
 
 	//handles starting a turn loop
