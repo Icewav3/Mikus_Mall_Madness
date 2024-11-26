@@ -4,23 +4,23 @@ using UnityEngine;
 
 public class EncounterManager : MonoBehaviour
 {
-	private List<Character> activeEncounter; // Currently activated Encounter
+	private Encounter activeEncounter; // Currently activated Encounter
 
 	/// <summary>
 	/// Enter Combat
 	/// </summary>
 	/// <param name="encounter"></param>
-	public void TriggerEncounter(List<Character> encounter)
+	public void TriggerEncounter(Encounter encounter)
 	{
 		if (activeEncounter != null)
 		{
 			Debug.LogWarning("An encounter is already active!");
 			return;
 		}
-		if (encounter.Count > 0)
+		if (encounter.GetEnemies().Count > 0 && !encounter.Encountered)
 		{
 			activeEncounter = encounter;
-			SceneGod.SInstance.EnterCombatState(activeEncounter);
+			SceneGod.SInstance.EnterCombatState(activeEncounter.GetEnemies());
 		}
 		else
 		{
@@ -37,7 +37,7 @@ public class EncounterManager : MonoBehaviour
 		{
 			//TODO::
 			print("change next scene");
-
+			activeEncounter.Encountered = true;
 		}
 		else
 		{
