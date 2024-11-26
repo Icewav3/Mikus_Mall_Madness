@@ -5,7 +5,9 @@ using UnityEngine;
 public class EncounterManager : MonoBehaviour
 {
 	private Encounter _activeEncounter; // Currently activated Encounter
-	[SerializeField] private LevelEncounters _levelEncounters;
+
+	[SerializeField] 
+	private LevelEncounters _levelEncounters;
 
 	/// <summary>
 	/// Enter Combat
