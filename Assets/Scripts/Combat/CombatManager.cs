@@ -51,7 +51,7 @@ public class CombatManager : MonoBehaviour
 	public void InitBattle(List<Character> enemies)
 	{
 		foreach (Targetable targetable in _targetableActors)
-		{ 
+		{
 			targetable.gameObject.SetActive(false);
 		}
 		_enemies = enemies;
@@ -59,10 +59,9 @@ public class CombatManager : MonoBehaviour
 
 		for (int i = 0; i < _enemies.Count; i++)
 		{
-			_targetableActors[i+4].gameObject.SetActive(true);
+			_targetableActors[i + 4].gameObject.SetActive(true);
 			_combatants.Add(_enemies[i]);
 			_targetableActors[i + 4].Actor.Init(_enemies[i]);
-			_targetableActors[i + 4].OnHover += _actionSelector.HandleTargetHover;
 			_targetableActors[i + 4].OnSelect += _actionSelector.HandleTargetSelection;
 		}
 		for (int i = 0; i < _playerParty.Count; i++)
@@ -70,7 +69,6 @@ public class CombatManager : MonoBehaviour
 			_targetableActors[i].gameObject.SetActive(true);
 			_combatants.Add(_playerParty[i]);
 			_targetableActors[i].Actor.Init(_playerParty[i]);
-			_targetableActors[i].OnHover += _actionSelector.HandleTargetHover;
 			_targetableActors[i].OnSelect += _actionSelector.HandleTargetSelection;
 		}
 
@@ -78,18 +76,17 @@ public class CombatManager : MonoBehaviour
 
 		NextTurn();
 	}
-	public void EndBattle()
+	public void EndBattle(bool victory)
 	{
 		for (int i = 0; i < _enemies.Count; i++)
 		{
-			_targetableActors[i + 4].OnHover -= _actionSelector.HandleTargetHover;
 			_targetableActors[i + 4].OnSelect -= _actionSelector.HandleTargetSelection;
 		}
 		for (int i = 0; i < _playerParty.Count; i++)
 		{
-			_targetableActors[i].OnHover -= _actionSelector.HandleTargetHover;
 			_targetableActors[i].OnSelect -= _actionSelector.HandleTargetSelection;
 		}
+		SceneGod.SInstance.EnterExploreState(victory);
 	}
 
 	//sorts the combatants based on their individual speed stats
@@ -124,9 +121,13 @@ public class CombatManager : MonoBehaviour
 		//call the end cycle method
 		if (_turnIndex == 0) EndCombatCycle();
 
-		if (_playerParty.FirstOrDefault(c => !c.IsDead) == null || _enemies.FirstOrDefault(c => !c.IsDead) == null)
+		if (_playerParty.FirstOrDefault(c => !c.IsDead) == null)
 		{
-			EndBattle();
+			EndBattle(false);
+		}
+		else if (_enemies.FirstOrDefault(c => !c.IsDead) == null)
+		{
+			EndBattle(true);
 		}
 		else
 		{

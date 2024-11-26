@@ -1,14 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Luka_VisualsController : MonoBehaviour
 {
-    [SerializeField]
+	[SerializeField]
 	private SpriteRenderer charSprite;
-    //[VFX]
-    
-    public void changeSortingLayerUP()
+	//[VFX]
+
+	public void changeSortingLayerUP()
 	{
 		charSprite.sortingLayerName = "CharacterInUse";
 		print("Called. Current Layer: " + charSprite.sortingLayerName);

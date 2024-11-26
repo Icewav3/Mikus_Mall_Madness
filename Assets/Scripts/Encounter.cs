@@ -7,13 +7,13 @@ using UnityEngine;
 public class Encounter : ScriptableObject
 {
 	[SerializeField] 
-	private List<CharacterBase> enemyBases;
+	private List<CharacterBase> _enemyBases;
 	public bool Encountered = false;
 
 	public List<Character> GetEnemies()
 	{
 		List<Character> enemies = new List<Character>();
-		foreach (CharacterBase enemyBase in enemyBases)
+		foreach (CharacterBase enemyBase in _enemyBases)
 		{
 			enemies.Add(new Character(enemyBase));
 		}

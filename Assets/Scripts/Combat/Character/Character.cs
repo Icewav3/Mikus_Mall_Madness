@@ -27,6 +27,10 @@ public class Character
 	public event Action<Character, int> OnStaminaDeplete;
 	public event Action<Character, int> OnStaminaGain;
 
+	public event Action<Character, ActionAnimType> OnAnimationStart;
+	public event Action<Character> OnActionPerformed;
+	public event Action<Character> OnTurnEnd;
+
 	private CharacterBase _characterBase;
 	public CharacterBase Base => _characterBase;
 
@@ -34,6 +38,8 @@ public class Character
 	public ReadOnlyCollection<CombatAction> CombatActions => _characterBase.CombatActions;
 
 	public bool IsEnemy => Base.IsEnemy;
+
+	public string Name => Base.Name;
 
 	// primarily used to ensure multi-targeting attacks don't target dead characters
 	///<summary>
@@ -231,6 +237,24 @@ public class Character
 		OnStaminaGain?.Invoke(this, gainedStamina);
 	}
 	#endregion
+
+	public void StartAnimation(ActionAnimType animType)
+	{
+		OnAnimationStart?.Invoke(this, animType);
+	}
+	public void PerformAction()
+	{
+		OnActionPerformed?.Invoke(this);
+	}
+	public void EndTurn()
+	{
+		OnTurnEnd?.Invoke(this);
+	}
+
+	public override string ToString()
+	{
+		return Name;
+	}
 }
 
 ///<summary>

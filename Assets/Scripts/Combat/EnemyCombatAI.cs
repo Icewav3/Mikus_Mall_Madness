@@ -18,10 +18,13 @@ public class EnemyCombatAI : MonoBehaviour
 	private Character _character;
 
 	private CombatAction _action;
+	public CombatAction Action => _action;
 	private Character _target;
+	public Character Target => _target;
 
 	public void HandleEnemyAction(Character character, List<Character> allies, List<Character> opponents)
 	{
+		_target = null;
 		_allies = allies;
 		_opponents = opponents;
 		_character = character;
@@ -66,7 +69,6 @@ public class EnemyCombatAI : MonoBehaviour
 			// target random
 			_target = _allies[Random.Range(0, _allies.Count)];
 		}
-		_action.Perform(_character, _target, _opponents, _allies);
 	}
 
 	private void TargetOpponent()
@@ -90,6 +92,5 @@ public class EnemyCombatAI : MonoBehaviour
 		{
 			_target = _opponents[Random.Range(0, _opponents.Count)];
 		}
-		_action.Perform(_character, _target, _opponents, _allies);
 	}
 }
