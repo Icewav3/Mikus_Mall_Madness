@@ -46170,8 +46170,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81580be87febefe489acb04414649156, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  charSprite: {fileID: 1525024317615652210}
-  charSprite2: {fileID: 6167755943249548079}
+  _animator: {fileID: 6186523960149298199}
+  _charSprite: {fileID: 1525024317615652210}
+  _charSprite2: {fileID: 6167755943249548079}
 --- !u!1 &8256674633851607268
 GameObject:
   m_ObjectHideFlags: 0
