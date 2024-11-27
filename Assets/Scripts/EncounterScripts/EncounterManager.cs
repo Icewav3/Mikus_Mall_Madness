@@ -9,6 +9,11 @@ public class EncounterManager : MonoBehaviour
 	[SerializeField] 
 	private LevelEncounters _levelEncounters;
 
+	private void Awake()
+	{
+		OnEncounterComplete();
+	}
+
 	/// <summary>
 	/// Enter Combat
 	/// </summary>
@@ -30,7 +35,7 @@ public class EncounterManager : MonoBehaviour
 	/// <summary>
 	/// Finish Combat
 	/// </summary>
-	public void OnEncounterComplete()
+	private void OnEncounterComplete()
 	{
 		if (SceneGod.SInstance.WonLastBattle)
 		{
