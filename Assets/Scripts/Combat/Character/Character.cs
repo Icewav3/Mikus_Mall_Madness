@@ -255,6 +255,55 @@ public class Character
 	{
 		return Name;
 	}
+
+	#region Status Effects
+	private List<StatusEffect> _statuses = new();
+
+	public void ApplyStatus(StatusEffect statusEffect)
+	{
+		StatusEffect existingMatch = _statuses.FirstOrDefault(s => s.Equals(statusEffect));
+		if(existingMatch != null)
+		{
+			if(statusEffect.Duration > existingMatch.Duration)
+			{
+				existingMatch.SetDuration(statusEffect.Duration);
+			}
+		}
+		else
+		{
+			_statuses.Add(statusEffect);
+			foreach(StatBoost boost in statusEffect.StatBoosts)
+			{
+				_activeStatBoosts.Add(boost);
+			}
+		}
+	}
+
+	public void UpdateStatuses()
+	{
+		foreach(StatusEffect statusEffect in _statuses)
+		{
+			foreach(StatusEffectProc proc in statusEffect.Procs)
+			{
+				proc.Proc(this);
+			}
+			statusEffect.DecreaseDuration();
+		}
+
+		List<StatusEffect> expiredStatuses = _statuses.Where(s => s.Duration <= 0).ToList();
+		foreach(StatusEffect statusEffect in expiredStatuses)
+		{
+			foreach(StatBoost boost in statusEffect.StatBoosts)
+			{
+				StatBoost existingMatch = _activeStatBoosts.FirstOrDefault(s => s.Equals(boost));
+				if (existingMatch != null)
+				{
+					_activeStatBoosts.Remove(existingMatch);
+				}
+			}
+		}
+	}
+	#endregion
 }
 
 ///<summary>
