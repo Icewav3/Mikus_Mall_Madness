@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29001ba2747116b4b8f40430567f6b61, type: 3}
+  m_Name: JeffBase
+  m_EditorClassIdentifier: 
+  _name: Jeff
+  _visuals: {fileID: 3187822434954041856, guid: 34f494dad8c7890469e8a56d9f3b2696, type: 3}
+  _isEnemy: 1
+  _baseHealth: 50
+  _baseStamina: 50
+  _baseSpeed: 50
+  _baseDefense: 2
+  _combatActions:
+  - {fileID: 11400000, guid: 0175d8355f3ca8f4882424f3220d1e73, type: 2}
+  - {fileID: 11400000, guid: 3b809f4cbf2cb844099c12886382276f, type: 2}
+  - {fileID: 11400000, guid: 3ed775fd86c97314a9db16b5dcac6872, type: 2}
