@@ -140,12 +140,17 @@ public class Character
 	///  </para>
 	///  <para>Also broadcasts and event with the amount of health was gained.</para>
 	///</summary>
-	public void Damage(int damage)
+	public void Damage(int damage, bool ignoreDefense = false)
 	{
 		if (damage <= 0) return;
 
 		// calculate defense damage reduction (uses a formula that can be found here: https://riskofrain2.fandom.com/wiki/Armor)
-		float defenseMultiplier = 1 - Defense / (100 + Mathf.Abs(Defense));
+		float defenseMultiplier = 1;
+		if (!ignoreDefense)
+		{
+			defenseMultiplier = 1 - (Defense / (100 + Mathf.Abs(Defense)));
+		}
+
 		int appliedDamage = Mathf.FloorToInt(damage * defenseMultiplier);
 
 		_currentHealth -= appliedDamage;
@@ -262,9 +267,9 @@ public class Character
 	public void ApplyStatus(StatusEffect statusEffect)
 	{
 		StatusEffect existingMatch = _statuses.FirstOrDefault(s => s.Equals(statusEffect));
-		if(existingMatch != null)
+		if (existingMatch != null)
 		{
-			if(statusEffect.Duration > existingMatch.Duration)
+			if (statusEffect.Duration > existingMatch.Duration)
 			{
 				existingMatch.SetDuration(statusEffect.Duration);
 			}
@@ -272,7 +277,7 @@ public class Character
 		else
 		{
 			_statuses.Add(statusEffect);
-			foreach(StatBoost boost in statusEffect.StatBoosts)
+			foreach (StatBoost boost in statusEffect.StatBoosts)
 			{
 				_activeStatBoosts.Add(boost);
 			}
@@ -281,9 +286,9 @@ public class Character
 
 	public void UpdateStatuses()
 	{
-		foreach(StatusEffect statusEffect in _statuses)
+		foreach (StatusEffect statusEffect in _statuses)
 		{
-			foreach(StatusEffectProc proc in statusEffect.Procs)
+			foreach (StatusEffectProc proc in statusEffect.Procs)
 			{
 				proc.Proc(this);
 			}
@@ -291,17 +296,24 @@ public class Character
 		}
 
 		List<StatusEffect> expiredStatuses = _statuses.Where(s => s.Duration <= 0).ToList();
-		foreach(StatusEffect statusEffect in expiredStatuses)
+		foreach (StatusEffect statusEffect in expiredStatuses)
 		{
-			foreach(StatBoost boost in statusEffect.StatBoosts)
+			foreach (StatBoost boost in statusEffect.StatBoosts)
 			{
 				StatBoost existingMatch = _activeStatBoosts.FirstOrDefault(s => s.Equals(boost));
 				if (existingMatch != null)
 				{
-					_activeStatBoosts.Remove(existingMatch);
+					//use discard to void return value explicitly
+					_ = _activeStatBoosts.Remove(existingMatch);
 				}
 			}
 		}
+	}
+
+	public void ClearStatuses()
+	{
+		_statuses.Clear();
+		_activeStatBoosts.Clear();
 	}
 	#endregion
 }
