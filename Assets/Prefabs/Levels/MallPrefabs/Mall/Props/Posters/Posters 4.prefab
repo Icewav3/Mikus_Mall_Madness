@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5699821941712763212}
   - component: {fileID: 4469324576851364875}
   m_Layer: 0
-  m_Name: ChairProp 2
+  m_Name: Posters 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 1797194213
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: -687446759, guid: 10fd6559328bcc3488ca321a9e6f7f44, type: 3}
+  m_Sprite: {fileID: 912427368, guid: 603dee67876eeff4389998b96ea9164d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

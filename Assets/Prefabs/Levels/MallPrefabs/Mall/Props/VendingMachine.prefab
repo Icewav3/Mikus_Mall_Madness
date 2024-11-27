@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5699821941712763212}
   - component: {fileID: 4469324576851364875}
   m_Layer: 0
-  m_Name: WidePlantProp
+  m_Name: VendingMachine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 1797194213
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: -881949956, guid: 10fd6559328bcc3488ca321a9e6f7f44, type: 3}
+  m_Sprite: {fileID: -668694967, guid: 603dee67876eeff4389998b96ea9164d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -101,7 +101,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8235680438720610125
 Transform:
   m_ObjectHideFlags: 0
@@ -137,13 +137,13 @@ MonoBehaviour:
   m_SelfShadows: 1
   m_ApplyToSortingLayers: 00000000c9aebca2f39fcdfc3d541fa909a2ea8939c6cbc8db75095b814eca13f76ae061
   m_ShapePath:
-  - {x: 0.06643676, y: 0.018478546, z: 0}
-  - {x: 0.4108745, y: -0.13271365, z: 0}
-  - {x: -0.049622253, y: -0.34499362, z: 0}
-  - {x: -0.39451355, y: -0.19068018, z: 0}
-  m_ShapePathHash: 694631090
+  - {x: 0.20097494, y: -0.3489142, z: 0}
+  - {x: 0.49884176, y: -0.47940826, z: 0}
+  - {x: -0.22814411, y: -0.83657557, z: 0}
+  - {x: -0.5264646, y: -0.70296025, z: 0}
+  m_ShapePathHash: -1023910569
   m_Mesh: {fileID: 0}
-  m_InstanceId: 42124
+  m_InstanceId: 42178
   m_LocalBounds:
-    m_Center: {x: 0.008180469, y: -0.16325754, z: 0}
-    m_Extent: {x: 0.40269402, y: 0.18173608, z: 0}
+    m_Center: {x: -0.0138114095, y: -0.5927449, z: 0}
+    m_Extent: {x: 0.5126532, y: 0.24383068, z: 0}
