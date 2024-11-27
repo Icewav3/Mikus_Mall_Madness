@@ -86,6 +86,10 @@ public class CombatManager : MonoBehaviour
 		{
 			_targetableActors[i].OnSelect -= _actionSelector.HandleTargetSelection;
 		}
+		foreach (Character character in _playerParty)
+		{
+			character.ClearStatuses();
+		}
 		SceneGod.SInstance.EnterExploreState(victory);
 	}
 
@@ -145,7 +149,10 @@ public class CombatManager : MonoBehaviour
 	//marks the end of a full cycle through every combatant on the field
 	private void EndCombatCycle()
 	{
-		// NOTE: We might want more functionality here later
+		foreach (Character character in _combatants)
+		{
+			character.UpdateStatuses();
+		}
 		OnLoopEnd?.Invoke(this);
 	}
 }
