@@ -258,7 +258,7 @@ public class Character
 			_statuses.Add(statusEffect);
 			foreach (StatBoost boost in statusEffect.StatBoosts)
 			{
-				_activeStatBoosts.Add(boost);
+				ActiveStatBoosts.Add(boost);
 			}
 		}
 	}
@@ -283,7 +283,7 @@ public class Character
 				if (existingMatch != null)
 				{
 					//use discard to void return value explicitly
-					_ = _activeStatBoosts.Remove(existingMatch);
+					_ = ActiveStatBoosts.Remove(existingMatch);
 				}
 			}
 		}
@@ -292,7 +292,7 @@ public class Character
 	public void ClearStatuses()
 	{
 		_statuses.Clear();
-		_activeStatBoosts.Clear();
+		ActiveStatBoosts.Clear();
 	}
 	#endregion
 }
