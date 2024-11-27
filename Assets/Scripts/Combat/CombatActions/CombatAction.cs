@@ -3,7 +3,7 @@ using System.Collections.ObjectModel;
 
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Combat Action", menuName = "")]
+[CreateAssetMenu(fileName = "Combat Action", menuName = "ScriptableObjects/Combat Action")]
 public class CombatAction : ScriptableObject
 {
 	[SerializeField]

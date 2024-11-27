@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Damage Target", menuName = "Action Effects/Damage Target")]
+[CreateAssetMenu(fileName = "Damage Target", menuName = "ScriptableObjects/Action Effects/Damage Target")]
 public class DamageTargetEffect : ActionEffect
 {
 	[SerializeField]

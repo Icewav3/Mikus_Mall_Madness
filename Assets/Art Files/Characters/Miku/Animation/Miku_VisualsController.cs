@@ -3,41 +3,41 @@ using UnityEngine;
 public class Miku_VisualsController : VisualsController
 {
 	[SerializeField]
-	private SpriteRenderer charSprite;
+	private SpriteRenderer _charSprite;
 	//[VFX]
 	[SerializeField]
-	private ParticleSystem stageLights;
+	private ParticleSystem _stageLights;
 	[SerializeField]
-	private ParticleSystem tinySparks;
+	private ParticleSystem _tinySparks;
 	[SerializeField]
-	private ParticleSystem afterSparks;
+	private ParticleSystem _afterSparks;
 	[SerializeField]
-	private ParticleSystem shockwave;
+	private ParticleSystem _shockwave;
 
 	public void ult_StageLights()
 	{
-		stageLights.Play();
+		_stageLights.Play();
 	}
 
 	public void ult_Burst()
 	{
-		tinySparks.Play();
-		shockwave.Play();
+		_tinySparks.Play();
+		_shockwave.Play();
 	}
 
 	public void atk2_afterSparks()
 	{
-		afterSparks.Play();
+		_afterSparks.Play();
 	}
 
 	public void changeSortingLayerUP()
 	{
-		charSprite.sortingLayerName = "CharacterInUse";
-		print("Called. Current Layer: " + charSprite.sortingLayerName);
+		_charSprite.sortingLayerName = "CharacterInUse";
+		print("Called. Current Layer: " + _charSprite.sortingLayerName);
 	}
 	public void changeSortingLayerDOWN()
 	{
-		charSprite.sortingLayerName = "Characters";
-		print("Called. Current Layer: " + charSprite.sortingLayerName);
+		_charSprite.sortingLayerName = "Characters";
+		print("Called. Current Layer: " + _charSprite.sortingLayerName);
 	}
 }
