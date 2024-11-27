@@ -3,7 +3,7 @@ using System.Collections.ObjectModel;
 
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Combat Action", menuName = "")]
+[CreateAssetMenu(fileName = "Combat Action", menuName = "ScriptableObjects/Combat Action")]
 public class CombatAction : ScriptableObject
 {
 	[SerializeField]
@@ -43,9 +43,11 @@ public class CombatAction : ScriptableObject
 
 public enum ActionAnimType
 {
-	Attack,
+	Attack1,
+	Attack2,
 	Status,
-	Defend
+	Defend,
+	Signature
 }
 
 public enum ActionBehaviourType

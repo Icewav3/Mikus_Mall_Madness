@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ParticleFunction : MonoBehaviour
@@ -13,9 +11,9 @@ public class ParticleFunction : MonoBehaviour
 
 	// Start is called before the first frame update
 	void Start()
-    {
-        
-    }
+	{
+
+	}
 
 	public void atkNormalEmit()
 	{

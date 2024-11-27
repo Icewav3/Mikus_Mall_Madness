@@ -7,7 +7,7 @@ using UnityEngine;
 ///  Class that stores and manages a list of <see cref="Character"/>s.
 ///  Persists between scenes because it is a <see cref="ScriptableObject"/>.
 ///</summary>
-[CreateAssetMenu(fileName = "Party Manager", menuName = "Characters/Party Manager")]
+[CreateAssetMenu(fileName = "Party Manager", menuName = "ScriptableObjects/Characters/Party Manager")]
 public class PartyManager : ScriptableObject
 {
 	private List<Character> _members = new();

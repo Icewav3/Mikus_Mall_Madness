@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 
 using UnityEngine;
@@ -6,8 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class SceneGod : MonoBehaviour
 {
-	[SerializeField] private string exploreScene;
-	[SerializeField] private string combatScene;
+	[SerializeField]
+	private string _exploreScene;
+	[SerializeField]
+	private string _combatScene;
 	public static SceneGod SInstance { get; private set; }
 	public List<Character> EnemyCharacters;
 	public bool WonLastBattle { get; private set; } = false;
@@ -30,19 +31,14 @@ public class SceneGod : MonoBehaviour
 		{
 			if (SInstance.gameObject.scene.buildIndex != gameObject.scene.buildIndex)
 			{
-				Destroy(this.gameObject);
+				Destroy(gameObject);
 			}
 		}
 		else
 		{
 			SInstance = this;
-			DontDestroyOnLoad(this.gameObject);
+			DontDestroyOnLoad(gameObject);
 		}
-	}
-
-	void Start()
-	{
-		//EnterCombatState(); testing
 	}
 
 	/// <summary>
@@ -57,8 +53,8 @@ public class SceneGod : MonoBehaviour
 		if (_currentState != GameState.Combat)
 		{
 			EnemyCharacters = characters;
-			_currentState   = GameState.Combat;
-			SceneManager.LoadScene(combatScene);
+			_currentState = GameState.Combat;
+			SceneManager.LoadScene(_combatScene);
 		}
 		else
 		{
@@ -79,7 +75,7 @@ public class SceneGod : MonoBehaviour
 		{
 			WonLastBattle = victory;
 			_currentState = GameState.Explore;
-			SceneManager.LoadScene(exploreScene);
+			SceneManager.LoadScene(_exploreScene);
 		}
 		else
 		{

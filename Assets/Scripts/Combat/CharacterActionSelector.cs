@@ -19,9 +19,11 @@ public class CharacterActionSelector : MonoBehaviour
 	private EnemyCombatAI _enemyCombatAI;
 
 	private CombatAction _nextAction;
+	private Character _target;
 	private Character _currentCharacter;
 	private List<Character> _allies;
 	private List<Character> _opponents;
+	private bool _canPickTarget = false;
 
 	private void OnEnable()
 	{
@@ -40,35 +42,56 @@ public class CharacterActionSelector : MonoBehaviour
 	///</summary>
 	public void StartSelection(Character character, List<Character> allies, List<Character> opponents)
 	{
+		_canPickTarget = false;
 		_currentCharacter = character;
+		_currentCharacter.OnActionPerformed += HandlePerformAction;
+		_currentCharacter.OnTurnEnd += EndTurn;
 		_allies = allies;
 		_opponents = opponents;
 		//do different things depending on whether the character passed in is an enemy
 		if (character.IsEnemy)
 		{
 			_enemyCombatAI.HandleEnemyAction(character, allies, opponents);
-			OnTurnComplete?.Invoke(this);
-			print("Enemy HP: " + character.CurrentHealth);
+			_nextAction = _enemyCombatAI.Action;
+			_target = _enemyCombatAI.Target;
+			_currentCharacter.StartAnimation(_nextAction.AnimType);
 		}
 		else
 		{
 			_buttonManager.Populate(character.CombatActions.ToList());
 		}
 	}
-	public void HandleTargetHover(Targetable targetable, Character character)
+
+	private void HandlePerformAction(Character character)
 	{
+		_currentCharacter.OnActionPerformed -= HandlePerformAction;
+		_nextAction.Perform(_currentCharacter, _target, _opponents, _allies);
+		_nextAction = null;
+	}
+	private void EndTurn(Character character)
+	{
+		_currentCharacter.OnTurnEnd -= EndTurn;
+		OnTurnComplete?.Invoke(this);
 	}
 	//recieves and processes a target for the given character's chosen action
-	public void HandleTargetSelection(Targetable targetable, Character target)
+	public void HandleTargetSelection(Targetable _, Character target)
 	{
-		_nextAction.Perform(_currentCharacter, target, _opponents, _allies);
+		if (!_canPickTarget) return;
+
+		bool validSelection =
+			(_allies.Contains(target) && _nextAction.TargetAllies) ||
+			(_opponents.Contains(target) && !_nextAction.TargetAllies);
+		if (!validSelection) return;
+
+		_canPickTarget = false;
+		_target = target;
+		_currentCharacter.StartAnimation(_nextAction.AnimType);
 		_buttonManager.DeInit();
-		OnTurnComplete?.Invoke(this);
-		print("Player Character HP: " + _currentCharacter.CurrentHealth);
 	}
 	//handles the player's selected combat action
 	private void HandleAction(CombatButtonManager buttonManager, CombatAction action)
 	{
+		_canPickTarget = true;
 		_nextAction = action;
 	}
 }

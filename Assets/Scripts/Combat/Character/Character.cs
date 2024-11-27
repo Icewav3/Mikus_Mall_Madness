@@ -13,10 +13,10 @@ public class Character
 {
 	public Character(CharacterBase characterBase)
 	{
-		_characterBase = characterBase;
+		Base = characterBase;
 
-		_currentHealth = MaxHealth;
-		_currentStamina = MaxStamina;
+		CurrentHealth = MaxHealth;
+		CurrentStamina = MaxStamina;
 	}
 	public event Action<Character> OnDeath;
 
@@ -27,13 +27,18 @@ public class Character
 	public event Action<Character, int> OnStaminaDeplete;
 	public event Action<Character, int> OnStaminaGain;
 
-	private CharacterBase _characterBase;
-	public CharacterBase Base => _characterBase;
+	public event Action<Character, ActionAnimType> OnAnimationStart;
+	public event Action<Character> OnActionPerformed;
+	public event Action<Character> OnTurnEnd;
+
+	public CharacterBase Base { get; private set; }
 
 	// shorthand variable to expose the character base's actions
-	public ReadOnlyCollection<CombatAction> CombatActions => _characterBase.CombatActions;
+	public ReadOnlyCollection<CombatAction> CombatActions => Base.CombatActions;
 
 	public bool IsEnemy => Base.IsEnemy;
+
+	public string Name => Base.Name;
 
 	// primarily used to ensure multi-targeting attacks don't target dead characters
 	///<summary>
@@ -42,34 +47,17 @@ public class Character
 	public bool IsDead { get; private set; } = false;
 
 	#region Stats
-	private List<StatBoost> _activeStatBoosts = new List<StatBoost>();
-	public List<StatBoost> ActiveStatBoosts => _activeStatBoosts;
+	public List<StatBoost> ActiveStatBoosts { get; private set; } = new List<StatBoost>();
+	public int CurrentHealth { get; private set; }
+	public int CurrentStamina { get; private set; }
 
-	private int _currentHealth;
-	public int CurrentHealth => _currentHealth;
+	public int MaxHealth => Mathf.FloorToInt(ApplyStatBoosts(Base.BaseHealth, StatTypes.MaxHealth));
 
-	private int _currentStamina;
-	public int CurrentStamina => _currentStamina;
+	public int MaxStamina => Mathf.FloorToInt(ApplyStatBoosts(Base.BaseStamina, StatTypes.MaxStamina));
 
-	public int MaxHealth
-	{
-		get { return Mathf.FloorToInt(ApplyStatBoosts(Base.BaseHealth, StatTypes.MaxHealth)); }
-	}
+	public int Speed => Mathf.FloorToInt(ApplyStatBoosts(Base.BaseSpeed, StatTypes.Speed));
 
-	public int MaxStamina
-	{
-		get { return Mathf.FloorToInt(ApplyStatBoosts(Base.BaseStamina, StatTypes.MaxStamina)); }
-	}
-
-	public int Speed
-	{
-		get { return Mathf.FloorToInt(ApplyStatBoosts(Base.BaseSpeed, StatTypes.Speed)); }
-	}
-
-	public int Defense
-	{
-		get { return Mathf.FloorToInt(ApplyStatBoosts(Base.BaseDefense, StatTypes.Defense)); }
-	}
+	public int Defense => Mathf.FloorToInt(ApplyStatBoosts(Base.BaseDefense, StatTypes.Defense));
 
 	// attack is used as a MULTIPLIER to damage dealt.
 	// this is slightly weird with the way stat boosts are handled,
@@ -77,10 +65,7 @@ public class Character
 	// sorry!! -cate (we tried to find a way around this but gave up)
 	private float _attack = 1;
 	///<returns>A multiplier for how much damage should be dealt by the character.</returns>
-	public float Attack
-	{
-		get { return ApplyStatBoosts(_attack, StatTypes.Attack); }
-	}
+	public float Attack => ApplyStatBoosts(_attack, StatTypes.Attack);
 
 	///<param name="baseValue">The base value the stat to be modified</param>
 	///<param name="statType">The type of stat to look for in modifiers.</param>
@@ -134,24 +119,29 @@ public class Character
 	///  </para>
 	///  <para>Also broadcasts and event with the amount of health was gained.</para>
 	///</summary>
-	public void Damage(int damage)
+	public void Damage(int damage, bool ignoreDefense = false)
 	{
 		if (damage <= 0) return;
 
-		// calculate defense damage reduction (uses a formula that can be found here: https://riskofrain2.fandom.com/wiki/Armor)
-		float defenseMultiplier = 1 - Defense / (100 + Mathf.Abs(Defense));
+		// calculate defense damage reduction (uses a formula that can be found here: https://riskofrain2.fandom.com/wiki/Armor
+		float defenseMultiplier = 1;
+		if (!ignoreDefense)
+		{
+			defenseMultiplier = 1 - (Defense / (100 + Mathf.Abs(Defense)));
+		}
+    
 		int appliedDamage = Mathf.FloorToInt(damage * defenseMultiplier);
 
-		_currentHealth -= appliedDamage;
+		CurrentHealth -= appliedDamage;
 
-		OnDamage?.Invoke(this, new DamageEvent(appliedDamage, damage));
-
-		if (_currentHealth <= 0)
+		if (CurrentHealth <= 0)
 		{
-			_currentHealth = 0;
+			CurrentHealth = 0;
 			IsDead = true;
 			OnDeath?.Invoke(this);
 		}
+		OnDamage?.Invoke(this, new DamageEvent(appliedDamage, damage));
+
 	}
 
 	///<param name="heal">
@@ -170,14 +160,14 @@ public class Character
 		int appliedHeal = heal;
 
 		// do not allow overhealing
-		if (_currentHealth + heal > MaxHealth)
+		if (CurrentHealth + heal > MaxHealth)
 		{
-			appliedHeal = MaxHealth - _currentHealth;
-			_currentHealth = MaxHealth;
+			appliedHeal = MaxHealth - CurrentHealth;
+			CurrentHealth = MaxHealth;
 		}
 		else
 		{
-			_currentHealth += heal;
+			CurrentHealth += heal;
 		}
 
 		OnHeal?.Invoke(this, appliedHeal);
@@ -197,7 +187,7 @@ public class Character
 		// TODO: Add check to prevent stamina from becoming negative
 		if (stamina <= 0) return;
 
-		_currentStamina -= stamina;
+		CurrentStamina -= stamina;
 
 		OnStaminaDeplete?.Invoke(this, stamina);
 	}
@@ -218,17 +208,91 @@ public class Character
 		int gainedStamina = stamina;
 
 		// do not allow stamina gain past the maximum
-		if (_currentStamina + stamina > MaxStamina)
+		if (CurrentStamina + stamina > MaxStamina)
 		{
-			gainedStamina = MaxStamina - _currentStamina;
-			_currentStamina = MaxStamina;
+			gainedStamina = MaxStamina - CurrentStamina;
+			CurrentStamina = MaxStamina;
 		}
 		else
 		{
-			_currentStamina += stamina;
+			CurrentStamina += stamina;
 		}
 
 		OnStaminaGain?.Invoke(this, gainedStamina);
+	}
+	#endregion
+
+	public void StartAnimation(ActionAnimType animType)
+	{
+		OnAnimationStart?.Invoke(this, animType);
+	}
+	public void PerformAction()
+	{
+		OnActionPerformed?.Invoke(this);
+	}
+	public void EndTurn()
+	{
+		OnTurnEnd?.Invoke(this);
+	}
+
+	public override string ToString()
+	{
+		return Name;
+	}
+
+	#region Status Effects
+	private List<StatusEffect> _statuses = new();
+
+	public void ApplyStatus(StatusEffect statusEffect)
+	{
+		StatusEffect existingMatch = _statuses.FirstOrDefault(s => s.Equals(statusEffect));
+		if (existingMatch != null)
+		{
+			if (statusEffect.Duration > existingMatch.Duration)
+			{
+				existingMatch.SetDuration(statusEffect.Duration);
+			}
+		}
+		else
+		{
+			_statuses.Add(statusEffect);
+			foreach (StatBoost boost in statusEffect.StatBoosts)
+			{
+				_activeStatBoosts.Add(boost);
+			}
+		}
+	}
+
+	public void UpdateStatuses()
+	{
+		foreach (StatusEffect statusEffect in _statuses)
+		{
+			foreach (StatusEffectProc proc in statusEffect.Procs)
+			{
+				proc.Proc(this);
+			}
+			statusEffect.DecreaseDuration();
+		}
+
+		List<StatusEffect> expiredStatuses = _statuses.Where(s => s.Duration <= 0).ToList();
+		foreach (StatusEffect statusEffect in expiredStatuses)
+		{
+			foreach (StatBoost boost in statusEffect.StatBoosts)
+			{
+				StatBoost existingMatch = _activeStatBoosts.FirstOrDefault(s => s.Equals(boost));
+				if (existingMatch != null)
+				{
+					//use discard to void return value explicitly
+					_ = _activeStatBoosts.Remove(existingMatch);
+				}
+			}
+		}
+	}
+
+	public void ClearStatuses()
+	{
+		_statuses.Clear();
+		_activeStatBoosts.Clear();
 	}
 	#endregion
 }

@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Heal Party", menuName = "Action Effects/Heal Party")]
+[CreateAssetMenu(fileName = "Heal Party", menuName = "ScriptableObjects/Action Effects/Heal Party")]
 public class HealPartyEffect : ActionEffect
 {
 	[SerializeField]

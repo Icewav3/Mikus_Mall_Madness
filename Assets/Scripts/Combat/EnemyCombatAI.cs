@@ -17,11 +17,12 @@ public class EnemyCombatAI : MonoBehaviour
 	private List<CombatAction> _combatActions;
 	private Character _character;
 
-	private CombatAction _action;
-	private Character _target;
+	public CombatAction Action { get; private set; }
+	public Character Target { get; private set; }
 
 	public void HandleEnemyAction(Character character, List<Character> allies, List<Character> opponents)
 	{
+		Target = null;
 		_allies = allies;
 		_opponents = opponents;
 		_character = character;
@@ -29,7 +30,7 @@ public class EnemyCombatAI : MonoBehaviour
 		// Get list of available actions
 		_combatActions = _character.CombatActions.ToList();
 
-		_action = _combatActions[Random.Range(0, _combatActions.Count)];
+		Action = _combatActions[Random.Range(0, _combatActions.Count)];
 
 		HandleEnemyTarget();
 	}
@@ -39,7 +40,7 @@ public class EnemyCombatAI : MonoBehaviour
 		// 1. check actions
 		// 2. target alley or opponent based on action type
 
-		if (_action.TargetAllies) { TargetAlly(); }
+		if (Action.TargetAllies) { TargetAlly(); }
 		else { TargetOpponent(); }
 	}
 
@@ -50,23 +51,22 @@ public class EnemyCombatAI : MonoBehaviour
 
 		//
 		// heal
-		if (_action.BehaviourTypes.Contains(ActionBehaviourType.Heal))
+		if (Action.BehaviourTypes.Contains(ActionBehaviourType.Heal))
 		{
 			_allies.Sort((c1, c2) => c2.CurrentHealth - c1.CurrentHealth);
-			_target = _allies[0];
+			Target = _allies[0];
 		}
 		// buff
-		else if (_action.BehaviourTypes.Contains(ActionBehaviourType.Buff))
+		else if (Action.BehaviourTypes.Contains(ActionBehaviourType.Buff))
 		{
 			// TODO: add more brain cells later
-			_target = _allies[Random.Range(0, _allies.Count)];
+			Target = _allies[Random.Range(0, _allies.Count)];
 		}
 		else
 		{
 			// target random
-			_target = _allies[Random.Range(0, _allies.Count)];
+			Target = _allies[Random.Range(0, _allies.Count)];
 		}
-		_action.Perform(_character, _target, _opponents, _allies);
 	}
 
 	private void TargetOpponent()
@@ -75,21 +75,20 @@ public class EnemyCombatAI : MonoBehaviour
 		// Attack: target alive opponents at random
 		// Debuff: target opponents without debuff at random
 		// attack
-		if (_action.BehaviourTypes.Contains(ActionBehaviourType.Attack))
+		if (Action.BehaviourTypes.Contains(ActionBehaviourType.Attack))
 		{
 			_opponents.Sort((c1, c2) => c2.CurrentHealth - c1.CurrentHealth);
-			_target = _opponents[0];
+			Target = _opponents[0];
 		}
 		// debuff
-		else if (_action.BehaviourTypes.Contains(ActionBehaviourType.Debuff))
+		else if (Action.BehaviourTypes.Contains(ActionBehaviourType.Debuff))
 		{
 			// TODO: add more brain cells later
-			_target = _opponents[Random.Range(0, _opponents.Count)];
+			Target = _opponents[Random.Range(0, _opponents.Count)];
 		}
 		else
 		{
-			_target = _opponents[Random.Range(0, _opponents.Count)];
+			Target = _opponents[Random.Range(0, _opponents.Count)];
 		}
-		_action.Perform(_character, _target, _opponents, _allies);
 	}
 }
