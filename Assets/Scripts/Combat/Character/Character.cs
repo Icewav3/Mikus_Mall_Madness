@@ -279,7 +279,7 @@ public class Character
 		{
 			foreach (StatBoost boost in statusEffect.StatBoosts)
 			{
-				StatBoost existingMatch = _activeStatBoosts.FirstOrDefault(s => s.Equals(boost));
+				StatBoost existingMatch = ActiveStatBoosts.FirstOrDefault(s => s.Equals(boost));
 				if (existingMatch != null)
 				{
 					//use discard to void return value explicitly
