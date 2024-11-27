@@ -11,6 +11,9 @@ public class CombatButtonManager : MonoBehaviour
 	[SerializeField]
 	private List<CombatButton> _buttons = new();
 	private List<CombatAction> _actions = new();
+
+	[SerializeField]
+	private DisplayTooltip _tooltip;
 	///<summary>
 	///  <para>Event that is broadcast when an action as been selected.</para>
 	///  <para>Passes itself and the selected <see cref="CombatAction"/>.</para>
@@ -22,6 +25,7 @@ public class CombatButtonManager : MonoBehaviour
 	///</summary>
 	public void Populate(List<CombatAction> combatActions)
 	{
+		_tooltip.gameObject.SetActive(false);
 		foreach (CombatButton button in _buttons)
 		{
 			button.gameObject.SetActive(false);
@@ -39,6 +43,7 @@ public class CombatButtonManager : MonoBehaviour
 	///</summary>
 	public void DeInit()
 	{
+		_tooltip.gameObject.SetActive(false);
 		foreach (CombatButton button in _buttons)
 		{
 			button.gameObject.SetActive(false);
@@ -48,5 +53,17 @@ public class CombatButtonManager : MonoBehaviour
 	public void SelectAction(int actionIndex)
 	{
 		OnActionSelected?.Invoke(this, _actions[actionIndex]);
+	}
+
+	public void DisplayTooltip(int actionIndex)
+	{
+		_tooltip.gameObject.SetActive(true);
+		_tooltip.DescriptionText.text = _actions[actionIndex].Description;
+		_tooltip.StaminaCostText.text = $"Stamina Cost: {_actions[actionIndex].StaminaCost}";
+	}
+
+	public void HideTooltip()
+	{
+		_tooltip.gameObject.SetActive(false);
 	}
 }
