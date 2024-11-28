@@ -23,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
 	{
 		Vector2 moveDir = (_mousePos - (Vector2)transform.position).normalized;
 
-		if (_mouseClicked && Vector2.Distance((Vector2)_mousePos, (Vector2)transform.position) > _mouseDeadZone)
+		if (_mouseClicked && Vector2.Distance(_mousePos, (Vector2)transform.position) > _mouseDeadZone)
 		{
 			_rb.velocity = moveDir * _moveSpeed;
 		}
