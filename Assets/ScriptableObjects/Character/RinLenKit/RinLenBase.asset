@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 29001ba2747116b4b8f40430567f6b61, type: 3}
-  m_Name: 1 RinLenBase
+  m_Name: RinLenBase
   m_EditorClassIdentifier: 
   _name: Rin & Len
   _visuals: {fileID: 5359356989845632272, guid: 55c072fd8fdd4cd428fcec2173705de7, type: 3}
