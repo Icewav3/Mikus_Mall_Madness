@@ -100,12 +100,12 @@ TextureImporter:
       name: Mall_Props_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 189
-        width: 98
-        height: 64
+        x: 0
+        y: 200
+        width: 51
+        height: 53
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -121,12 +121,12 @@ TextureImporter:
       name: Mall_Props_2
       rect:
         serializedVersion: 2
-        x: 106
-        y: 197
+        x: 104
+        y: 201
         width: 52
-        height: 55
+        height: 53
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -134,6 +134,510 @@ TextureImporter:
       bones: []
       spriteID: fb0d3acb7cbe1f64789343753de7cb35
       internalID: -364726572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mall_Props_1
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 200
+        width: 49
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a2699896a04d2c41bba4133dd06714e
+      internalID: -131901758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mall_Props_3
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 201
+        width: 50
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 569af58314fe3d94ab3dc14a5620590e
+      internalID: 746102391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mall_Props_4
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 201
+        width: 48
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b35f8a0b4406294f8df465050cfcd6d
+      internalID: -448495422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mall_Props_5
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 155
+        width: 33
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbade960b7b766b4783fd6e64444ff7b
+      internalID: -1899756131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mall_Props_6
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 155
+        width: 29
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4013f98039d6b1144bdda336c27f111e
+      internalID: 1096649903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mall_Props_7
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 155
+        width: 27
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a4d7e3c309c9b843a805d7d9b31f1f4
+      internalID: -142421115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mall_Props_8
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 156
+        width: 32
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8b947737634c5248910385b1f857f92
+      internalID: 310169738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mall_Props_9
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 101
+        width: 17
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2ecc26b35b24dc41b8938d7b7f01e3d
+      internalID: 30666146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mall_Props_10
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 101
+        width: 15
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd1f12195fe23a74d80bc2e1878ea97d
+      internalID: 2044709861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mall_Props_11
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 101
+        width: 16
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45e5738671b58f44480570175b2fba53
+      internalID: -1979467614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mall_Props_12
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 115
+        width: 29
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d9e6c1f0bd9d174b8e6e4720a72cf75
+      internalID: 609530834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mall_Props_13
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 106
+        width: 42
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec5cb61722053804aa62af8d94d13ee8
+      internalID: -949893025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mall_Props_14
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 73
+        width: 46
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1cb6f7ec846eaa46a3a0aec451a90ca
+      internalID: -687334811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mall_Props_15
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 79
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 675c9b42f5f33e64b9b79b8b05af2783
+      internalID: 2049073134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mall_Props_16
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 83
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71a9918550a2c1e40bfeee449727c76e
+      internalID: -1280142505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mall_Props_17
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 74
+        width: 6
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9135ca2710c46c14a97be2cc82915aa1
+      internalID: 254914750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mall_Props_18
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 82
+        width: 4
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b51b4fceff72b94c8ff88fc51c62287
+      internalID: 502222604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mall_Props_19
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 24
+        width: 57
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41b27a6e7f0000d4db0d9b783af7650e
+      internalID: -1323911743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mall_Props_20
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 24
+        width: 57
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ea8dfdbf1d11914eb34e6396d11763e
+      internalID: -1699297638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mall_Props_21
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 96
+        width: 40
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22a8a4aeb56fa8f488f0d539c537b989
+      internalID: -1554161411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mall_Props_22
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 96
+        width: 38
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f4010c7876a41d4780c945e82a13901
+      internalID: -1297779765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mall_Props_23
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 154
+        width: 33
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d4e6d3a94c3cbf48a53860bb4229c98
+      internalID: -1428524774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mall_Props_24
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 155
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba388eb01f0475e4e99970a478da3238
+      internalID: -501447041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mall_Props_25
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 155
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18210523d39876e40a8a954016037f52
+      internalID: -1801871375
       vertices: []
       indices: 
       edges: []
@@ -153,7 +657,30 @@ TextureImporter:
     nameFileIdTable:
       Mall_Props_0: 418800995
       Mall_Props_1: -131901758
+      Mall_Props_10: 2044709861
+      Mall_Props_11: -1979467614
+      Mall_Props_12: 609530834
+      Mall_Props_13: -949893025
+      Mall_Props_14: -687334811
+      Mall_Props_15: 2049073134
+      Mall_Props_16: -1280142505
+      Mall_Props_17: 254914750
+      Mall_Props_18: 502222604
+      Mall_Props_19: -1323911743
       Mall_Props_2: -364726572
+      Mall_Props_20: -1699297638
+      Mall_Props_21: -1554161411
+      Mall_Props_22: -1297779765
+      Mall_Props_23: -1428524774
+      Mall_Props_24: -501447041
+      Mall_Props_25: -1801871375
+      Mall_Props_3: 746102391
+      Mall_Props_4: -448495422
+      Mall_Props_5: -1899756131
+      Mall_Props_6: 1096649903
+      Mall_Props_7: -142421115
+      Mall_Props_8: 310169738
+      Mall_Props_9: 30666146
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
