@@ -1176,6 +1176,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CombatSceneGrid
       objectReference: {fileID: 0}
+    - target: {fileID: 9129848141420875168, guid: 30fd0ca07e203c749a69e881bcb8a1a0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
