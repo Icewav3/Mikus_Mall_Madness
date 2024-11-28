@@ -5,6 +5,15 @@ public class Luka_VisualsController : MonoBehaviour
 	[SerializeField]
 	private SpriteRenderer _charSprite;
 	//[VFX]
+	[SerializeField]
+	private ParticleSystem _ultInitialSpin;
+	[SerializeField]
+	private ParticleSystem _ultBigSpin;
+
+	public void ultPhase1Spin()
+	{
+		_ultInitialSpin.Emit(3);
+	}
 
 	public void changeSortingLayerUP()
 	{
