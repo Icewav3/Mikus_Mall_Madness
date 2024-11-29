@@ -155,7 +155,7 @@ public class Character
 	///</summary>
 	public void Heal(int heal)
 	{
-		if (heal <= 0) return;
+		if (heal <= 0 || CurrentHealth == MaxHealth) return;
 
 		int appliedHeal = heal;
 
