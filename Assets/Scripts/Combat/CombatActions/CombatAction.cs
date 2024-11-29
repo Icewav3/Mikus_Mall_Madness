@@ -9,6 +9,12 @@ public class CombatAction : ScriptableObject
 	[SerializeField]
 	private string _displayName;
 	public string DisplayName => _displayName;
+
+	[SerializeField]
+	[TextArea(3,20)]
+	private string _description;
+	public string Description => _description;
+
 	// whether the action allows you to target allies or not after choosing it
 	[SerializeField]
 	private bool _targetAllies;
