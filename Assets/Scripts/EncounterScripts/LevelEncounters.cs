@@ -7,11 +7,11 @@ using UnityEngine;
 public class LevelEncounters : ScriptableObject
 {
 	[SerializeField] 
-	private List<Encounter> levelEncounters;
+	private List<Encounter> _levelEncounters;
 
 	public void ResetEncounters()
 	{
-		foreach (Encounter encounter in levelEncounters)
+		foreach (Encounter encounter in _levelEncounters)
 		{
 			encounter.Encountered = false;
 		}
