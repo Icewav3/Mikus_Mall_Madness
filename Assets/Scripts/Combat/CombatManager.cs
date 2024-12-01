@@ -86,6 +86,10 @@ public class CombatManager : MonoBehaviour
 		{
 			_targetableActors[i].OnSelect -= _actionSelector.HandleTargetSelection;
 		}
+		foreach (Character character in _playerParty)
+		{
+			character.ClearStatuses();
+		}
 		SceneGod.SInstance.EnterExploreState(victory);
 	}
 
@@ -93,13 +97,20 @@ public class CombatManager : MonoBehaviour
 	//a higher speed stat means the character will have a lower index
 	private void SortCombatants()
 	{
-		_combatants.Sort((a, b) => (b.Speed - a.Speed));
+		_combatants.Sort((a, b) => b.Speed - a.Speed);
 	}
 
 	//handles starting a turn loop
 	private void NextTurn()
 	{
 		Character nextCharacter = _combatants[_turnIndex];
+
+		if (nextCharacter.IsDead)
+		{
+			EndTurn(_actionSelector);
+			return;
+		}
+
 		if (nextCharacter.IsEnemy)
 		{
 			_actionSelector.StartSelection(nextCharacter, _enemies, _playerParty);
@@ -138,7 +149,10 @@ public class CombatManager : MonoBehaviour
 	//marks the end of a full cycle through every combatant on the field
 	private void EndCombatCycle()
 	{
-		// NOTE: We might want more functionality here later
+		foreach (Character character in _combatants)
+		{
+			character.UpdateStatuses();
+		}
 		OnLoopEnd?.Invoke(this);
 	}
 }

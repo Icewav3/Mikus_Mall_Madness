@@ -23,19 +23,19 @@ public class VisualsController : MonoBehaviour
 	{
 		switch (animType)
 		{
-			case (ActionAnimType.Attack1):
+			case ActionAnimType.Attack1:
 				_animator.SetTrigger("actionDamage1");
 				break;
-			case (ActionAnimType.Attack2):
+			case ActionAnimType.Attack2:
 				_animator.SetTrigger("actionDamage2");
 				break;
-			case (ActionAnimType.Status):
+			case ActionAnimType.Status:
 				_animator.SetTrigger("actionStatus");
 				break;
-			case (ActionAnimType.Defend):
+			case ActionAnimType.Defend:
 				_animator.SetTrigger("actionDefend");
 				break;
-			case (ActionAnimType.Signature):
+			case ActionAnimType.Signature:
 				_animator.SetTrigger("actionSignature");
 				break;
 			default:

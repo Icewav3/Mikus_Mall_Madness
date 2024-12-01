@@ -1,83 +1,35 @@
 ﻿using UnityEngine;
-using UnityEngine.Tilemaps;
 
-[RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMovement : MonoBehaviour
 {
-	[SerializeField] private float moveSpeed = 5f; // Movement speed of the player
-	[SerializeField] private Tilemap tilemap;      // Reference to the tilemap for snapping
+	[SerializeField]
+	private float _moveSpeed = 1.0f;
+	[SerializeField]
+	private float _mouseDeadZone = 0.05f;
 
-	private Rigidbody2D _rigidbody2D;   // Rigidbody2D component for physics-based movement
-	private Vector2 _movementDirection; // Direction in which the player should move
-	private bool _isMoving = false;     // Track if player is currently moving
+	[SerializeField]
+	private Rigidbody2D _rb;
 
-	private void Awake()
-	{
-		_rigidbody2D = GetComponent<Rigidbody2D>();
-	}
+	private Vector2 _mousePos = new();
+	private bool _mouseClicked = false;
 
 	private void Update()
 	{
-		ProcessInput();
+		_mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+		_mouseClicked = Input.GetMouseButton(0);
 	}
 
 	private void FixedUpdate()
 	{
-		if (_isMoving)
-		{
-			MovePlayer();
-		}
-	}
+		Vector2 moveDir = (_mousePos - (Vector2)transform.position).normalized;
 
-	// Processes the input and updates movement state and direction
-	private void ProcessInput()
-	{
-		if (Input.GetMouseButton(0))
+		if (_mouseClicked && Vector2.Distance(_mousePos, (Vector2)transform.position) > _mouseDeadZone)
 		{
-			UpdateMovementDirection();
-			_isMoving = true;
-		}
-		else if (_isMoving)
-		{
-			SnapToTileCenter();
-			_isMoving = false;
-		}
-	}
-
-	// Updates the movement direction based on mouse position relative to the player
-	private void UpdateMovementDirection()
-	{
-		Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-		Vector2 direction = mousePosition - transform.position;
-
-		// Round the direction to the nearest 45-degree angle
-		if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y))
-		{
-			_movementDirection = direction.x > 0 ? new Vector2(1, 1) : new Vector2(-1, -1);
+			_rb.velocity = moveDir * _moveSpeed;
 		}
 		else
 		{
-			_movementDirection = direction.y > 0 ? new Vector2(-1, 1) : new Vector2(1, -1);
+			_rb.velocity = Vector2.zero;
 		}
-
-		_movementDirection.Normalize();
-	}
-
-	// Moves the player in the specified direction
-	private void MovePlayer()
-	{
-		Vector2 newPosition = _rigidbody2D.position + _movementDirection * moveSpeed * Time.fixedDeltaTime;
-		_rigidbody2D.MovePosition(newPosition);
-	}
-
-	// Snaps the player to the nearest tile center on the tilemap
-	private void SnapToTileCenter()
-	{
-		if (tilemap == null) return;
-		// Convert the player’s current position to the nearest cell position in the tilemap
-		Vector3Int cellPosition = tilemap.WorldToCell(transform.position);
-		// Get the world position of the center of that cell
-		Vector3 cellCenter = tilemap.GetCellCenterWorld(cellPosition);
-		_rigidbody2D.MovePosition(cellCenter);
 	}
 }

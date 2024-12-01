@@ -6,7 +6,7 @@ using UnityEngine;
 ///<summary>
 ///  Class that defines the base values to be instantiated into a <see cref="Character"/>.
 ///</summary>
-[CreateAssetMenu(fileName = "Character Base", menuName = "Characters/Character Base")]
+[CreateAssetMenu(fileName = "Character Base", menuName = "ScriptableObjects/Characters/Character Base")]
 public class CharacterBase : ScriptableObject
 {
 	[SerializeField]

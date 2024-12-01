@@ -3,17 +3,26 @@ using UnityEngine;
 public class Luka_VisualsController : MonoBehaviour
 {
 	[SerializeField]
-	private SpriteRenderer charSprite;
+	private SpriteRenderer _charSprite;
 	//[VFX]
+	[SerializeField]
+	private ParticleSystem _ultInitialSpin;
+	[SerializeField]
+	private ParticleSystem _ultBigSpin;
+
+	public void ultPhase1Spin()
+	{
+		_ultInitialSpin.Emit(3);
+	}
 
 	public void changeSortingLayerUP()
 	{
-		charSprite.sortingLayerName = "CharacterInUse";
-		print("Called. Current Layer: " + charSprite.sortingLayerName);
+		_charSprite.sortingLayerName = "CharacterInUse";
+		print("Called. Current Layer: " + _charSprite.sortingLayerName);
 	}
 	public void changeSortingLayerDOWN()
 	{
-		charSprite.sortingLayerName = "Characters";
-		print("Called. Current Layer: " + charSprite.sortingLayerName);
+		_charSprite.sortingLayerName = "Characters";
+		print("Called. Current Layer: " + _charSprite.sortingLayerName);
 	}
 }

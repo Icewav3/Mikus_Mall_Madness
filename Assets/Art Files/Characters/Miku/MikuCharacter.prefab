@@ -25533,11 +25533,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _animator: {fileID: 6848297232430702266}
-  charSprite: {fileID: 2831588333061271729}
-  stageLights: {fileID: 7491958901993511982}
-  tinySparks: {fileID: 3891851787721457707}
-  afterSparks: {fileID: 41538225952666889}
-  shockwave: {fileID: 58085788828561630}
+  _charSprite: {fileID: 2831588333061271729}
+  _stageLights: {fileID: 7491958901993511982}
+  _tinySparks: {fileID: 3891851787721457707}
+  _afterSparks: {fileID: 41538225952666889}
+  _shockwave: {fileID: 58085788828561630}
 --- !u!1 &6802663463960757268
 GameObject:
   m_ObjectHideFlags: 0

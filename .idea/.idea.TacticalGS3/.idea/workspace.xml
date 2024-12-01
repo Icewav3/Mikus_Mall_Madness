@@ -19,6 +19,24 @@
     &quot;assignee&quot;: &quot;Icewav3&quot;
   }
 }</component>
+  <component name="GitHubPullRequestState"><![CDATA[{
+  "prStates": [
+    {
+      "id": {
+        "id": "PR_kwDONLcmuM6Dabv1",
+        "number": 33
+      },
+      "lastSeen": 1732894541021
+    },
+    {
+      "id": {
+        "id": "PR_kwDONLcmuM6DaEeo",
+        "number": 31
+      },
+      "lastSeen": 1732894779306
+    }
+  ]
+}]]></component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/Icewav3/TacticalGS3.git&quot;,
@@ -26,14 +44,40 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock://C:/Users/coled/Desktop/Github/TacticalGS3/Assets/Art Files/Tilemaps/Luka_frontFacingl.png.meta" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/coled/Desktop/Github/TacticalGS3/Assets/Art Files/Tilemaps/Luka_frontFacingl.png.meta" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/coled/Desktop/Github/TacticalGS3/Assets/Art Files/Tilemaps/Luka_frontFacingl.png.meta" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/coled/Desktop/Github/TacticalGS3/Assets/Art Files/Tilemaps/Luka_frontFacingl.png.meta" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Combat/CombatManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/coled/Desktop/Github/TacticalGS3/Assets/Art Files/Characters/Miku/Animation/MikuOverworldController.controller" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/coled/Desktop/Github/TacticalGS3/Assets/Art Files/Characters/Miku/Animation/MikuOverworldController.controller" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/coled/Desktop/Github/TacticalGS3/Assets/Art Files/Characters/Miku/MikuOverworld.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/coled/Desktop/Github/TacticalGS3/Assets/Art Files/Characters/Miku/MikuOverworld.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/coled/Desktop/Github/TacticalGS3/Assets/Prefabs/CombatActor.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/coled/Desktop/Github/TacticalGS3/Assets/Prefabs/CombatActor.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/coled/Desktop/Github/TacticalGS3/Assets/Prefabs/CombatActor.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/coled/Desktop/Github/TacticalGS3/Assets/Prefabs/CombatActor.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/coled/Desktop/Github/TacticalGS3/Assets/Prefabs/CombatActor.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/coled/Desktop/Github/TacticalGS3/Assets/Prefabs/CombatActor.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/coled/Desktop/Github/TacticalGS3/Assets/Scenes/CombatUITest.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/coled/Desktop/Github/TacticalGS3/Assets/Scenes/CombatUITest.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/coled/Desktop/Github/TacticalGS3/Assets/Scenes/CombatUITest.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/coled/Desktop/Github/TacticalGS3/Assets/Scenes/CombatUITest.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/coled/Desktop/Github/TacticalGS3/Assets/Scenes/CombatUITest.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/coled/Desktop/Github/TacticalGS3/Assets/Scenes/CombatUITest.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/coled/Desktop/Github/TacticalGS3/Assets/Scripts/Combat/Character/Character.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/coled/Desktop/Github/TacticalGS3/Assets/Scripts/Combat/Character/Character.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/coled/Desktop/Github/TacticalGS3/Assets/Scripts/Combat/Character/Character.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/coled/Desktop/Github/TacticalGS3/Assets/Scripts/Combat/Character/Character.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/coled/Desktop/Github/TacticalGS3/Assets/Scripts/Combat/Character/Character.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/coled/Desktop/Github/TacticalGS3/Assets/Scripts/Combat/Character/Character.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/coled/Desktop/Github/TacticalGS3/Assets/Scripts/OverworldPlayerMovement.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/OverworldPlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/Users/coled/Desktop/Github/TacticalGS3/Assets/Scripts/OverworldPlayerMovement.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/coled/Desktop/Github/TacticalGS3/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/coled/Desktop/Github/TacticalGS3/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/coled/Desktop/Github/TacticalGS3/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/coled/Desktop/Github/TacticalGS3/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/coled/Desktop/Github/TacticalGS3/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/coled/Desktop/Github/TacticalGS3/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/coled/Desktop/Github/TacticalGS3/ProjectSettings/TagManager.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/coled/Desktop/Github/TacticalGS3/ProjectSettings/TagManager.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/coled/Desktop/Github/TacticalGS3/ProjectSettings/TagManager.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/coled/Desktop/Github/TacticalGS3/ProjectSettings/TagManager.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/coled/Desktop/Github/TacticalGS3/ProjectSettings/TagManager.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/coled/Desktop/Github/TacticalGS3/ProjectSettings/TagManager.asset" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -54,7 +98,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "build",
+    "git-widget-placeholder": "#31 on player-movement",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -122,7 +166,6 @@
       <workItem from="1731968460815" duration="7663000" />
       <workItem from="1731978026577" duration="361000" />
       <workItem from="1732028408404" duration="3001000" />
-      <workItem from="1732633424064" duration="747000" />
     </task>
     <task id="LOCAL-00001" summary="Merge Commit">
       <option name="closed" value="true" />

@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Heal Self", menuName = "Action Effects/Heal Self")]
+[CreateAssetMenu(fileName = "Heal Self", menuName = "ScriptableObjects/Action Effects/Heal Self")]
 public class HealSelfEffect : ActionEffect
 {
 	[SerializeField]
