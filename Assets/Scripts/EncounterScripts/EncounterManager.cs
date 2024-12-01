@@ -1,12 +1,10 @@
-using System.Collections.Generic;
-
 using UnityEngine;
 
 public class EncounterManager : MonoBehaviour
 {
 	private Encounter _activeEncounter; // Currently activated Encounter
 
-	[SerializeField] 
+	[SerializeField]
 	private LevelEncounters _levelEncounters;
 
 	private void Awake()
