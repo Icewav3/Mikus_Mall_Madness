@@ -1,13 +1,13 @@
 using System.Collections.Generic;
 using System.Linq;
 
+using JetBrains.Annotations;
+
 using UnityEngine;
 
 public class EnemyCombatAI : MonoBehaviour
 {
 	// Handle Enemy combat turn
-
-	// TO DO: pick an action at random
 
 	// add priority to certain actions
 	// depending on the enemy's action selection
@@ -30,7 +30,43 @@ public class EnemyCombatAI : MonoBehaviour
 		// Get list of available actions
 		_combatActions = _character.CombatActions.ToList();
 
-		Action = _combatActions[Random.Range(0, _combatActions.Count)];
+		// Action = _combatActions[Random.Range(0, _combatActions.Count)];
+
+		/*
+		 * Thoughts:
+		 * - Replace the hardcoded action selection with something more flexible
+		 * - Signatures stamina cost are more than the max stamina of the character
+		 *	 so that needs some tuning so for now the enemy can only attack or heal/buff
+		 */
+
+		// WIP here:
+		// check each ally
+		for (int ally = 0; ally < _allies.Count; ally++)
+		{
+			// get combatActions index
+			for (int i = 0; i < _combatActions.Count; i++)
+			{
+				// check if any ally has low hp - %30 or less
+				if (_allies[ally].CurrentHealth < _allies[ally].MaxHealth * 0.3)
+				{
+					// heal
+					Action = _combatActions[1];
+					Debug.Log("HEALING/BUFFING");
+				}
+				/*else if (_character.CurrentStamina >= 60)
+				{
+				// signature
+					Action = _combatActions[2];
+					Debug.Log("SIGNATURE");
+				}*/
+				else
+				{
+					// reg attack
+					Action = _combatActions[0];
+					Debug.Log("ATTACK");
+				}
+			}
+		}
 
 		HandleEnemyTarget();
 	}
@@ -48,8 +84,7 @@ public class EnemyCombatAI : MonoBehaviour
 	{
 		// Heal allies with the lowest health
 		// Buff unbuffed allies: prioritize higher attack
-
-		//
+		
 		// heal
 		if (Action.BehaviourTypes.Contains(ActionBehaviourType.Heal))
 		{
@@ -71,7 +106,6 @@ public class EnemyCombatAI : MonoBehaviour
 
 	private void TargetOpponent()
 	{
-		//_target = Random.Range(0, _opponents.Count);
 		// Attack: target alive opponents at random
 		// Debuff: target opponents without debuff at random
 		// attack
