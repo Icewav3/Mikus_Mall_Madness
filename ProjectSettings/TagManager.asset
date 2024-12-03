@@ -50,6 +50,12 @@ TagManager:
   - name: Wall
     uniqueID: 3504616623
     locked: 0
+  - name: Roof
+    uniqueID: 4241334259
+    locked: 0
+  - name: '[Behind] Particles'
+    uniqueID: 2021559959
+    locked: 0
   - name: NonStoreProps
     uniqueID: 1797194213
     locked: 0
@@ -59,17 +65,14 @@ TagManager:
   - name: CarProps
     uniqueID: 3070815789
     locked: 0
-  - name: Roof
-    uniqueID: 4241334259
+  - name: Characters
+    uniqueID: 2837402685
     locked: 0
   - name: OverworldCharacter
     uniqueID: 4224091809
     locked: 0
-  - name: '[Behind] Particles'
-    uniqueID: 2021559959
-    locked: 0
-  - name: Characters
-    uniqueID: 2837402685
+  - name: ParkingLotPillarsOverTop
+    uniqueID: 664318347
     locked: 0
   - name: '[Front] Particles'
     uniqueID: 2313855497
