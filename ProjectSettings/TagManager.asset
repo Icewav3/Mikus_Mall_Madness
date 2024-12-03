@@ -50,11 +50,11 @@ TagManager:
   - name: Wall
     uniqueID: 3504616623
     locked: 0
-  - name: NonStoreProps
-    uniqueID: 4232132019
-    locked: 0
   - name: Pillars
     uniqueID: 2688281661
+    locked: 0
+  - name: NonStoreProps
+    uniqueID: 4232132019
     locked: 0
   - name: OverworldCharacter
     uniqueID: 4224091809
