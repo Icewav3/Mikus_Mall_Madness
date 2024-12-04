@@ -13,7 +13,7 @@ public class EncounterManager : MonoBehaviour
 	/// <param name="encounter"></param>
 	public void TriggerEncounter(Encounter encounter)
 	{
-		if (encounter.GetEnemies().Count > 0 && !encounter.Encountered)
+		if (encounter.GetEnemies().Count > 0)
 		{
 			_activeEncounter = encounter;
 			_activeEncounter.Encountered = true;
@@ -22,6 +22,7 @@ public class EncounterManager : MonoBehaviour
 		else
 		{
 			Debug.LogWarning("There is no ENCOUNTER DATA");
+			print("SHUT THE FUCK UPPPPP");
 		}
 	}
 

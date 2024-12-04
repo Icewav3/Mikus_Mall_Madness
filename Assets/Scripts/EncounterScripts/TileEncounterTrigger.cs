@@ -13,6 +13,7 @@ public class TileEncounterTrigger : MonoBehaviour
 		if (_encounter && _encounterManager)
 		{
 			_encounterManager.TriggerEncounter(_encounter);
+			this.gameObject.SetActive(false);
 		}
 	}
 }
