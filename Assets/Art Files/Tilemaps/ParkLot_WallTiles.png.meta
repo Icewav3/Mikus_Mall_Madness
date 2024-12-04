@@ -112,7 +112,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 954e29f63491d7544a77c8132fb307c8
-      internalID: 4654242383520345049
+      internalID: -1576105264
       vertices: []
       indices: 
       edges: []
@@ -133,7 +133,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: ba76a0b23cc988a48806505943c93132
-      internalID: 4565404484951736397
+      internalID: -415799088
       vertices: []
       indices: 
       edges: []
@@ -154,7 +154,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: c192a785a466f364ea919abee063e297
-      internalID: -7234298863476199347
+      internalID: 1761007182
       vertices: []
       indices: 
       edges: []
@@ -175,7 +175,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 0c43fa973c480b143ae9a6cfe95ba819
-      internalID: 2426231062497034800
+      internalID: -1064520534
       vertices: []
       indices: 
       edges: []
@@ -196,7 +196,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 120f57f0b043ca04f9975e000b13b3d5
-      internalID: -2642307315854842148
+      internalID: -1246795123
       vertices: []
       indices: 
       edges: []
@@ -217,7 +217,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 5d6ff4d5cc6d9aa43bda87b9bafd0673
-      internalID: -8357297628803898613
+      internalID: 153887465
       vertices: []
       indices: 
       edges: []
@@ -238,7 +238,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 54e551972554856438f5db8b37f5c72b
-      internalID: -6717437570392554808
+      internalID: 682463447
       vertices: []
       indices: 
       edges: []
@@ -259,7 +259,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 7e8fb58d7bf332749a73e0a12b363da0
-      internalID: -5844922692309455362
+      internalID: 1032263171
       vertices: []
       indices: 
       edges: []
@@ -280,7 +280,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 4707c5a0c3bd213499899ce1219faee9
-      internalID: -2444483012739647600
+      internalID: 1430865279
       vertices: []
       indices: 
       edges: []
@@ -301,7 +301,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 98eac26857163ba4c9ff457e81d2b92b
-      internalID: -265939704502102195
+      internalID: -2034152204
       vertices: []
       indices: 
       edges: []
@@ -322,7 +322,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: fe947c5a437b05f47b77b2154d03ac6a
-      internalID: 6017341278882057246
+      internalID: 371845688
       vertices: []
       indices: 
       edges: []
@@ -343,7 +343,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 7723903f49225c847ae425641b35b1b0
-      internalID: -8771749570997706741
+      internalID: -1802203499
       vertices: []
       indices: 
       edges: []
@@ -364,7 +364,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: e1dfea0700a304a499e84e29590d397f
-      internalID: -815622515571295300
+      internalID: 1924293758
       vertices: []
       indices: 
       edges: []
@@ -385,7 +385,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 48905846300c40844addeecf2c73b94a
-      internalID: 1728097401293024610
+      internalID: -1368249631
       vertices: []
       indices: 
       edges: []
@@ -406,7 +406,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: b549c5a6d201b4343ad54d42318c3f80
-      internalID: 1107011341346922411
+      internalID: -318221690
       vertices: []
       indices: 
       edges: []
@@ -427,7 +427,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 71cbede585d3bbe46bd3064963678a79
-      internalID: -3559588619414848272
+      internalID: 1816862555
       vertices: []
       indices: 
       edges: []
@@ -448,7 +448,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 4812eaff4d0fc674dbcad0e6ce60edd0
-      internalID: -269245648809102457
+      internalID: -491915307
       vertices: []
       indices: 
       edges: []
@@ -469,7 +469,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 4ca038c4359cf664581b6cd9a3f61d1d
-      internalID: 3157587623856977794
+      internalID: 975936860
       vertices: []
       indices: 
       edges: []
@@ -490,7 +490,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 3d23b744a6f010b4c8a8e8577c637259
-      internalID: -8308713814595617789
+      internalID: 384234102
       vertices: []
       indices: 
       edges: []
@@ -511,7 +511,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 52fa6529f1b16ce46896b33d4be64dae
-      internalID: 1875025712855465903
+      internalID: 192907476
       vertices: []
       indices: 
       edges: []
@@ -532,7 +532,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: bb6d5fd7b44e3c346824a5d94c5b66ce
-      internalID: -4144113611181735490
+      internalID: -1380144386
       vertices: []
       indices: 
       edges: []
@@ -553,7 +553,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: f5ae352d74b2a0d49a85431d3f27f4f7
-      internalID: -4966371081845926021
+      internalID: 1075861434
       vertices: []
       indices: 
       edges: []
@@ -574,7 +574,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: e8d2c90f0174a7448b6878ab4b12041a
-      internalID: -3604320958717038652
+      internalID: -2011484438
       vertices: []
       indices: 
       edges: []
@@ -595,7 +595,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: a4f20220ea7762c4589b7b4f8c9e835c
-      internalID: -4468274264953991361
+      internalID: 1647023085
       vertices: []
       indices: 
       edges: []
@@ -616,7 +616,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 090c0eaf7a411c84d9b62514b00d5c56
-      internalID: -3434949250019770341
+      internalID: 1913280917
       vertices: []
       indices: 
       edges: []
@@ -637,7 +637,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 3251f4f69cfe06744aa446c6aac5794a
-      internalID: 7499283024483165490
+      internalID: -858987328
       vertices: []
       indices: 
       edges: []
@@ -658,7 +658,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: aed5da05a383d10458a0b3ffdb6961d4
-      internalID: -259442011440649408
+      internalID: -271046044
       vertices: []
       indices: 
       edges: []
@@ -679,7 +679,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: cc6b3607be79e2b43b1700ec6e4cab6a
-      internalID: -2127717952822350616
+      internalID: 1239273470
       vertices: []
       indices: 
       edges: []
@@ -700,7 +700,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: fd1f80a8a09111c4cbdf2736c3c1a1c5
-      internalID: -7229259363244915958
+      internalID: -731057575
       vertices: []
       indices: 
       edges: []
@@ -721,7 +721,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 240c8835615db674e806b19abc0c2e66
-      internalID: -1091842785292991947
+      internalID: -1628996639
       vertices: []
       indices: 
       edges: []
@@ -742,7 +742,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: d1eedc5beda569f4dae1b37ea9289efa
-      internalID: 3634318374689172673
+      internalID: -1493291196
       vertices: []
       indices: 
       edges: []
@@ -763,7 +763,385 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 5d0072d722c9c6948acce7d3ab9fd8f3
-      internalID: 8023166995406391356
+      internalID: -402141495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParkLot_WallTiles_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b77f70dc50142d94abcfab7abb93ecef
+      internalID: 1544004499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParkLot_WallTiles_33
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc674ea01530e5146a45fce0187ffae5
+      internalID: -358694553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParkLot_WallTiles_34
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f559b145a7691b4c95e8d67bda5f409
+      internalID: -1030326758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParkLot_WallTiles_35
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a04b68befa947d4c82594740253518d
+      internalID: -1641019018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParkLot_WallTiles_36
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b700aca0c718fe44aed9966be8526ec
+      internalID: -785907899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParkLot_WallTiles_37
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 224
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52fb21a46eac8df4c8dea1ede1a6cf22
+      internalID: -168780427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParkLot_WallTiles_38
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 224
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3161d20c43044a44c873d40823d8b9c6
+      internalID: 1405456349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParkLot_WallTiles_39
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 224
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc01122f7955479458fe3c96b8a7ae66
+      internalID: 257587273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParkLot_WallTiles_40
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 224
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61a3b0313fb54de429bd0a33946d1e97
+      internalID: 688023702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParkLot_WallTiles_41
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99e266c6d9ba4c04ab432d0e5036a953
+      internalID: 561529695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParkLot_WallTiles_42
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2223bb4ffe6c541419f9845fbe4831b6
+      internalID: 2035422123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParkLot_WallTiles_43
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d49ce4d57d16bc14baf8b549a2327166
+      internalID: -137545981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParkLot_WallTiles_44
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 704edf8823b30f04da16bb8a8b609c14
+      internalID: -208328416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParkLot_WallTiles_45
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2696e4af180f9514692afe2573339f74
+      internalID: -1849912158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParkLot_WallTiles_46
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 424645765ea86384fafd285cb3f7447f
+      internalID: 2127357201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParkLot_WallTiles_47
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f175d90ae927e114f8d04b1cf7b04911
+      internalID: 1356890001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParkLot_WallTiles_48
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ac424748b3b289469d7f04fdf386131
+      internalID: 525753280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParkLot_WallTiles_49
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58f2e53359626ac4792b6b813dc6ca5f
+      internalID: 2126881124
       vertices: []
       indices: 
       edges: []
@@ -771,46 +1149,66 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
-    secondaryTextures: []
+    secondaryTextures:
+    - texture: {fileID: 2800000, guid: f292b818e09696140a683410e6131492, type: 3}
+      name: _NormalMap
     nameFileIdTable:
-      ParkLot_WallTiles_0: 4654242383520345049
-      ParkLot_WallTiles_1: 4565404484951736397
-      ParkLot_WallTiles_10: 6017341278882057246
-      ParkLot_WallTiles_11: -8771749570997706741
-      ParkLot_WallTiles_12: -815622515571295300
-      ParkLot_WallTiles_13: 1728097401293024610
-      ParkLot_WallTiles_14: 1107011341346922411
-      ParkLot_WallTiles_15: -3559588619414848272
-      ParkLot_WallTiles_16: -269245648809102457
-      ParkLot_WallTiles_17: 3157587623856977794
-      ParkLot_WallTiles_18: -8308713814595617789
-      ParkLot_WallTiles_19: 1875025712855465903
-      ParkLot_WallTiles_2: -7234298863476199347
-      ParkLot_WallTiles_20: -4144113611181735490
-      ParkLot_WallTiles_21: -4966371081845926021
-      ParkLot_WallTiles_22: -3604320958717038652
-      ParkLot_WallTiles_23: -4468274264953991361
-      ParkLot_WallTiles_24: -3434949250019770341
-      ParkLot_WallTiles_25: 7499283024483165490
-      ParkLot_WallTiles_26: -259442011440649408
-      ParkLot_WallTiles_27: -2127717952822350616
-      ParkLot_WallTiles_28: -7229259363244915958
-      ParkLot_WallTiles_29: -1091842785292991947
-      ParkLot_WallTiles_3: 2426231062497034800
-      ParkLot_WallTiles_30: 3634318374689172673
-      ParkLot_WallTiles_31: 8023166995406391356
-      ParkLot_WallTiles_4: -2642307315854842148
-      ParkLot_WallTiles_5: -8357297628803898613
-      ParkLot_WallTiles_6: -6717437570392554808
-      ParkLot_WallTiles_7: -5844922692309455362
-      ParkLot_WallTiles_8: -2444483012739647600
-      ParkLot_WallTiles_9: -265939704502102195
+      ParkLot_WallTiles_0: -1576105264
+      ParkLot_WallTiles_1: -415799088
+      ParkLot_WallTiles_10: 371845688
+      ParkLot_WallTiles_11: -1802203499
+      ParkLot_WallTiles_12: 1924293758
+      ParkLot_WallTiles_13: -1368249631
+      ParkLot_WallTiles_14: -318221690
+      ParkLot_WallTiles_15: 1816862555
+      ParkLot_WallTiles_16: -491915307
+      ParkLot_WallTiles_17: 975936860
+      ParkLot_WallTiles_18: 384234102
+      ParkLot_WallTiles_19: 192907476
+      ParkLot_WallTiles_2: 1761007182
+      ParkLot_WallTiles_20: -1380144386
+      ParkLot_WallTiles_21: 1075861434
+      ParkLot_WallTiles_22: -2011484438
+      ParkLot_WallTiles_23: 1647023085
+      ParkLot_WallTiles_24: 1913280917
+      ParkLot_WallTiles_25: -858987328
+      ParkLot_WallTiles_26: -271046044
+      ParkLot_WallTiles_27: 1239273470
+      ParkLot_WallTiles_28: -731057575
+      ParkLot_WallTiles_29: -1628996639
+      ParkLot_WallTiles_3: -1064520534
+      ParkLot_WallTiles_30: -1493291196
+      ParkLot_WallTiles_31: -402141495
+      ParkLot_WallTiles_32: 1544004499
+      ParkLot_WallTiles_33: -358694553
+      ParkLot_WallTiles_34: -1030326758
+      ParkLot_WallTiles_35: -1641019018
+      ParkLot_WallTiles_36: -785907899
+      ParkLot_WallTiles_37: -168780427
+      ParkLot_WallTiles_38: 1405456349
+      ParkLot_WallTiles_39: 257587273
+      ParkLot_WallTiles_4: -1246795123
+      ParkLot_WallTiles_40: 688023702
+      ParkLot_WallTiles_41: 561529695
+      ParkLot_WallTiles_42: 2035422123
+      ParkLot_WallTiles_43: -137545981
+      ParkLot_WallTiles_44: -208328416
+      ParkLot_WallTiles_45: -1849912158
+      ParkLot_WallTiles_46: 2127357201
+      ParkLot_WallTiles_47: 1356890001
+      ParkLot_WallTiles_48: 525753280
+      ParkLot_WallTiles_49: 2126881124
+      ParkLot_WallTiles_5: 153887465
+      ParkLot_WallTiles_6: 682463447
+      ParkLot_WallTiles_7: 1032263171
+      ParkLot_WallTiles_8: 1430865279
+      ParkLot_WallTiles_9: -2034152204
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
