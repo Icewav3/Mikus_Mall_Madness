@@ -66,8 +66,8 @@ public class SceneGod : MonoBehaviour
 			_currentState = GameState.Combat;
 			stuff.SetActive(false);
 			SceneManager.LoadScene(_combatScene, LoadSceneMode.Additive);
-			_scene = SceneManager.GetActiveScene();
-			print(_scene);
+			_scene = SceneManager.GetSceneAt(1);
+			print(_scene.name);
 		}
 		else
 		{
