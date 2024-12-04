@@ -9,8 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 702ce7f23d578554eb2369ad7773476f, type: 3}
-  m_Name: Status Effect Base
+  m_Script: {fileID: 11500000, guid: 60f92c633cbf08346911ec557657b966, type: 3}
+  m_Name: LukaSig
   m_EditorClassIdentifier: 
-  _statBoosts: []
-  _procs: []
+  _displayName: Slide Through
+  _description: 
+  _targetAllies: 0
+  _effects: []
+  _animType: 4
+  _behaviourTypes: 0000000002000000
+  _staminaCost: 65

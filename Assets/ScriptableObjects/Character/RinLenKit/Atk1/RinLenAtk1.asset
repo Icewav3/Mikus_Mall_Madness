@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: RinLenAtk1
   m_EditorClassIdentifier: 
   _displayName: Explode
+  _description: 
   _targetAllies: 0
   _effects:
   - {fileID: 11400000, guid: 18f72ebc92c7e64438ede61424b035c3, type: 2}
