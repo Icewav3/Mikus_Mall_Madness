@@ -45,22 +45,10 @@ TagManager:
     uniqueID: 2730274505
     locked: 0
   - name: StoreProps
-    uniqueID: 241203171
+    uniqueID: 4225819035
     locked: 0
   - name: Wall
     uniqueID: 3504616623
-    locked: 0
-  - name: Pillars
-    uniqueID: 2688281661
-    locked: 0
-  - name: NonStoreProps
-    uniqueID: 4232132019
-    locked: 0
-  - name: OverworldCharacter
-    uniqueID: 4224091809
-    locked: 0
-  - name: WallOverCharacter
-    uniqueID: 2384371887
     locked: 0
   - name: Roof
     uniqueID: 4241334259
@@ -68,8 +56,23 @@ TagManager:
   - name: '[Behind] Particles'
     uniqueID: 2021559959
     locked: 0
+  - name: NonStoreProps
+    uniqueID: 1797194213
+    locked: 0
+  - name: Pillars
+    uniqueID: 1137053211
+    locked: 0
+  - name: CarProps
+    uniqueID: 3070815789
+    locked: 0
   - name: Characters
     uniqueID: 2837402685
+    locked: 0
+  - name: OverworldCharacter
+    uniqueID: 4224091809
+    locked: 0
+  - name: ParkingLotPillarsOverTop
+    uniqueID: 664318347
     locked: 0
   - name: '[Front] Particles'
     uniqueID: 2313855497
@@ -85,7 +88,4 @@ TagManager:
     locked: 0
   - name: '[SCR] Splash'
     uniqueID: 1642097399
-    locked: 0
-  - name: UI
-    uniqueID: 3324216933
     locked: 0
