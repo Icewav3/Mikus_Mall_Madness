@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: DemoFloorEncounters
   m_EditorClassIdentifier: 
   _levelEncounters:
-  - {fileID: 11400000, guid: 68b7bb8324d53254c8f695cbad9adf17, type: 2}
+  - {fileID: 11400000, guid: 53a7c22f0f418634aba280685c94176c, type: 2}
+  - {fileID: 11400000, guid: b9442530c9ab9b84c9e29545de903123, type: 2}

@@ -13,11 +13,8 @@ public class EncounterManager : MonoBehaviour
 	/// <param name="encounter"></param>
 	public void TriggerEncounter(Encounter encounter)
 	{
-		Debug.Log(encounter.GetEnemies().Count);
-		Debug.Log(encounter.Encountered);
 		if (encounter.GetEnemies().Count > 0 && !encounter.Encountered)
 		{
-			Debug.Log("frog");
 			_activeEncounter = encounter;
 			_activeEncounter.Encountered = true;
 			SceneGod.SInstance.EnterCombatState(_activeEncounter.GetEnemies());
