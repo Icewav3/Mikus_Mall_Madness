@@ -59,6 +59,9 @@ TagManager:
   - name: OverworldCharacter
     uniqueID: 4224091809
     locked: 0
+  - name: WallOverCharacter
+    uniqueID: 2384371887
+    locked: 0
   - name: Roof
     uniqueID: 4241334259
     locked: 0
