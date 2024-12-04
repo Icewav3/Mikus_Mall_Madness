@@ -18,7 +18,7 @@ public class SceneGod : MonoBehaviour
 
 	private Scene _scene;
 	[SerializeField]
-	private GameObject stuff;
+	private GameObject _sceneParent;
 
 
 	private void Start()
@@ -64,10 +64,9 @@ public class SceneGod : MonoBehaviour
 		{
 			EnemyCharacters = characters;
 			_currentState = GameState.Combat;
-			stuff.SetActive(false);
+			_sceneParent.SetActive(false);
 			SceneManager.LoadScene(_combatScene, LoadSceneMode.Additive);
 			_scene = SceneManager.GetSceneAt(1);
-			print(_scene.name);
 		}
 		else
 		{
@@ -89,7 +88,7 @@ public class SceneGod : MonoBehaviour
 			WonLastBattle = victory;
 			_currentState = GameState.Explore;
 			SceneManager.UnloadSceneAsync(_scene);
-			stuff.SetActive(true);
+			_sceneParent.SetActive(true);
 		}
 		else
 		{
