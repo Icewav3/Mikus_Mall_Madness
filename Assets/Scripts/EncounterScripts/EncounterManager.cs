@@ -7,19 +7,17 @@ public class EncounterManager : MonoBehaviour
 	[SerializeField]
 	private LevelEncounters _levelEncounters;
 
-	private void Awake()
-	{
-		OnEncounterComplete();
-	}
-
 	/// <summary>
 	/// Enter Combat
 	/// </summary>
 	/// <param name="encounter"></param>
 	public void TriggerEncounter(Encounter encounter)
 	{
+		Debug.Log(encounter.GetEnemies().Count);
+		Debug.Log(encounter.Encountered);
 		if (encounter.GetEnemies().Count > 0 && !encounter.Encountered)
 		{
+			Debug.Log("frog");
 			_activeEncounter = encounter;
 			_activeEncounter.Encountered = true;
 			SceneGod.SInstance.EnterCombatState(_activeEncounter.GetEnemies());

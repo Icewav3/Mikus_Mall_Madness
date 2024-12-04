@@ -9,8 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f71193b1d1aa61645bd2541edf108a8d, type: 3}
-  m_Name: Test Status Target Effect
+  m_Script: {fileID: 11500000, guid: 16a94b351f184252a6de0843c3c56a6a, type: 3}
+  m_Name: DemoEncounter2
   m_EditorClassIdentifier: 
-  _effectBase: {fileID: 0}
-  _duration: 1
+  _enemyBases:
+  - {fileID: 11400000, guid: 4c77fd7c61cd3cc449cd47536c545d69, type: 2}
+  - {fileID: 11400000, guid: 25bc2f22369515b43a735d264785bcff, type: 2}
+  Encountered: 0

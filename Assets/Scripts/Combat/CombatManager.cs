@@ -42,6 +42,11 @@ public class CombatManager : MonoBehaviour
 	private void OnEnable()
 	{
 		_actionSelector.OnTurnComplete += EndTurn;
+
+		if(SceneGod.SInstance.EnemyCharacters.Count > 0 && _party.Members.Count > 0)
+		{
+			InitBattle(SceneGod.SInstance.EnemyCharacters);
+		}
 	}
 	private void OnDisable()
 	{
