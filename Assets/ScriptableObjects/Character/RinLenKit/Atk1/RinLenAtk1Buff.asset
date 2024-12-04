@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ebf0b98507b453418fadd561c4bbd5d, type: 3}
   m_Name: RinLenAtk1Buff
   m_EditorClassIdentifier: 
-  _effectBase: {fileID: 0}
+  _effectBase: {fileID: 11400000, guid: 40ae047bbbbf876459df3c2ed583a9b1, type: 2}
   _duration: 1
