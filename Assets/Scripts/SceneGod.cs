@@ -20,12 +20,6 @@ public class SceneGod : MonoBehaviour
 	[SerializeField]
 	private GameObject _sceneParent;
 
-
-	private void Start()
-	{
-		//EnterCombatState(new List<Character>());
-	}
-
 	/// <summary>
 	/// Initializes the SceneGod instance and ensures it persists across scenes.
 	/// </summary>
