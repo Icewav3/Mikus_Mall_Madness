@@ -10,7 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 702ce7f23d578554eb2369ad7773476f, type: 3}
-  m_Name: RinLenAtk1Base
+  m_Name: RinLenStatusBase
   m_EditorClassIdentifier: 
-  _statBoosts: []
+  _statBoosts:
+  - _statIncrease: 3
+    _type: 1
+    _amount: -0.25
   _procs: []

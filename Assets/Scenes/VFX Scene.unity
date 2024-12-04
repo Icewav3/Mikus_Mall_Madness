@@ -25826,6 +25826,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6644249537575463716, guid: 2a0ae9f75eabef54db306584c9040ed0, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.7885245
+      objectReference: {fileID: 0}
+    - target: {fileID: 6644249537575463716, guid: 2a0ae9f75eabef54db306584c9040ed0, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7885245
+      objectReference: {fileID: 0}
+    - target: {fileID: 6644249537575463716, guid: 2a0ae9f75eabef54db306584c9040ed0, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.7885245
+      objectReference: {fileID: 0}
+    - target: {fileID: 8178490811085282686, guid: 2a0ae9f75eabef54db306584c9040ed0, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.7885245
+      objectReference: {fileID: 0}
+    - target: {fileID: 8178490811085282686, guid: 2a0ae9f75eabef54db306584c9040ed0, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7885245
+      objectReference: {fileID: 0}
+    - target: {fileID: 8178490811085282686, guid: 2a0ae9f75eabef54db306584c9040ed0, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.7885245
+      objectReference: {fileID: 0}
     - target: {fileID: 8855840842088763634, guid: 2a0ae9f75eabef54db306584c9040ed0, type: 3}
       propertyPath: m_Name
       value: LukaCharacter

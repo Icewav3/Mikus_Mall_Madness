@@ -10,15 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 60f92c633cbf08346911ec557657b966, type: 3}
-  m_Name: RinLenSig
+  m_Name: LukaAtk1
   m_EditorClassIdentifier: 
-  _displayName: Bombs Away!
+  _displayName: Explode
   _description: 
   _targetAllies: 0
-  _effects:
-  - {fileID: 11400000, guid: 970c2813ecfdbed4c9f2dfcd5c739499, type: 2}
-  - {fileID: 11400000, guid: 9cd7a9e442281da4c89c08a425779914, type: 2}
-  - {fileID: 11400000, guid: d53603e58341ddf4ea704574590e5470, type: 2}
-  _animType: 4
+  _effects: []
+  _animType: 0
   _behaviourTypes: 0000000002000000
-  _staminaCost: 65
+  _staminaCost: 15
