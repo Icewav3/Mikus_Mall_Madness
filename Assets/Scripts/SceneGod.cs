@@ -18,6 +18,7 @@ public class SceneGod : MonoBehaviour
 
 	private Scene _scene;
 	[SerializeField]
+	// _sceneParent is used to disable all interactive components of the primary scene when loading a new scene
 	private GameObject _sceneParent;
 
 	/// <summary>
