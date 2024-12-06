@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Luka_VisualsController : MonoBehaviour
+public class Luka_VisualsController : VisualsController
 {
 	[SerializeField]
 	private SpriteRenderer _charSprite;

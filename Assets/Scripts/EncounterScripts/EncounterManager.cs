@@ -7,18 +7,13 @@ public class EncounterManager : MonoBehaviour
 	[SerializeField]
 	private LevelEncounters _levelEncounters;
 
-	private void Awake()
-	{
-		OnEncounterComplete();
-	}
-
 	/// <summary>
 	/// Enter Combat
 	/// </summary>
 	/// <param name="encounter"></param>
 	public void TriggerEncounter(Encounter encounter)
 	{
-		if (encounter.GetEnemies().Count > 0 && !encounter.Encountered)
+		if (encounter.GetEnemies().Count > 0)
 		{
 			_activeEncounter = encounter;
 			_activeEncounter.Encountered = true;
@@ -27,6 +22,7 @@ public class EncounterManager : MonoBehaviour
 		else
 		{
 			Debug.LogWarning("There is no ENCOUNTER DATA");
+			print("SHUT THE FUCK UPPPPP");
 		}
 	}
 

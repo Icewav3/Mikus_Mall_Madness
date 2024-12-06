@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 1 JesseBase
   m_EditorClassIdentifier: 
   _name: Jesse
-  _visuals: {fileID: 3187822434954041856, guid: 34f494dad8c7890469e8a56d9f3b2696, type: 3}
+  _visuals: {fileID: 6119061641877455612, guid: 99757232bb4c8b540a3b174b8f6d48df, type: 3}
   _isEnemy: 1
   _baseHealth: 40
   _baseStamina: 50

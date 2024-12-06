@@ -16,6 +16,11 @@ public class SceneGod : MonoBehaviour
 
 	private GameState _currentState;
 
+	private Scene _scene;
+	[SerializeField]
+	// _sceneParent is used to disable all interactive components of the primary scene when loading a new scene
+	private GameObject _sceneParent;
+
 	/// <summary>
 	/// Initializes the SceneGod instance and ensures it persists across scenes.
 	/// </summary>
@@ -54,7 +59,9 @@ public class SceneGod : MonoBehaviour
 		{
 			EnemyCharacters = characters;
 			_currentState = GameState.Combat;
-			SceneManager.LoadScene(_combatScene);
+			_sceneParent.SetActive(false);
+			SceneManager.LoadScene(_combatScene, LoadSceneMode.Additive);
+			_scene = SceneManager.GetSceneAt(1);
 		}
 		else
 		{
@@ -75,7 +82,8 @@ public class SceneGod : MonoBehaviour
 		{
 			WonLastBattle = victory;
 			_currentState = GameState.Explore;
-			SceneManager.LoadScene(_exploreScene);
+			SceneManager.UnloadSceneAsync(_scene);
+			_sceneParent.SetActive(true);
 		}
 		else
 		{
