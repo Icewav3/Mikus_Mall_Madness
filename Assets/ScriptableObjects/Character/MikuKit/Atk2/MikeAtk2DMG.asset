@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 840a45b8c41756948ba28b638de0adcc, type: 3}
   m_Name: MikeAtk2DMG
   m_EditorClassIdentifier: 
-  _damage: 12
+  _damage: 18
+  _ignoreDefense: 0

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: MikuAtk2
   m_EditorClassIdentifier: 
   _displayName: Pierce
-  _description: pierce description ashjfkgwaerw
+  _description: A piercing attack
   _targetAllies: 0
   _effects:
   - {fileID: 11400000, guid: 1703368837746fa43ae43c1fd256c54f, type: 2}

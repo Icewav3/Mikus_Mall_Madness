@@ -15,4 +15,5 @@ MonoBehaviour:
   _enemyBases:
   - {fileID: 11400000, guid: 4c77fd7c61cd3cc449cd47536c545d69, type: 2}
   - {fileID: 11400000, guid: 25bc2f22369515b43a735d264785bcff, type: 2}
+  - {fileID: 11400000, guid: 25bc2f22369515b43a735d264785bcff, type: 2}
   Encountered: 0

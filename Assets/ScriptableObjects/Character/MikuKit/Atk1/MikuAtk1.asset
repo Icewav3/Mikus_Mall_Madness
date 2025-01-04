@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: MikuAtk1
   m_EditorClassIdentifier: 
   _displayName: Slash
-  _description: slash description askahjfihakuwfr
+  _description: A slashing attack
   _targetAllies: 0
   _effects:
   - {fileID: 11400000, guid: b967e60e440cb764199bf11982de6679, type: 2}
