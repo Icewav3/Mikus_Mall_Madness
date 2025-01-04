@@ -4,24 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a063e10-1ee8-49d0-8f7e-8addaa4aa7f8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SimpleSceneSwitcher.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/onCollision.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TacticalGS3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TacticalGS3/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/CombatUITest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/CombatUITest.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TilesTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TilesTest.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Character/MikuKit/Atk1/MikeAtk1DMG.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Character/MikuKit/Atk1/MikeAtk1DMG.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Character/MikuKit/Atk1/MikuAtk1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Character/MikuKit/Atk1/MikuAtk1.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Character/MikuKit/Atk2/MikeAtk2DMG.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Character/MikuKit/Atk2/MikeAtk2DMG.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Character/MikuKit/Atk2/MikuAtk2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Character/MikuKit/Atk2/MikuAtk2.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Character/MikuKit/Sig/MikuSig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Character/MikuKit/Sig/MikuSig.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Character/MikuKit/Sig/MikuSigHeal.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Character/MikuKit/Sig/MikuSigHeal.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Encounter/DemoEncounter1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Encounter/DemoEncounter1.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Encounter/DemoEncounter2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Encounter/DemoEncounter2.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
-    </list>
+    <list default="true" id="4a063e10-1ee8-49d0-8f7e-8addaa4aa7f8" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -128,7 +111,7 @@
       <option name="presentableId" value="Default" />
       <updated>1733353930355</updated>
       <workItem from="1733353932009" duration="49000" />
-      <workItem from="1735967731967" duration="3044000" />
+      <workItem from="1735967731967" duration="3342000" />
     </task>
     <servers />
   </component>
